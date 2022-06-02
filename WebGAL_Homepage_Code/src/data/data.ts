@@ -137,12 +137,12 @@ export const pageData: IPage = {
         },
         {
           type: "text",
-          content: "人人都有",
+          content: "人人都有权利",
           bold: true,
         },
         {
           type: "text",
-          content: "制作Galgame的权利！",
+          content: "制作Galgame！",
           bold: true,
           color: '#005caf',
         },
