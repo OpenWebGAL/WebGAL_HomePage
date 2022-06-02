@@ -1,0 +1,33 @@
+.disappear {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: toDisappear 0.5s ease-in-out forwards;
+}
+
+.show {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  animation: toShow 0.5s ease-in-out forwards;
+}
+
+@keyframes toDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes toShow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
