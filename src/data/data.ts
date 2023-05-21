@@ -149,7 +149,7 @@ export const pageData: IPage = {
         {
           type: 'button',
           content: '现在下载',
-          href: '/downloads'
+          href: 'https://docs.openwebgal.com/guide'
         },
       ]
     },
