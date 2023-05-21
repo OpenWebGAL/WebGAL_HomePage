@@ -1,0 +1,17 @@
+.dn {
+  padding: 100px;
+  font-size: 150%;
+}
+
+.downloadLink {
+  margin: 30px 0 0 0;
+  color: #005CAF;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.33s;
+  border-radius: 6px;
+}
+
+.downloadLink:hover {
+  color: white;
+  background: #005CAF;
+}

@@ -1,12 +1,13 @@
 import './App.css'
 import TopNav from "./components/TopNav/TopNav";
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-import Index from "./pages";
+import Index from "./pages/index";
+import Downloads from "./pages/downloads";
 
 const router = createBrowserRouter([
   {
-    path: "/app",
-    element: <div>Hello world!</div>,
+    path: "/downloads",
+    element: <Downloads/>,
   },
   {
     path: "/",

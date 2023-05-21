@@ -889,10 +889,24 @@ react-router@6.11.2:
   dependencies:
     "@remix-run/router" "1.6.2"
 
+react-usevalue-hook@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-usevalue-hook/-/react-usevalue-hook-1.0.3.tgz#91d090d2e67398e2b88554d34351fcf77e12610f"
+  integrity sha512-dFZklFQERrJWasM/m5sjlMOpdW8UJFOcYjvHtUt0vEzKX1BUmtpAGbtETNn9Chu+IUA7bJ2kyoTDANPL/gT+nQ==
+  dependencies:
+    react "^18.2.0"
+
 react@^18.0.0:
   version "18.1.0"
   resolved "https://registry.npmjs.org/react/-/react-18.1.0.tgz#6f8620382decb17fdc5cc223a115e2adbf104890"
   integrity sha512-4oL8ivCz5ZEPyclFQXaNksK3adutVS8l2xzZU0cqEFrE9Sb7fC0EFK5uEk74wIreL1DERyjvsU915j1pcT2uEQ==
+  dependencies:
+    loose-envify "^1.1.0"
+
+react@^18.2.0:
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
+  integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
 

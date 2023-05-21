@@ -19,6 +19,7 @@
     "react-dom": "^18.0.0",
     "react-redux": "^8.0.1",
     "react-router-dom": "^6.11.2",
+    "react-usevalue-hook": "^1.0.3",
     "sass": "^1.51.0"
   },
   "devDependencies": {

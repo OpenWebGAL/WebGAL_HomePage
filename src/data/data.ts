@@ -5,7 +5,7 @@ export const pageData: IPage = {
   theme: "default",
   contents: [
     {
-      mainPicSrc: "./assets/image/1.jpg",
+      mainPicSrc: "./assets/image/1.png",
       contents: [
         {
           type: "text",
@@ -14,7 +14,7 @@ export const pageData: IPage = {
         },
         {
           type: "text",
-          content: "网页端Galgame引擎"
+          content: "网页端视觉小说引擎"
         },
         {
           type: "text",
@@ -25,17 +25,17 @@ export const pageData: IPage = {
         {
           type: 'button',
           content: '查看在线演示',
-          href: 'https://demo.msfasr.com'
+          href: 'https://demo.openwebgal.com'
         },
         {
           type: 'button',
-          content: '立刻了解',
-          href: 'https://docs.msfasr.com'
+          content: '立即制作',
+          href: 'https://docs.openwebgal.com'
         },
       ]
     },
     {
-      mainPicSrc: "./assets/image/2.jpg",
+      mainPicSrc: "./assets/image/2.png",
       contents: [
         {
           type: "text",
@@ -50,7 +50,7 @@ export const pageData: IPage = {
       ]
     },
     {
-      mainPicSrc: "./assets/image/3.jpg",
+      mainPicSrc: "./assets/image/3.png",
       contents: [
         {
           type: "text",
@@ -64,12 +64,12 @@ export const pageData: IPage = {
         },
         {
           type: "text",
-          content: "今后还会支持导出导出"
+          content: "还支持导入导出"
         }
       ]
     },
     {
-      mainPicSrc: "./assets/image/4.jpg",
+      mainPicSrc: "./assets/image/4.png",
       contents: [
         {
           type: "text",
@@ -84,7 +84,7 @@ export const pageData: IPage = {
       ]
     },
     {
-      mainPicSrc: "./assets/image/5.jpg",
+      mainPicSrc: "./assets/image/5.png",
       contents: [
         {
           type: "text",
@@ -104,7 +104,7 @@ export const pageData: IPage = {
       ]
     },
     {
-      mainPicSrc: "./assets/image/6.jpg",
+      mainPicSrc: "./assets/image/6.png",
       contents: [
         {
           type: "text",
@@ -123,7 +123,7 @@ export const pageData: IPage = {
       ]
     },
     {
-      mainPicSrc: "./assets/image/7.jpg",
+      mainPicSrc: "./assets/image/7.png",
       contents: [
         {
           type: "text",
@@ -142,14 +142,14 @@ export const pageData: IPage = {
         },
         {
           type: "text",
-          content: "制作Galgame！",
+          content: "制作视觉小说",
           bold: true,
           color: '#005caf',
         },
         {
           type: 'button',
           content: '现在下载',
-          href: 'https://github.com/MakinoharaShoko/WebGAL_Terre'
+          href: '/downloads'
         },
       ]
     },
