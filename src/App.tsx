@@ -1,11 +1,26 @@
 import './App.css'
-import {Main} from "./components/Main/Main";
-import {pageData} from "./data/data";
+import TopNav from "./components/TopNav/TopNav";
+import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import Index from "./pages";
+
+const router = createBrowserRouter([
+  {
+    path: "/app",
+    element: <div>Hello world!</div>,
+  },
+  {
+    path: "/",
+    element: <Index/>
+  }
+]);
 
 function App() {
   return (
     <div className="App" id={'appRoot'} style={{height: '100vh', width: '100vw'}}>
-      <Main pageData={pageData}/>
+      <TopNav/>
+      <main className={'main'}>
+        <RouterProvider router={router}/>
+      </main>
     </div>
   )
 }
