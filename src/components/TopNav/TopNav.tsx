@@ -29,7 +29,7 @@ export default function TopNav() {
         <a href={'https://demo.openwebgal.com'}>DEMO</a>
       </div>
       <div className={s.navButton}>
-        <a href={'/downloads'}>DOWNLOADS</a>
+        <a href={'https://docs.openwebgal.com/guide'}>DOWNLOADS</a>
       </div>
       <div className={s.navButton}>
         <a href={'https://docs.openwebgal.com'}>DOCUMENTS</a>
