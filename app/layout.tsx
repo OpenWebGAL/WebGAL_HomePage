@@ -1,3 +1,5 @@
+import Footer from './components/Footer'
+import Navbar from './components/Navbar'
 import './globals.scss'
 import { Noto_Sans_SC } from 'next/font/google'
 
@@ -18,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body className={notoSansSC.className}>{children}</body>
-    </html>
+      <body className={notoSansSC.className}>
+        <Navbar />
+        {children}
+      </body>
+    </html >
   )
 }

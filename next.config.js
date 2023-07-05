@@ -4,7 +4,8 @@ const path = require('path')
 const nextConfig = {
   // 静态导出
   output: 'export',
-  basePath: '/out',
+  // 默认路径
+  // basePath: '/',
   trailingSlash: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
