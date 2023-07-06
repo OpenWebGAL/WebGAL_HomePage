@@ -1,14 +1,15 @@
-@use '../base';
+@use '../../base';
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, .0));
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, .5));
+  box-shadow: 0 1px 2px rgb(0, 0, 0, .05);
   backdrop-filter: blur(1px);
 }
 
-.container {
+.navbarContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

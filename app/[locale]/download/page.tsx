@@ -1,4 +1,3 @@
-import Footer from '../components/Footer'
 import styles from './Download.module.scss'
 
 const Download = () => {
@@ -12,7 +11,6 @@ const Download = () => {
           WebGAL下载
         </div>
       </div>
-      <Footer />
     </div>
   )
 }
