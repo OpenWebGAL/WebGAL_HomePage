@@ -30,13 +30,13 @@ const Navbar = () => {
 
           <div className={'flex flex-row items-center'} >
             <div className={styles.icon}>
-              <Link href={'https://github.com/MakinoharaShoko/WebGAL'} target={'_blank'}>
+              <Link href={'https://github.com/MakinoharaShoko/WebGAL'} target={'_blank'} title='MakinoharaShoko / WebGAL'>
                 <RiGithubFill style={{ width: '24px', height: '24px' }} />
               </Link>
             </div>
 
             <div className={styles.icon}>
-              <Link href={'https://discord.gg/kPrQkJttJy'} target={'_blank'}>
+              <Link href={'https://discord.gg/kPrQkJttJy'} target={'_blank'} title='Discord / WebGAL'>
                 <RiDiscordFill style={{ width: '24px', height: '24px' }} />
               </Link>
             </div>

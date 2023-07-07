@@ -6,7 +6,7 @@ import styles from './LocaleSelect.module.scss'
 const LocaleSelect = ({ locale, paths }: { locale: string, paths: string[] }) => {
   return (
     <div className={styles.localeSelect}>
-      <Link href='#' className={styles.localeButton}>
+      <Link href='#' title='Change language' className={styles.localeButton}>
         <RiTranslate2 style={{ width: '24px', height: '24px' }} /><RiArrowDropDownFill />
       </Link>
       <div className={styles.localeMenu}>
