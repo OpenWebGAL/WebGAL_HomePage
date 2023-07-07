@@ -1,0 +1,68 @@
+@use '../../../base';
+
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.nav a {
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+
+.nav a:hover {
+  color: base.$primary-color;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.menuButton {
+  width: 2.5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  &:hover svg {
+    color: base.$primary-color;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav {
+    padding-right: 0;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    padding: 0.5rem;
+    width: 100vw;
+    // height: 100vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+
+    a {
+      text-align: center;
+    }
+  }
+
+  .nav:hover .navLinks {
+    display: flex;
+  }
+
+}

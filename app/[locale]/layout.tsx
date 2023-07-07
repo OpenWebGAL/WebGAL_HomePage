@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { i18n } from '../../i18n'
 import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 
 const notoSansSC = Noto_Sans_SC({
   subsets: ['latin'],

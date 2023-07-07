@@ -1,0 +1,42 @@
+@use '../../../base';
+
+.active {
+  color: base.$primary-color;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, .75));
+  box-shadow: 0 1px 2px rgb(0, 0, 0, .05);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  // height: 4rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: #555;
+  }
+
+  &:hover svg {
+    color: base.$primary-color;
+  }
+}
