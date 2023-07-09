@@ -1,8 +1,27 @@
 {
-  "nav": {
+  "common": {
     "home": "HOME",
     "download": "DOWNLOAD",
     "demo": "DEMO",
     "document": "DOCUMENT"
+  },
+  "download": {
+    "downloadWebgal": "Download WebGAL",
+    "webgal": "WebGAL",
+    "webgalTerre": "WebGAL Terre Visual Editor",
+    "fetching": "Fetching",
+    "version": "Version",
+    "releaseTime": "Release Time",
+    "releaseNote": "Release Note",
+    "gitHubReleases": "GitHub Releases",
+    "downloadWindows": "Download Windows zip",
+    "downloadWindowsSetup": "Download Windows setup",
+    "downloadMacos": "Download macOS zip",
+    "downloadLinux": "Download Linux zip",
+    "otherDownloadLink": "Other Download Link",
+    "otherDownloadLinkInfo": "If the above download address is slow, please try using the following download address",
+    "systemRequirements": "System Requirements",
+    "systemRequirementsSystem": "System: Windows 10+ / macOS 10.14+ / Linux Desktop",
+    "systemRequirementsBrowser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge or other modern browsers"
   }
 }

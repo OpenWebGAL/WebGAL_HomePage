@@ -1,8 +1,27 @@
 {
-  "nav": {
+  "common": {
     "home": "主页",
     "download": "下载",
     "demo": "演示",
     "document": "文档"
+  },
+  "download": {
+    "downloadWebgal": "下载 WebGAL",
+    "webgal": "WebGAL",
+    "webgalTerre": "WebGAL Terre 可视化编辑器",
+    "fetching": "获取中",
+    "version": "版本号",
+    "releaseTime": "发布日期",
+    "releaseNote": "发布日志",
+    "gitHubReleases": "前往 GitHub 下载",
+    "downloadWindows": "下载 Windows 压缩包",
+    "downloadWindowsSetup": "下载 Windows 安装文件",
+    "downloadMacos": "下载 macOS 压缩包",
+    "downloadLinux": "下载 Linux 压缩包",
+    "otherDownloadLink": "其它下载地址",
+    "otherDownloadLinkInfo": "如果上面的下载地址下载速度比较慢，请尝试使用以下下载地址",
+    "systemRequirements": "系统需求",
+    "systemRequirementsSystem": "系统: Windows 10+ / macOS 10.14+ / Linux 桌面版",
+    "systemRequirementsBrowser": "浏览器: Google Chrome / Mozilla Firefox / Microsoft Edge 或者其他现代浏览器"
   }
 }

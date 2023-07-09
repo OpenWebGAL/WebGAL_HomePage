@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 
 const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
 
-  const t = useTranslations('nav')
+  const t = useTranslations('common')
 
   const navData = [
     { label: t('home'), href: `/${locale}/` },
@@ -28,14 +28,15 @@ const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
                 key={link.label}
                 className={isActive ? styles.active : 'text-black'}
                 href={link.href}
+                target={link.href.startsWith('/')?'_self':'_blank'}
               >
                 {link.label}
               </Link>
             )
           })
-        }
+          }
+          </div>
       </div>
-    </div >
   )
 }
 
