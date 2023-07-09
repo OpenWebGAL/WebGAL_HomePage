@@ -1,0 +1,19 @@
+.card {
+  @apply flex flex-col gap-2 p-4;
+}
+
+.card-title {
+  @apply text-xl border-b-2
+}
+
+.card-info {
+  @apply text-gray-700;
+}
+
+.card-button-gourp {
+  @apply flex flex-row flex-wrap gap-2;
+}
+
+.list {
+  @apply list-disc list-inside pl-4;
+}

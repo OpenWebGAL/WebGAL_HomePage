@@ -1,5 +1,5 @@
 import { RiMenuFill } from 'react-icons/ri'
-import styles from './Nav.module.scss'
+import styles from './Nav.module.css'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 

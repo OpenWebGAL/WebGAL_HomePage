@@ -1,0 +1,51 @@
+.localeSelect {
+  display: flex;
+  flex-direction: column;
+}
+
+.localeSelect:hover .localeMenu {
+  display: flex;
+  animation: 0.5s linear forwards;
+}
+
+.localeSelect a {
+  padding: 4px 8px;
+}
+
+.localeSelect a:hover {
+  @apply text-webgal;
+}
+
+.localeButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 4rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.localeButton svg {
+  @apply text-gray-500;
+}
+
+.localeButton:hover svg {
+  @apply text-webgal;
+}
+
+.localeMenu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 3rem;
+  width: max-content;
+  transform: translateX(-40px);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+  padding: 4px 0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}

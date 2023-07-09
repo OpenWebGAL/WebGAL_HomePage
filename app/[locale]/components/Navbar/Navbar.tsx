@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import styles from './Navbar.module.scss'
+import styles from './Navbar.module.css'
 import { useLocale } from 'next-intl'
 import { usePathname } from 'next/navigation'
 
@@ -19,7 +19,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navbarContainer}>
 
-        <Link href={`/${locale}/`} className={'flex flex-row justify-center items-center gap-3'}>
+        <Link href={`/${locale}/`} className={styles['navbar-title']}>
           <Image src={'/favicon.ico'} width={32} height={32} alt='logo' />
           <h1>WebGAL</h1>
         </Link>
@@ -34,13 +34,11 @@ const Navbar = () => {
                 <RiGithubFill style={{ width: '24px', height: '24px' }} />
               </Link>
             </div>
-
             <div className={styles.icon}>
               <Link href={'https://discord.gg/kPrQkJttJy'} target={'_blank'} title='Discord / WebGAL'>
                 <RiDiscordFill style={{ width: '24px', height: '24px' }} />
               </Link>
             </div>
-
             <LocaleSelect locale={locale} paths={paths} />
           </div>
 

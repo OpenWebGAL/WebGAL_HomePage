@@ -1,0 +1,19 @@
+.btn {
+  @apply bg-webgal text-white px-4 py-2 rounded shadow
+}
+
+.btn:hover {
+  @apply shadow-md opacity-95
+}
+
+.btn a {
+  @apply flex flex-row justify-center items-center gap-2 text-white
+}
+
+.btn-webgal {
+  @apply bg-webgal
+}
+
+.btn-terre {
+  @apply bg-terre
+}

@@ -7,9 +7,6 @@ const nextConfig = {
   // 默认路径
   // basePath: '/',
   trailingSlash: true,
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
   // 静态导出时需关闭图像优化
   images: {
     unoptimized: true,

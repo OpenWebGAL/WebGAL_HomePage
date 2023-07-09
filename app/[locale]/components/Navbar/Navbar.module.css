@@ -1,17 +1,15 @@
-@use '../../../base';
-
 .active {
-  color: base.$primary-color;
+  @apply text-webgal;
 }
 
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, .75));
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   box-shadow: 0 1px 2px rgb(0, 0, 0, .05);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 
 .navbarContainer {
@@ -20,9 +18,12 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1280px;
-  // height: 4rem;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+.navbar-title {
+  @apply flex flex-row justify-center items-center gap-4;
 }
 
 .icon {
@@ -31,12 +32,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  svg {
-    color: #555;
-  }
+.icon svg {
+  @apply text-gray-500;
+}
 
-  &:hover svg {
-    color: base.$primary-color;
-  }
+.icon:hover svg {
+  @apply text-webgal;
 }
