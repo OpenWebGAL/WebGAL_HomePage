@@ -19,13 +19,17 @@ export const findAssetsUrl = (assets: any[], arg: string) => {
  * @returns 
  */
 export const parseReleaseNote = (body: string) => {
-  return body
-    .split(/\r\n\r\n## /)
-    .filter(item => item !== '')
-    .map(item =>
-      item
-        .split(/\r\n### .*\r\n/)[1]
-        .split('\r\n')
-        .filter(item => item !== '')
-    )
+  try {
+    return body
+      .split(/\r\n\r\n## /)
+      .filter(item => item !== '')
+      .map(item =>
+        item
+          .split(/\r\n### .*\r\n/)[1]
+          .split('\r\n')
+          .filter(item => item !== '')
+      )
+  } catch (error) {
+    return []
+  }
 }

@@ -3,11 +3,11 @@
 }
 
 .card-title {
-  @apply text-xl border-b-2
+  @apply text-xl border-b-2 font-medium;
 }
 
 .card-info {
-  @apply text-gray-700;
+  @apply text-gray-700 font-normal;
 }
 
 .card-button-gourp {

@@ -1,19 +1,45 @@
 .topVisual {
-  height: 100vh;
-  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(230, 230, 230, 0.8));
+  @apply border-b-2;
+  background: linear-gradient(rgba(0, 93, 175, 0.1), rgb(255, 255, 255));
   padding-top: 4rem;
+  overflow: hidden;
 }
 
-.topVisual::after {
-  content: '';
-  display: block;
+.background {
   position: fixed;
   top: 0;
-  background-image: url("/images/terre.webp");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  z-index: -1;
   height: 100vh;
   width: 100%;
-  z-index: -1;
+}
+
+.container {
+  @apply max-w-screen-xl mx-auto h-full p-4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.card {
+  @apply shadow-md border-2 border-gray-200 rounded-lg;
+  transform: translateY(calc(1280px/120));
+  max-height: calc(1280px/3);
+  max-width: 100%;
+  transition: 0.35s ease-out;
+}
+
+@media screen and (max-width: 1280px) {
+  .card {
+    transform: translateY(calc(100vw/120));
+    max-height: calc(100vw/3);
+  }
+}
+
+.card:hover {
+  transform: none;
+}
+
+.card-image {
+  @apply h-full w-full object-cover rounded-lg;
 }

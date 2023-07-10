@@ -6,7 +6,6 @@ const Features = () => {
   const locale = useLocale()
   return (
     <div className={'bg-white'}>
-
       <div className={'max-w-screen-xl mx-auto space-y-4 p-4 text-center '}>
         <div>
           <h2>界面美观</h2>
@@ -25,7 +24,7 @@ const Features = () => {
       <div className={'max-w-screen-xl mx-auto space-y-4 p-4 flex flex-col justify-center items-center text-center'}>
         <p>一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法，只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！</p>
         <Button>
-          <Link href={`/${locale}/download/`}>立即下载 WebGAL 开始创作游戏吧！</Link>
+          <Link href={`/${locale}/download/`}>立即下载 WebGAL 开始创作吧！</Link>
         </Button>
       </div>
     </div>
