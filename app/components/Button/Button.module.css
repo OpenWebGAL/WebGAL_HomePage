@@ -2,12 +2,18 @@
   @apply bg-webgal text-white px-4 py-2 rounded shadow
 }
 
-.btn:hover {
-  @apply shadow-md opacity-95
+@media (any-hover:hover) {
+  .btn:hover {
+    @apply shadow-md opacity-90;
+  }
+}
+
+.btn:active {
+  @apply shadow-md opacity-90;
 }
 
 .btn a {
-  @apply flex flex-row justify-center items-center gap-2 text-white
+  @apply flex flex-row justify-center items-center gap-2 text-white;
 }
 
 .btn-webgal {

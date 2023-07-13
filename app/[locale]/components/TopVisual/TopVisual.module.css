@@ -1,6 +1,4 @@
 .topVisual {
-  @apply border-b-2;
-  background: linear-gradient(rgba(0, 93, 175, 0.1), rgb(255, 255, 255));
   padding-top: 4rem;
   overflow: hidden;
 }
@@ -11,6 +9,7 @@
   z-index: -1;
   height: 100vh;
   width: 100%;
+  background: linear-gradient(135deg, rgba(0, 93, 175, 0.1), rgba(181, 73, 91, 0.1));
 }
 
 .container {
@@ -22,24 +21,25 @@
 }
 
 .card {
-  @apply shadow-md border-2 border-gray-200 rounded-lg;
-  transform: translateY(calc(1280px/120));
-  max-height: calc(1280px/3);
-  max-width: 100%;
+  @apply max-w-screen-md mx-auto drop-shadow rounded-md;
+  transform: translateY(4px);
+  /* transform: translateY(calc(768px/120)); */
+  /* max-height: calc(768px/3); */
   transition: 0.35s ease-out;
+  float: left;
 }
 
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 768px) {
   .card {
     transform: translateY(calc(100vw/120));
     max-height: calc(100vw/3);
   }
-}
+} */
 
 .card:hover {
   transform: none;
 }
 
 .card-image {
-  @apply h-full w-full object-cover rounded-lg;
+  @apply h-full w-full object-cover rounded-md;
 }

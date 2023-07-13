@@ -1,5 +1,21 @@
 .card {
   @apply flex flex-col gap-2 p-4;
+  position: relative;
+}
+
+.corner {
+  @apply max-w-screen-xl;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 1rem;
+  overflow: hidden;
+  transform: translate(0, -8px)
+}
+
+.corner-text {
+  @apply w-40 p-2 text-white text-center;
+  transform: rotate(45deg) translate(70px, -46px);
 }
 
 .card-title {

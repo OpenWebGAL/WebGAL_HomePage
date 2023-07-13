@@ -5,8 +5,32 @@
     "demo": "演示",
     "document": "文档"
   },
+  "home": {
+    "title": "WebGAL",
+    "subTitle": "全新的网页端视觉小说引擎",
+    "nowDownload": "立即下载",
+    "viewDocument": "查看文档",
+    "webgalGames": "使用 WebGAL 创作的游戏",
+    "webgalGamesInfo": "我们挑选了一些使用 WebGAL 创作的游戏",
+    "showCaseYourGame": "展示您的游戏"
+  },
+  "features": {
+    "niceUI": {
+      "title": "界面美观",
+      "info": "美观优雅的图形用户界面与交互效果，一切都是为了更好的用户体验。"
+    },
+    "fullFunction": {
+      "title": "功能强大",
+      "info": "不仅支持主流视觉小说引擎所具有的几乎全部功能，你还可以使用 Pixi.js 为你的游戏添加自定义效果。"
+    },
+    "easyToDevelop": {
+      "title": "易于开发",
+      "info": "无论是使用 WebGAL 脚本还是使用可视化编辑器进行开发，一切都是那么简单自然。"
+    }
+  },
   "download": {
     "downloadWebgal": "下载 WebGAL",
+    "recommend": "推荐",
     "webgal": "WebGAL",
     "webgalTerre": "WebGAL Terre 可视化编辑器",
     "fetching": "获取中",

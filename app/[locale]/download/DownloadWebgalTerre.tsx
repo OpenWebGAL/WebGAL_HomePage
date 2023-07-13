@@ -19,6 +19,9 @@ const DownloadWebgalTerre = () => {
     <div className={styles.card}>
       <h2 className={`${styles['card-title']} border-terre`}>{t('webgalTerre')}</h2>
       <div className={styles['card-info']}>
+        {/* <div className={styles.corner}>
+          <p className={`${styles['corner-text']} bg-terre`}>{t('recommend')}</p>
+        </div> */}
         <p>{t('version')}: {webgalTerreAssets?.version ? webgalTerreAssets?.version : t('fetching')}</p>
         <p>{t('releaseTime')}: {webgalTerreAssets?.releaseTime ? webgalTerreAssets?.releaseTime.split('T')[0] : t('fetching')} </p>
         <div>

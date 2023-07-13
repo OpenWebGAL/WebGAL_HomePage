@@ -5,8 +5,32 @@
     "demo": "DEMO",
     "document": "DOCUMENT"
   },
+  "home": {
+    "title": "WebGAL",
+    "subTitle": "A brand new web Visual Novel engine",
+    "nowDownload": "Download",
+    "viewDocument": "Document",
+    "webgalGames": "WebGAL GAMES",
+    "webgalGamesInfo": "We've picked a few games created using WebGAL",
+    "showCaseYourGame": "Showcase your game"
+  },
+  "features": {
+    "niceUI": {
+      "title": "Nice UI",
+      "info": "Aesthetically pleasing and elegant graphical user interface with interactive effects, providing a better using experience."
+    },
+    "fullFunction": {
+      "title": "Full Function",
+      "info": "WebGAL not only supports most of the features found in mainstream visual novel engines, but you can also use Pixi.js to add custom effects to your game."
+    },
+    "easyToDevelop": {
+      "title": "Easy to develop",
+      "info": "Whether you use WebGAL scripting or the visual editor for development, it is simple and natural."
+    }
+  },
   "download": {
     "downloadWebgal": "Download WebGAL",
+    "recommend": "Recommend",
     "webgal": "WebGAL",
     "webgalTerre": "WebGAL Terre Visual Editor",
     "fetching": "Fetching",
