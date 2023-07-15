@@ -15,6 +15,7 @@
     "showCaseYourGame": "展示您的游戏"
   },
   "features": {
+    "features": "特性",
     "niceUI": {
       "title": "界面美观",
       "info": "美观优雅的图形用户界面与交互效果，一切都是为了更好的用户体验。"
@@ -26,6 +27,10 @@
     "easyToDevelop": {
       "title": "易于开发",
       "info": "无论是使用 WebGAL 脚本还是使用可视化编辑器进行开发，一切都是那么简单自然。"
+    },
+    "nowDownload": {
+      "info": "一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法，只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！",
+      "nowDownload": "立即下载 WebGAL"
     }
   },
   "download": {

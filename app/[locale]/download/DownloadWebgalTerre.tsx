@@ -10,10 +10,20 @@ const DownloadWebgalTerre = () => {
 
   const webgalTerreUrl = 'https://github.com/MakinoharaShoko/WebGAL_Terre/releases'
   const webgalTerreApiUrl = 'https://api.github.com/repos/MakinoharaShoko/WebGAL_Terre/releases/latest'
-  const webgalTerreAssets = useWebgalTerreAssets(webgalTerreApiUrl)
+
   const t = useTranslations('download')
   const locale = useLocale()
+
   const releaseIndex = i18n.locales.findIndex(item => item.code === locale)
+
+  const webgalTerreAssets = useWebgalTerreAssets(webgalTerreApiUrl)
+
+  const releaseNote =
+    webgalTerreAssets?.releaseNote[releaseIndex]
+      ? webgalTerreAssets?.releaseNote[releaseIndex]
+      : webgalTerreAssets?.releaseNote[1]
+        ? webgalTerreAssets?.releaseNote[1]
+        : null
 
   return (
     <div className={styles.card}>
@@ -25,11 +35,11 @@ const DownloadWebgalTerre = () => {
         <p>{t('version')}: {webgalTerreAssets?.version ? webgalTerreAssets?.version : t('fetching')}</p>
         <p>{t('releaseTime')}: {webgalTerreAssets?.releaseTime ? webgalTerreAssets?.releaseTime.split('T')[0] : t('fetching')} </p>
         <div>
-          <p>{t('releaseNote')}: {!(webgalTerreAssets?.releaseNote) && t('fetching')}</p>
+          <p>{t('releaseNote')}: {!(releaseNote) && t('fetching')}</p>
           <ul className={styles.list}>
             {
-              webgalTerreAssets?.releaseNote[releaseIndex] &&
-              webgalTerreAssets?.releaseNote[releaseIndex].map((item, index) => <li key={index}>{item}</li>)
+              releaseNote &&
+              releaseNote.map((item, index) => <li key={index}>{item}</li>)
             }
           </ul>
         </div>

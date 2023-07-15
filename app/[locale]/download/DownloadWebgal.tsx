@@ -15,6 +15,13 @@ const DownloadWebgal = () => {
   const releaseIndex = i18n.locales.findIndex(item => item.code === locale)
   const t = useTranslations('download')
 
+  const releaseNote =
+    webgalAssets?.releaseNote[releaseIndex]
+      ? webgalAssets?.releaseNote[releaseIndex]
+      : webgalAssets?.releaseNote[1]
+        ? webgalAssets?.releaseNote[1]
+        : null
+
   return (
     <div className={styles.card}>
       <h2 className={`${styles['card-title']} border-webgal`}>{t('webgal')}</h2>
@@ -22,11 +29,11 @@ const DownloadWebgal = () => {
         <p>{t('version')}: {webgalAssets?.version ? webgalAssets?.version : t('fetching')}</p>
         <p>{t('releaseTime')}: {webgalAssets?.releaseTime ? webgalAssets?.releaseTime.split('T')[0] : t('fetching')} </p>
         <div>
-          <p>{t('releaseNote')}: {!(webgalAssets?.releaseNote) && t('fetching')}</p>
+          <p>{t('releaseNote')}: {!(releaseNote) && t('fetching')}</p>
           <ul className={styles.list}>
             {
-              webgalAssets?.releaseNote[releaseIndex] &&
-              webgalAssets?.releaseNote[releaseIndex].map((item, index) => <li key={index}>{item}</li>)
+              releaseNote &&
+              releaseNote.map((item, index) => <li key={index}>{item}</li>)
             }
           </ul>
         </div>

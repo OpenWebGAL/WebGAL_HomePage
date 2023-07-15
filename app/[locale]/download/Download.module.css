@@ -19,7 +19,7 @@
 }
 
 .card-title {
-  @apply text-xl border-b-2 font-medium;
+  @apply text-xl font-medium border-b-2;
 }
 
 .card-info {

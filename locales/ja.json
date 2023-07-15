@@ -15,6 +15,7 @@
     "showCaseYourGame": "Showcase your game"
   },
   "features": {
+    "features": "FEATURES",
     "niceUI": {
       "title": "Nice UI",
       "info": "Aesthetically pleasing and elegant graphical user interface with interactive effects, providing a better using experience."
@@ -26,6 +27,10 @@
     "easyToDevelop": {
       "title": "Easy to develop",
       "info": "Whether you use WebGAL scripting or the visual editor for development, it is simple and natural."
+    },
+    "nowDownload": {
+      "info": "Once coding, it can run on most platforms. There is no need of Html5 knowledge. You can learn and understand the core function within 3 minutes. With your idea, strat creating your OWN visual novel !",
+      "nowDownload": "Now download WebGAL"
     }
   },
   "download": {

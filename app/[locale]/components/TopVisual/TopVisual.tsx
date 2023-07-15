@@ -9,7 +9,20 @@ import { useEffect, useState } from 'react'
 const TopVisual = () => {
   const t = useTranslations('home')
   const locale = useLocale()
+
+  const topVisualImagesData = [
+    {
+      title: 'terre',
+      src: '/images/terre.webp',
+    },
+    {
+      title: 'title',
+      src: '/images/title.webp',
+    },
+  ]
+
   const [topVisualImageIndex, setTopVisualImageIndex] = useState(0)
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setTopVisualImageIndex(() => {
@@ -22,7 +35,7 @@ const TopVisual = () => {
     return () => {
       clearInterval(timer)
     }
-  }, [topVisualImageIndex])
+  }, [topVisualImageIndex, topVisualImagesData.length])
 
   return (
     <div className={styles.topVisual}>

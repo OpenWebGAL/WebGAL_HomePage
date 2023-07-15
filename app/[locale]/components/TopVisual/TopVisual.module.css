@@ -1,15 +1,32 @@
 .topVisual {
-  padding-top: 4rem;
-  overflow: hidden;
+  @apply pt-16 pb-8;
+}
+
+@media screen and (max-width: 768px) {
+  .topVisual {
+    @apply pt-16 pb-4;
+  }
 }
 
 .background {
   position: fixed;
-  top: 0;
+  top: -100vh;
+  left: -100%;
   z-index: -1;
-  height: 100vh;
-  width: 100%;
+  height: 300vh;
+  width: 300%;
   background: linear-gradient(135deg, rgba(0, 93, 175, 0.1), rgba(181, 73, 91, 0.1));
+  animation: rotatebg 10s infinite linear;
+}
+
+@keyframes rotatebg {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .container {

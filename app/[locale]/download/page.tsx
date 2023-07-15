@@ -13,7 +13,7 @@ const Download = () => {
   return (
     <div className={'pt-16'}>
       <div className={'max-w-screen-xl mx-auto space-y-4'}>
-        <h1 className={'text-2xl pt-8 pb-4 px-4 font-bold'}>{t('downloadWebgal')}</h1>
+        <h1 className={'text-2xl font-semibold pt-8 pb-4 px-4'}>{t('downloadWebgal')}</h1>
         <DownloadWebgalTerre />
         <DownloadWebgal />
         <OtherDownloadLink />

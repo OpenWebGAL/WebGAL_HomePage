@@ -10,7 +10,7 @@ const Games = () => {
   return (
     <div className={'flex flex-row flex-wrap justify-center item-center p-4 pb-8 gap-4 text-center bg-white'}>
       <div className={'w-full pt-2'}>
-        <h2 className={'text-xl font-medium'}>{t('webgalGames')}</h2>
+        <h2 className={'text-2xl font-semibold p-2'}>{t('webgalGames')}</h2>
         <p className={'text-gray-700 font-normal'}>{t('webgalGamesInfo')}</p>
       </div>
       <div className={'w-full flex flex-row flex-wrap justify-center item-center gap-4'}>
