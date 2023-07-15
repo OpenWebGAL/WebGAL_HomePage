@@ -1,0 +1,56 @@
+{
+  "common": {
+    "home": "主页",
+    "download": "下载",
+    "demo": "演示",
+    "document": "文档"
+  },
+  "home": {
+    "title": "WebGAL",
+    "subTitle": "全新的网页端视觉小说引擎",
+    "nowDownload": "立即下载",
+    "viewDocument": "查看文档",
+    "webgalGames": "使用 WebGAL 创作的游戏",
+    "webgalGamesInfo": "我们挑选了一些使用 WebGAL 创作的游戏",
+    "showCaseYourGame": "展示您的游戏"
+  },
+  "features": {
+    "features": "特性",
+    "niceUI": {
+      "title": "界面美观",
+      "info": "美观优雅的图形用户界面与交互效果，一切都是为了更好的用户体验。"
+    },
+    "fullFunction": {
+      "title": "功能强大",
+      "info": "不仅支持主流视觉小说引擎所具有的几乎全部功能，你还可以使用 Pixi.js 为你的游戏添加自定义效果。"
+    },
+    "easyToDevelop": {
+      "title": "易于开发",
+      "info": "无论是使用 WebGAL 脚本还是使用可视化编辑器进行开发，一切都是那么简单自然。"
+    },
+    "nowDownload": {
+      "info": "一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法，只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！",
+      "nowDownload": "立即下载 WebGAL"
+    }
+  },
+  "download": {
+    "downloadWebgal": "下载 WebGAL",
+    "recommend": "推荐",
+    "webgal": "WebGAL",
+    "webgalTerre": "WebGAL Terre 可视化编辑器",
+    "fetching": "获取中",
+    "version": "版本号",
+    "releaseTime": "发布日期",
+    "releaseNote": "发布日志",
+    "gitHubReleases": "前往 GitHub 下载",
+    "downloadWindows": "下载 Windows 压缩包",
+    "downloadWindowsSetup": "下载 Windows 安装文件",
+    "downloadMacos": "下载 macOS 压缩包",
+    "downloadLinux": "下载 Linux 压缩包",
+    "otherDownloadLink": "其它下载地址",
+    "otherDownloadLinkInfo": "如果上面的下载地址下载速度比较慢，请尝试使用以下下载地址",
+    "systemRequirements": "系统需求",
+    "systemRequirementsSystem": "系统: Windows 10+ / macOS 10.14+ / Linux 桌面版",
+    "systemRequirementsBrowser": "浏览器: Google Chrome / Mozilla Firefox / Microsoft Edge / 其他现代浏览器"
+  }
+}

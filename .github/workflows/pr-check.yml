@@ -8,7 +8,7 @@ on:
 
 # 任务
 jobs:
-  build-webgal-static-webpage :
+  build-webgal-homepage :
     # 服务器环境：最新版 Ubuntu
     runs-on: ubuntu-latest
     steps:
@@ -20,13 +20,13 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          cache: 'yarn'
+          node-version: 18
+          cache: 'npm'
 
       # 安装依赖
       - name: Install
-        run: npm install yarn -g && yarn install
+        run: npm install
 
       # 生成静态文件
       - name: Build
-        run: yarn build
+        run: npm run build

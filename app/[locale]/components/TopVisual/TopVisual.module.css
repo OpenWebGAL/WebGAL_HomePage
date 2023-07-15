@@ -1,0 +1,62 @@
+.topVisual {
+  @apply pt-16 pb-8;
+}
+
+@media screen and (max-width: 768px) {
+  .topVisual {
+    @apply pt-16 pb-4;
+  }
+}
+
+.background {
+  position: fixed;
+  top: -100vh;
+  left: -100%;
+  z-index: -1;
+  height: 300vh;
+  width: 300%;
+  background: linear-gradient(135deg, rgba(0, 93, 175, 0.1), rgba(181, 73, 91, 0.1));
+  animation: rotatebg 10s infinite linear;
+}
+
+@keyframes rotatebg {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  @apply max-w-screen-xl mx-auto h-full p-4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.card {
+  @apply max-w-screen-md mx-auto drop-shadow rounded-md;
+  transform: translateY(4px);
+  /* transform: translateY(calc(768px/120)); */
+  /* max-height: calc(768px/3); */
+  transition: 0.35s ease-out;
+  float: left;
+}
+
+/* @media screen and (max-width: 768px) {
+  .card {
+    transform: translateY(calc(100vw/120));
+    max-height: calc(100vw/3);
+  }
+} */
+
+.card:hover {
+  transform: none;
+}
+
+.card-image {
+  @apply h-full w-full object-cover rounded-md;
+}

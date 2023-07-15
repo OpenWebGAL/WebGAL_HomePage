@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  @apply text-webgal;
+}

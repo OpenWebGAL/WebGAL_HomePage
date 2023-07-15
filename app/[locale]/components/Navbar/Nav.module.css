@@ -1,0 +1,72 @@
+.nav {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.nav a {
+  padding: 6px 12px;
+  border-radius: 2px;
+}
+
+.nav a:hover {
+  @apply text-webgal;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.menuButton {
+  width: 2.5rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menuButton svg {
+  @apply text-gray-600;
+}
+
+.menuButton:hover svg {
+  @apply text-webgal;
+}
+
+@media screen and (max-width: 768px) {
+
+  .nav {
+    padding-right: 0;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .navLinks {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    width: 100vw;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .navLinks a {
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .nav:hover .navLinks {
+    display: flex;
+  }
+
+}
