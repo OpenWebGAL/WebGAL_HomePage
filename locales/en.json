@@ -29,7 +29,10 @@
       "info": "Whether you use WebGAL scripting or the visual editor for development, it is simple and natural."
     },
     "nowDownload": {
-      "info": "Once coding, it can run on most platforms. There is no need of Html5 knowledge. You can learn and understand the core function within 3 minutes. With your idea, strat creating your OWN visual novel !",
+      "info": {
+        "line0": "Once coding, it can run on most platforms. There is no need of Html5 knowledge. You can learn and understand the core function within 3 minutes. ",
+        "line1": "With your idea, strat creating your OWN visual novel !"
+      },
       "nowDownload": "Now download WebGAL"
     }
   },
@@ -52,5 +55,14 @@
     "systemRequirements": "System Requirements",
     "systemRequirementsSystem": "System: Windows 10+ / macOS 10.14+ / Linux Desktop",
     "systemRequirementsBrowser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge / Other modern browser"
+  },
+  "footer": {
+    "development": "Development",
+    "community": "Community",
+    "developer": "Developer",
+    "sponsor": "Sponsor",
+    "contribute": "Contributing Guide",
+    "qqGroup": "QQ Group",
+    "bilibili": "Bilibili"
   }
 }
