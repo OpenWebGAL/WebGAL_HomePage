@@ -29,7 +29,10 @@
       "info": "无论是使用 WebGAL 脚本还是使用可视化编辑器进行开发，一切都是那么简单自然。"
     },
     "nowDownload": {
-      "info": "一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法，只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！",
+      "info": {
+        "line0": "一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法。",
+        "line1": "只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！"
+      },
       "nowDownload": "立即下载 WebGAL"
     }
   },
@@ -52,5 +55,14 @@
     "systemRequirements": "系统需求",
     "systemRequirementsSystem": "系统: Windows 10+ / macOS 10.14+ / Linux 桌面版",
     "systemRequirementsBrowser": "浏览器: Google Chrome / Mozilla Firefox / Microsoft Edge / 其他现代浏览器"
+  },
+  "footer": {
+    "development": "开发",
+    "community": "社区",
+    "developer": "开发者",
+    "sponsor": "赞助",
+    "contribute": "参与开发",
+    "qqGroup": "QQ群",
+    "bilibili": "哔哩哔哩"
   }
 }

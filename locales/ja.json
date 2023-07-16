@@ -29,7 +29,10 @@
       "info": "WebGAL スクリプトまたはビジュアルエディターから始まり、いずれにしてもシンプル。"
     },
     "nowDownload": {
-      "info": "開発一回で、ほぼすべての端末で対応可能！Web開発の知識は必要なし！操作を覚えるのにかかる時間 3 分だけ、インスピレーションさえあれば、経験ゼロでノベルゲームを作れる！",
+      "info": {
+        "line0": "開発一回で、ほぼすべての端末で対応可能！Web開発の知識は必要なし！操作を覚えるのにかかる時間 3 分だけ。",
+        "line1": "インスピレーションさえあれば、経験ゼロでノベルゲームを作れる！"
+      },
       "nowDownload": "WebGAL を今すぐダウンロード"
     }
   },
@@ -52,5 +55,14 @@
     "systemRequirements": "システム要件",
     "systemRequirementsSystem": "OS: Windows 10+ / macOS 10.14+ / Linux デスクトップ",
     "systemRequirementsBrowser": "Webブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
+  },
+  "footer": {
+    "development": "Development",
+    "community": "Community",
+    "developer": "Developer",
+    "sponsor": "Sponsor",
+    "contribute": "Contributing Guide",
+    "qqGroup": "QQ Group",
+    "bilibili": "Bilibili"
   }
 }

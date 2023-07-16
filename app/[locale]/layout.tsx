@@ -40,5 +40,5 @@ export default async function LangLayout({ children, params: { locale } }
 export const metadata = {
   title: 'WebGAL',
   description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎',
-  keywords: 'Game Engine,Visual Editor,游戏引擎,可视化编辑器'
+  keywords: 'Visual Novel,Game Engine,Visual Editor,视觉小说,游戏引擎,可视化编辑器'
 }
