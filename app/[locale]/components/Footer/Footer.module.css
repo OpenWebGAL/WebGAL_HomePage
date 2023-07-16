@@ -12,11 +12,11 @@
 }
 
 .link-title {
-  @apply text-lg font-medium text-black pb-2;
+  @apply text-lg font-normal text-black pb-2;
 }
 
 .link {
-  @apply text-base;
+  @apply text-base font-light;
 }
 
 @media screen and (max-width: 768px) {
