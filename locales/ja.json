@@ -1,56 +1,56 @@
 {
   "common": {
-    "home": "HOME",
-    "download": "DOWNLOAD",
-    "demo": "DEMO",
-    "document": "DOCUMENT"
+    "home": "ホームページ",
+    "download": "ダウンロード",
+    "demo": "デモ",
+    "document": "ドキュメント"
   },
   "home": {
     "title": "WebGAL",
-    "subTitle": "A brand new web Visual Novel engine",
-    "nowDownload": "Download",
-    "viewDocument": "Document",
-    "webgalGames": "WebGAL GAMES",
-    "webgalGamesInfo": "We've picked a few games created using WebGAL",
-    "showCaseYourGame": "Showcase your game"
+    "subTitle": "未だかつてない Web ベースビジュアルノベルエンジン",
+    "nowDownload": "今すぐダウンロード",
+    "viewDocument": "ドキュメントに移動",
+    "webgalGames": "WebGAL 製ゲームへようこそ",
+    "webgalGamesInfo": "おすすめの WebGAL 製ゲームをチェックしよう",
+    "showCaseYourGame": "作品を出展しよう"
   },
   "features": {
-    "features": "FEATURES",
+    "features": "特徴",
     "niceUI": {
-      "title": "Nice UI",
-      "info": "Aesthetically pleasing and elegant graphical user interface with interactive effects, providing a better using experience."
+      "title": "良いデザイン",
+      "info": "美しく洗練された画面、使いやすさを追求し、より良い体験を提供。"
     },
     "fullFunction": {
-      "title": "Full Function",
-      "info": "WebGAL not only supports most of the features found in mainstream visual novel engines, but you can also use Pixi.js to add custom effects to your game."
+      "title": "高機能",
+      "info": "主流のビジュアルノベルエンジンのほぼすべての機能をサポート。PixiJSを使って、さまざまなカスタマイズが可能。"
     },
     "easyToDevelop": {
-      "title": "Easy to develop",
-      "info": "Whether you use WebGAL scripting or the visual editor for development, it is simple and natural."
+      "title": "気軽に開発",
+      "info": "WebGAL スクリプトまたはビジュアルエディターから始まり、いずれにしてもシンプル。"
     },
     "nowDownload": {
-      "info": "Once coding, it can run on most platforms. There is no need of Html5 knowledge. You can learn and understand the core function within 3 minutes. With your idea, strat creating your OWN visual novel !",
-      "nowDownload": "Now download WebGAL"
+      "info": "開発一回で、ほぼすべての端末で対応可能！Web開発の知識は必要なし！操作を覚えるのにかかる時間 3 分だけ、インスピレーションさえあれば、経験ゼロでノベルゲームを作れる！",
+      "nowDownload": "WebGAL を今すぐダウンロード"
     }
   },
   "download": {
-    "downloadWebgal": "Download WebGAL",
-    "recommend": "Recommend",
+    "downloadWebgal": "WebGAL をダウンロード",
+    "recommend": "おすすめ",
     "webgal": "WebGAL",
-    "webgalTerre": "WebGAL Terre Visual Editor",
-    "fetching": "Fetching",
-    "version": "Version",
-    "releaseTime": "Release Time",
-    "releaseNote": "Release Note",
-    "gitHubReleases": "GitHub Releases",
-    "downloadWindows": "Download Windows zip",
-    "downloadWindowsSetup": "Download Windows setup",
-    "downloadMacos": "Download macOS zip",
-    "downloadLinux": "Download Linux zip",
-    "otherDownloadLink": "Other Download Link",
-    "otherDownloadLinkInfo": "If the above download address is slow, please try using the following download address",
-    "systemRequirements": "System Requirements",
-    "systemRequirementsSystem": "System: Windows 10+ / macOS 10.14+ / Linux Desktop",
-    "systemRequirementsBrowser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge / Other modern browser"
+    "webgalTerre": "WebGAL Terre ビジュアルエディター",
+    "fetching": "取得中",
+    "version": "バージョン",
+    "releaseTime": "リリース日",
+    "releaseNote": "リリースノート",
+    "gitHubReleases": "GitHub からダウンロード",
+    "downloadWindows": "Windows zip をダウンロード",
+    "downloadWindowsSetup": "Windows setup をダウンロード",
+    "downloadMacos": "macOS zip をダウンロード",
+    "downloadLinux": "Linux zip をダウンロード",
+    "otherDownloadLink": "その他のダウンロードリンク",
+    "otherDownloadLinkInfo": "上記のダウンロードリンクが遅い場合は、以下のダウンロードリンクをお試しください",
+    "systemRequirements": "システム要件",
+    "systemRequirementsSystem": "OS: Windows 10+ / macOS 10.14+ / Linux デスクトップ",
+    "systemRequirementsBrowser": "Webブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
   }
 }
