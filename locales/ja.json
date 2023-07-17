@@ -57,12 +57,12 @@
     "systemRequirementsBrowser": "Webブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
   },
   "footer": {
-    "development": "Development",
-    "community": "Community",
-    "developer": "Developer",
-    "sponsor": "Sponsor",
-    "contribute": "Contributing Guide",
-    "qqGroup": "QQ Group",
+    "development": "エンジン開発",
+    "community": "コミュニティ",
+    "developer": "開発者",
+    "sponsor": "スポンサー",
+    "contribute": "コントリビューション",
+    "qqGroup": "QQ グループ",
     "bilibili": "Bilibili"
   }
 }
