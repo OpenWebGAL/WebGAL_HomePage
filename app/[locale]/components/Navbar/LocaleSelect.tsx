@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { RiTranslate2, RiGithubFill, RiArrowDropDownFill, RiMenuFill } from 'react-icons/ri'
+import { RiTranslate2, RiArrowDropDownFill } from 'react-icons/ri'
 import { i18n } from '../../../../i18n'
 import styles from './LocaleSelect.module.css'
 

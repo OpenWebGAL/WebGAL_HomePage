@@ -19,8 +19,8 @@ const Footer = () => {
   ]
 
   const developerLink = [
-    { href: 'https://space.bilibili.com/7321105', label: t('bilibili') },
     { href: 'https://github.com/MakinoharaShoko', label: 'GitHub' },
+    { href: 'https://space.bilibili.com/7321105', label: t('bilibili') },
   ]
 
   const sponsorLink = [
@@ -36,7 +36,7 @@ const Footer = () => {
             {
               developmentLink.map((item, index) =>
                 <li key={index}>
-                  <Link href={item.href} className={styles.link}>{item.label}</Link>
+                  <Link href={item.href} target={'_blank'} className={styles.link}>{item.label}</Link>
                 </li>
               )
             }
@@ -46,7 +46,7 @@ const Footer = () => {
             {
               communityLink.map((item, index) =>
                 <li key={index}>
-                  <Link href={item.href} className={styles.link}>{item.label}</Link>
+                  <Link href={item.href} target={'_blank'} className={styles.link}>{item.label}</Link>
                 </li>
               )
             }
@@ -56,7 +56,7 @@ const Footer = () => {
             {
               developerLink.map((item, index) =>
                 <li key={index}>
-                  <Link href={item.href} className={styles.link}>{item.label}</Link>
+                  <Link href={item.href} target={'_blank'} className={styles.link}>{item.label}</Link>
                 </li>
               )
             }
@@ -66,20 +66,19 @@ const Footer = () => {
             {
               sponsorLink.map((item, index) =>
                 <li key={index}>
-                  <Link href={item.href} className={styles.link}>{item.label}</Link>
+                  <Link href={item.href} target={'_blank'} className={styles.link}>{item.label}</Link>
                 </li>
               )
             }
           </ul>
         </div>
-
-        <div className={'font-light'}>
-          <p>Powered by <Link href="https://github.com/MakinoharaShoko/WebGAL" target="_blank">WebGAL</Link> Framework</p>
-          <p>Made with ❤ by <Link href="https://github.com/MakinoharaShoko" target="_blank">Mahiru</Link></p>
-          <p>
-            WebGAL is licensed under the <Link href="https://github.com/MakinoharaShoko/WebGAL/blob/main/LICENSE" target="_blank" >Mozilla Public License 2.0 (MPL-2.0)</Link>
-          </p>
-        </div>
+      </div>
+      <div className={'w-full p-2 text-sm font-light border-t'}>
+        <p>Powered by <Link href="https://github.com/MakinoharaShoko/WebGAL" target="_blank">WebGAL</Link> Framework</p>
+        <p>Made with ❤ by <Link href="https://github.com/MakinoharaShoko" target="_blank">Mahiru</Link></p>
+        <p>
+          WebGAL is licensed under the <Link href="https://github.com/MakinoharaShoko/WebGAL/blob/main/LICENSE" target="_blank" >Mozilla Public License 2.0 (MPL-2.0)</Link>
+        </p>
       </div>
     </footer>
   )

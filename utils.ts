@@ -1,3 +1,5 @@
+import { Game } from "./types"
+
 /**
  * 根据文件名查询下载链接
  * @param assets 资源列表
@@ -32,4 +34,28 @@ export const parseReleaseNote = (body: string) => {
   } catch (error) {
     return []
   }
+}
+
+/**
+ * 游戏排序
+ * @param gamesData 游戏数据
+ * @param sortBy 根据日期或标题排序
+ * @returns 
+ */
+export const gamesDataSort = (gamesData: Game[], sortBy: 'date' | 'title') => {
+  if (sortBy === 'date')
+    return [...gamesData].sort((a, b) => {
+      const dateA = Number(a.releaseDate.replaceAll('-', ''))
+      const dateB = Number(b.releaseDate.replaceAll('-', ''))
+      if (dateA < dateB)
+        return 1
+      if (dateA > dateB)
+        return -1
+      return 0
+    })
+  if (sortBy === 'title')
+    return [...gamesData].sort((a, b) => {
+      return a.title.localeCompare(b.title, 'en')
+    })
+  return gamesData
 }

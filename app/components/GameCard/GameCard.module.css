@@ -1,0 +1,38 @@
+.card {
+  @apply bg-white drop-shadow rounded-md transition-transform;
+}
+
+.card:hover {
+  @apply drop-shadow-md -translate-y-0.5;
+}
+
+.link {
+  @apply flex flex-col justify-center items-center;
+}
+
+.image {
+  @apply w-max h-auto object-cover shadow-inner rounded-t-md;
+}
+
+.info {
+  @apply w-full flex flex-col justify-center items-center text-center p-1;
+}
+
+.title {
+  @apply w-full text-base text-gray-700 text-ellipsis overflow-hidden break-words whitespace-nowrap;
+}
+
+.developer {
+  @apply w-full text-sm font-light text-gray-600 text-ellipsis overflow-hidden break-words whitespace-nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    @apply text-sm;
+  }
+
+  .developer {
+    @apply text-xs;
+  }
+
+}

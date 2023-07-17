@@ -3,16 +3,20 @@
     "home": "ホームページ",
     "download": "ダウンロード",
     "demo": "デモ",
-    "document": "ドキュメント"
+    "document": "ドキュメント",
+    "games": "GAMES"
   },
   "home": {
     "title": "WebGAL",
     "subTitle": "未だかつてない Web ベースビジュアルノベルエンジン",
     "nowDownload": "今すぐダウンロード",
-    "viewDocument": "ドキュメントに移動",
+    "viewDocument": "ドキュメントに移動"
+  },
+  "games": {
     "webgalGames": "WebGAL 製ゲームへようこそ",
     "webgalGamesInfo": "おすすめの WebGAL 製ゲームをチェックしよう",
-    "showCaseYourGame": "作品を出展しよう"
+    "showCaseYourGame": "作品を出展しよう",
+    "viewMoreGames": "作品をもっと見る"
   },
   "features": {
     "features": "特徴",

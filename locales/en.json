@@ -3,16 +3,20 @@
     "home": "HOME",
     "download": "DOWNLOAD",
     "demo": "DEMO",
-    "document": "DOCUMENT"
+    "document": "DOCUMENT",
+    "games": "GAMES"
   },
   "home": {
     "title": "WebGAL",
     "subTitle": "A brand new web Visual Novel engine",
     "nowDownload": "Download",
-    "viewDocument": "Document",
+    "viewDocument": "Document"
+  },
+  "games": {
     "webgalGames": "WebGAL GAMES",
     "webgalGamesInfo": "We've picked a few games created using WebGAL",
-    "showCaseYourGame": "Showcase your game"
+    "showCaseYourGame": "Showcase your game",
+    "viewMoreGames": "View more games"
   },
   "features": {
     "features": "FEATURES",
