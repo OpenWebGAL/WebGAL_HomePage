@@ -12,6 +12,7 @@ const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
     { label: t('download'), href: `/${locale}/download/` },
     { label: t('demo'), href: 'https://demo.openwebgal.com/' },
     { label: t('document'), href: 'https://docs.openwebgal.com/' },
+    { label: t('games'), href: `/${locale}/games/` }
   ]
 
   return (
@@ -28,15 +29,15 @@ const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
                 key={link.label}
                 className={isActive ? styles.active : 'text-black'}
                 href={link.href}
-                target={link.href.startsWith('/')?'_self':'_blank'}
+                target={link.href.startsWith('/') ? '_self' : '_blank'}
               >
                 {link.label}
               </Link>
             )
           })
-          }
-          </div>
+        }
       </div>
+    </div>
   )
 }
 
