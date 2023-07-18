@@ -3,16 +3,26 @@
     "home": "主页",
     "download": "下载",
     "demo": "演示",
-    "document": "文档"
+    "document": "文档",
+    "games": "游戏"
   },
   "home": {
     "title": "WebGAL",
     "subTitle": "全新的网页端视觉小说引擎",
     "nowDownload": "立即下载",
-    "viewDocument": "查看文档",
+    "viewDocument": "查看文档"
+  },
+  "games": {
     "webgalGames": "使用 WebGAL 创作的游戏",
     "webgalGamesInfo": "我们挑选了一些使用 WebGAL 创作的游戏",
-    "showCaseYourGame": "展示您的游戏"
+    "showCaseYourGame": "展示您的游戏",
+    "viewMoreGames": "查看更多游戏",
+    "disclaimer": "免责申明",
+    "disclaimerInfo": {
+      "line0": "本页面不提供游戏下载，仅用作收集使用 WebGAL 创作的游戏",
+      "line1": "非 WebGAL 开发组发布的游戏与 WebGAL 开发组无关",
+      "line2": "如果有游戏侵犯了您的权益，请发送电子邮件到"
+    }
   },
   "features": {
     "features": "特性",
@@ -29,7 +39,10 @@
       "info": "无论是使用 WebGAL 脚本还是使用可视化编辑器进行开发，一切都是那么简单自然。"
     },
     "nowDownload": {
-      "info": "一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法，只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！",
+      "info": {
+        "line0": "一次编写，处处运行，无需网页开发基础，3 分钟即可学会所有的语法。",
+        "line1": "只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！"
+      },
       "nowDownload": "立即下载 WebGAL"
     }
   },
@@ -52,5 +65,14 @@
     "systemRequirements": "系统需求",
     "systemRequirementsSystem": "系统: Windows 10+ / macOS 10.14+ / Linux 桌面版",
     "systemRequirementsBrowser": "浏览器: Google Chrome / Mozilla Firefox / Microsoft Edge / 其他现代浏览器"
+  },
+  "footer": {
+    "development": "开发",
+    "community": "社区",
+    "developer": "开发者",
+    "sponsor": "赞助",
+    "contribute": "参与开发",
+    "qqGroup": "QQ群",
+    "bilibili": "哔哩哔哩"
   }
 }

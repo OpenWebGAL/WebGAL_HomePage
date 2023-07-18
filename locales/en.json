@@ -3,16 +3,26 @@
     "home": "HOME",
     "download": "DOWNLOAD",
     "demo": "DEMO",
-    "document": "DOCUMENT"
+    "document": "DOCUMENT",
+    "games": "GAMES"
   },
   "home": {
     "title": "WebGAL",
     "subTitle": "A brand new web Visual Novel engine",
     "nowDownload": "Download",
-    "viewDocument": "Document",
+    "viewDocument": "Document"
+  },
+  "games": {
     "webgalGames": "WebGAL GAMES",
     "webgalGamesInfo": "We've picked a few games created using WebGAL",
-    "showCaseYourGame": "Showcase your game"
+    "showCaseYourGame": "Showcase your game",
+    "viewMoreGames": "View more games",
+    "disclaimer": "Disclaimer",
+    "disclaimerInfo": {
+      "line0": "This page is not for downloading games, it is only for collecting games created using WebGAL",
+      "line1": "Games published by non-WebGAL devs are not related to the WebGAL devs",
+      "line2": "If a game infringes on your rights, please send an email to"
+    }
   },
   "features": {
     "features": "FEATURES",
@@ -29,7 +39,10 @@
       "info": "Whether you use WebGAL scripting or the visual editor for development, it is simple and natural."
     },
     "nowDownload": {
-      "info": "Once coding, it can run on most platforms. There is no need of Html5 knowledge. You can learn and understand the core function within 3 minutes. With your idea, strat creating your OWN visual novel !",
+      "info": {
+        "line0": "Once coding, it can run on most platforms. There is no need of Html5 knowledge. You can learn and understand the core function within 3 minutes. ",
+        "line1": "With your idea, strat creating your OWN visual novel !"
+      },
       "nowDownload": "Now download WebGAL"
     }
   },
@@ -52,5 +65,14 @@
     "systemRequirements": "System Requirements",
     "systemRequirementsSystem": "System: Windows 10+ / macOS 10.14+ / Linux Desktop",
     "systemRequirementsBrowser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge / Other modern browser"
+  },
+  "footer": {
+    "development": "Development",
+    "community": "Community",
+    "developer": "Developer",
+    "sponsor": "Sponsor",
+    "contribute": "Contributing Guide",
+    "qqGroup": "QQ Group",
+    "bilibili": "Bilibili"
   }
 }

@@ -10,17 +10,6 @@ const TopVisual = () => {
   const t = useTranslations('home')
   const locale = useLocale()
 
-  const topVisualImagesData = [
-    {
-      title: 'terre',
-      src: '/images/terre.webp',
-    },
-    {
-      title: 'title',
-      src: '/images/title.webp',
-    },
-  ]
-
   const [topVisualImageIndex, setTopVisualImageIndex] = useState(0)
 
   useEffect(() => {
@@ -35,7 +24,7 @@ const TopVisual = () => {
     return () => {
       clearInterval(timer)
     }
-  }, [topVisualImageIndex, topVisualImagesData.length])
+  }, [topVisualImageIndex])
 
   return (
     <div className={styles.topVisual}>

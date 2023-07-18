@@ -48,5 +48,5 @@ gtag('config', 'G-6XPF6Q2WY0');`}}/>
 export const metadata = {
   title: 'WebGAL',
   description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎',
-  keywords: 'Game Engine,Visual Editor,游戏引擎,可视化编辑器'
+  keywords: 'Visual Novel,Game Engine,Visual Editor,视觉小说,游戏引擎,可视化编辑器'
 }

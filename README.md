@@ -9,7 +9,7 @@ To add translations, modify `/i18n.ts` and add the corresponding json file in th
 
 ## How to add a showcase game
 
-Open `/data/gameData.ts` and add game.
+Open `/data/gamesData.ts` and add game.
 
 ## How to change the top visual image
 

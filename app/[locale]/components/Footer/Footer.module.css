@@ -1,12 +1,27 @@
 .footer {
-  background-color: #f2f2f2;
+  @apply text-gray-700 text-center;
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  text-align: center;
-  color: #666;
-  font-weight: 300;
+  background-color: #f9f9fb;
+}
+
+.container {
+  @apply max-w-screen-xl flex flex-col justify-between items-center flex-wrap m-auto p-4 gap-2;
+}
+
+.links {
+  @apply grid grid-cols-4 gap-4 flex-wrap max-w-fit;
+}
+
+.link-title {
+  @apply text-base font-normal text-black pb-2;
+}
+
+.link {
+  @apply text-sm font-light;
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    @apply grid grid-flow-row grid-cols-2 gap-4 flex-wrap;
+  }
 }
