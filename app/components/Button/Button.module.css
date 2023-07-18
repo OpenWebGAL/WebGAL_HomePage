@@ -1,5 +1,5 @@
 .btn {
-  @apply bg-webgal text-white px-4 py-2 rounded shadow
+  @apply bg-webgal text-white p-2 rounded shadow
 }
 
 @media (any-hover:hover) {
