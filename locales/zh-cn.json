@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "home": {
+      "description": "全新的网页端视觉小说引擎",
+      "keywords": "视觉小说,美少女游戏,galgame,游戏引擎,可视化编辑器"
+    }
+  },
   "common": {
     "home": "主页",
     "download": "下载",
@@ -67,11 +73,13 @@
     "systemRequirementsBrowser": "浏览器: Google Chrome / Mozilla Firefox / Microsoft Edge / 其他现代浏览器"
   },
   "footer": {
+    "products": "产品",
     "development": "开发",
     "community": "社区",
     "developer": "开发者",
     "sponsor": "赞助",
     "contribute": "参与开发",
+    "technical": "技术介绍",
     "qqGroup": "QQ群",
     "bilibili": "哔哩哔哩"
   }

@@ -1,9 +1,10 @@
 import { Noto_Sans_SC } from 'next/font/google'
-import { NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider, createTranslator } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { i18n } from '../../i18n'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
+import Script from 'next/script'
 
 const notoSansSC = Noto_Sans_SC({
   subsets: ['latin'],
@@ -26,14 +27,19 @@ export default async function LangLayout({ children, params: { locale } }
 
   return (
     <html lang={locale} className={notoSansSC.className}>
-    <head>
-      {/*Google tag (gtag.js)*/}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XPF6Q2WY0"></script>
-      <script dangerouslySetInnerHTML={{__html:`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-6XPF6Q2WY0');`}}/>
-    </head>
+      <head>
+        {/*Google tag (gtag.js)*/}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-6XPF6Q2WY0" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          gtag('config', '6XPF6Q2WY0');
+        `}
+        </Script>
+      </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={locales}>
           <Navbar />
@@ -45,8 +51,18 @@ gtag('config', 'G-6XPF6Q2WY0');`}}/>
   )
 }
 
-export const metadata = {
-  title: 'WebGAL',
-  description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎',
-  keywords: 'Visual Novel,Game Engine,Visual Editor,视觉小说,游戏引擎,可视化编辑器'
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+  const messages = (await import(`../../locales/${locale}.json`)).default
+
+  const t = createTranslator({ locale, messages })
+
+  return {
+    title: 'WebGAL',
+    description: t('metadata.home.description'),
+    keywords: t('metadata.home.keywords'),
+    openGraph: {
+      title: 'WebGAL',
+      description: t('metadata.home.description'),
+    },
+  }
 }

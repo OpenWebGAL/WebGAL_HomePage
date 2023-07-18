@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "home": {
+      "description": "未だかつてない Web ベースビジュアルノベルエンジン",
+      "keywords": "ビジュアルノベル,美少女ゲーム,ギャルゲーム,ゲームエンジン,ビジュアルエディター"
+    }
+  },
   "common": {
     "home": "ホームページ",
     "download": "ダウンロード",
@@ -67,11 +73,13 @@
     "systemRequirementsBrowser": "Webブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
   },
   "footer": {
+    "products": "プロダクト",
     "development": "エンジン開発",
     "community": "コミュニティ",
     "developer": "開発者",
     "sponsor": "スポンサー",
     "contribute": "コントリビューション",
+    "technical": "技術紹介",
     "qqGroup": "QQ グループ",
     "bilibili": "Bilibili"
   }

@@ -24,8 +24,7 @@ const Games = () => {
           <h2 className={'font-lg text-black'}>{t('disclaimer')}</h2>
           <p className='text-sm font-light text-gray-800'>{t('disclaimerInfo.line0')}</p>
           <p className='text-sm font-light text-gray-800'>{t('disclaimerInfo.line1')}</p>
-          <p className='text-sm font-light text-gray-800'>{t('disclaimerInfo.line2')} <Link href={'mailto:Mahiru_@outlook.com'} target={'_top'}>Mahiru_@outlook.com</Link></p>
-
+          <p className='text-sm font-light text-gray-800'>{t('disclaimerInfo.line2')} <Link href={'mailto:contact@openwebgal.com'} target={'_top'}>contact@openwebgal.com</Link></p>
         </div>
       </div>
     </div>
