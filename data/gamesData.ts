@@ -1,6 +1,6 @@
 import { Game } from '@/types'
 
-// 首页显示的游戏id
+// 首页显示的游戏id，建议最多只放4个
 export const homeGamesId = ['elf-of-era-idols-project', 'hoshinasuzu']
 
 // 全部游戏

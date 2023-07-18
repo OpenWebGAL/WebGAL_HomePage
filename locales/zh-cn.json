@@ -19,8 +19,9 @@
     "viewMoreGames": "查看更多游戏",
     "disclaimer": "免责申明",
     "disclaimerInfo": {
-      "line0": "本页面不提供游戏下载，仅用作收集使用 WebGAL 创作的游戏，非 WebGAL 开发组发布的游戏与 WebGAL 开发组无关",
-      "line1": "如果某个游戏侵犯了您的权益，请发送电子邮件到 Mahiru_@outlook.com"
+      "line0": "本页面不提供游戏下载，仅用作收集使用 WebGAL 创作的游戏",
+      "line1": "非 WebGAL 开发组发布的游戏与 WebGAL 开发组无关",
+      "line2": "如果有游戏侵犯了您的权益，请发送电子邮件到"
     }
   },
   "features": {

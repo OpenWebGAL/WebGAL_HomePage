@@ -15,7 +15,7 @@ const WebGALGames = () => {
         <h2 className={'text-2xl font-semibold p-2'}>{t('webgalGames')}</h2>
         {/* <p className={'text-gray-700 font-normal'}>{t('webgalGamesInfo')}</p> */}
       </div>
-      <div className={'max-w-screen-xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 px-4 gap-4'}>
+      <div className={'max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 px-4 gap-4'}>
         {
           gamesDataSort(gamesData, 'date')
             .filter(game => homeGamesId.find(id => id === game.id))
@@ -24,7 +24,7 @@ const WebGALGames = () => {
             )
         }
       </div>
-      <div className={'flex flex-row justify-center w-full gap-4'}>
+      <div className={'grid grid-cols-2 gap-4'}>
         <Button>
           <Link href={'https://docs.openwebgal.com/guide/showcase-your-game'} target={'_blank'}> {t('showCaseYourGame')}</Link>
         </Button>
