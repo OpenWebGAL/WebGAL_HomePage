@@ -1,4 +1,10 @@
 {
+  "metadata": {
+    "home": {
+      "description": "A brand new web Visual Novel engine",
+      "keywords": "Visual Novel,galgame,Game Engine,Visual Editor"
+    }
+  },
   "common": {
     "home": "HOME",
     "download": "DOWNLOAD",
@@ -67,11 +73,13 @@
     "systemRequirementsBrowser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge / Other modern browser"
   },
   "footer": {
+    "products": "Products",
     "development": "Development",
     "community": "Community",
     "developer": "Developer",
     "sponsor": "Sponsor",
     "contribute": "Contributing Guide",
+    "technical": "Technical Introduction",
     "qqGroup": "QQ Group",
     "bilibili": "Bilibili"
   }

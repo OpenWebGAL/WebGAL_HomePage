@@ -9,7 +9,7 @@
 }
 
 .links {
-  @apply grid grid-cols-4 gap-4 flex-wrap max-w-fit;
+  @apply grid grid-cols-5 gap-4 flex-wrap max-w-fit;
 }
 
 .link-title {
@@ -22,6 +22,12 @@
 
 @media screen and (max-width: 768px) {
   .links {
-    @apply grid grid-flow-row grid-cols-2 gap-4 flex-wrap;
+    @apply grid-cols-3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    @apply grid-cols-2;
   }
 }
