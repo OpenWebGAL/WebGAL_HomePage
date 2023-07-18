@@ -33,11 +33,11 @@
 
 @media screen and (max-width: 768px) {
   .feature {
-    @apply flex flex-col p-2 gap-2;
+    @apply flex-col p-0 gap-2;
   }
 
   .feature-reverse {
-    @apply flex flex-col p-2 gap-2;
+    @apply flex-col p-0 gap-2;
   }
 
   .feature-image {

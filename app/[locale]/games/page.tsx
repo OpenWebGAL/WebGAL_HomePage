@@ -1,10 +1,10 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-// import styles from './Games.module.css'
 import { gamesData } from '@/data/gamesData'
 import GameCard from '@/app/components/GameCard/GameCard'
 import { gamesDataSort } from '@/utils'
+import Link from 'next/link'
 
 const Games = () => {
   const t = useTranslations('games')
@@ -22,8 +22,10 @@ const Games = () => {
         </div>
         <div className={'px-4'}>
           <h2 className={'font-lg text-black'}>{t('disclaimer')}</h2>
-          <p className='text-sm font-light text-gray-700'>{t('disclaimerInfo.line0')}</p>
-          <p className='text-sm font-light text-gray-700'>{t('disclaimerInfo.line1')}</p>
+          <p className='text-sm font-light text-gray-800'>{t('disclaimerInfo.line0')}</p>
+          <p className='text-sm font-light text-gray-800'>{t('disclaimerInfo.line1')}</p>
+          <p className='text-sm font-light text-gray-800'>{t('disclaimerInfo.line2')} <Link href={'mailto:Mahiru_@outlook.com'} target={'_top'}>Mahiru_@outlook.com</Link></p>
+
         </div>
       </div>
     </div>
