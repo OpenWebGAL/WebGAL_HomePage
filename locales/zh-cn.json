@@ -16,7 +16,12 @@
     "webgalGames": "使用 WebGAL 创作的游戏",
     "webgalGamesInfo": "我们挑选了一些使用 WebGAL 创作的游戏",
     "showCaseYourGame": "展示您的游戏",
-    "viewMoreGames": "查看更多游戏"
+    "viewMoreGames": "查看更多游戏",
+    "disclaimer": "免责申明",
+    "disclaimerInfo": {
+      "line0": "本页面不提供游戏下载，仅用作收集使用 WebGAL 创作的游戏，非 WebGAL 开发组发布的游戏与 WebGAL 开发组无关",
+      "line1": "如果某个游戏侵犯了您的权益，请发送电子邮件到 Mahiru_@outlook.com"
+    }
   },
   "features": {
     "features": "特性",

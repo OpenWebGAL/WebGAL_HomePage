@@ -20,6 +20,11 @@ const Games = () => {
               )
           }
         </div>
+        <div className={'px-4'}>
+          <h2 className={'font-lg text-black'}>{t('disclaimer')}</h2>
+          <p className='text-sm font-light text-gray-700'>{t('disclaimerInfo.line0')}</p>
+          <p className='text-sm font-light text-gray-700'>{t('disclaimerInfo.line1')}</p>
+        </div>
       </div>
     </div>
   )

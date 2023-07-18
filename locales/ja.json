@@ -16,7 +16,12 @@
     "webgalGames": "WebGAL 製ゲームへようこそ",
     "webgalGamesInfo": "おすすめの WebGAL 製ゲームをチェックしよう",
     "showCaseYourGame": "作品を出展しよう",
-    "viewMoreGames": "作品をもっと見る"
+    "viewMoreGames": "作品をもっと見る",
+    "disclaimer": "Disclaimer",
+    "disclaimerInfo": {
+      "line0": "This page is not for downloading games, it is only for collecting games created using WebGAL, games not published by the WebGAL development team are not related to the WebGAL development team",
+      "line1": "If a game infringes on your rights, please email Mahiru_@outlook.com"
+    }
   },
   "features": {
     "features": "特徴",
