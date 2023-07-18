@@ -26,6 +26,14 @@ export default async function LangLayout({ children, params: { locale } }
 
   return (
     <html lang={locale} className={notoSansSC.className}>
+    <head>
+      {/*Google tag (gtag.js)*/}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XPF6Q2WY0"></script>
+      <script dangerouslySetInnerHTML={{__html:`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-6XPF6Q2WY0');`}}/>
+    </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={locales}>
           <Navbar />
