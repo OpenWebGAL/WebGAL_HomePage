@@ -24,7 +24,7 @@ const WebGALGames = () => {
             )
         }
       </div>
-      <div className={'grid grid-cols-2 gap-4 max-w-fit mx-auto'}>
+      <div className={'grid grid-cols-2 gap-4 px-4 max-w-fit mx-auto'}>
         <Button>
           <Link href={'https://docs.openwebgal.com/guide/showcase-your-game'} target={'_blank'}> {t('showCaseYourGame')}</Link>
         </Button>
