@@ -4,7 +4,7 @@
     "download": "ダウンロード",
     "demo": "デモ",
     "document": "ドキュメント",
-    "games": "GAMES"
+    "games": "ゲーム"
   },
   "home": {
     "title": "WebGAL",
@@ -17,10 +17,10 @@
     "webgalGamesInfo": "おすすめの WebGAL 製ゲームをチェックしよう",
     "showCaseYourGame": "作品を出展しよう",
     "viewMoreGames": "作品をもっと見る",
-    "disclaimer": "Disclaimer",
+    "disclaimer": "免責事項",
     "disclaimerInfo": {
-      "line0": "This page is not for downloading games, it is only for collecting games created using WebGAL, games not published by the WebGAL development team are not related to the WebGAL development team",
-      "line1": "If a game infringes on your rights, please email Mahiru_@outlook.com"
+      "line0": "このページはゲームのダウンロードは提供しておらず、WebGAL を使用して作成されたゲームの収集のために利用されています。WebGAL 開発チーム以外によって公開されたゲームは、WebGAL開発チームとは関係ありません。",
+      "line1": "ゲームがあなたの権利を侵害している場合は、Mahiru_@outlook.com までご連絡ください。"
     }
   },
   "features": {
