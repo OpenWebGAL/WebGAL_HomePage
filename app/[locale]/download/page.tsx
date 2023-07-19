@@ -5,14 +5,16 @@ import SystemRequirements from './SystemRequirements'
 import OtherDownloadLink from './OtherDownloadLink'
 import DownloadTitle from './DownloadTitle'
 
-const Download = () => {
+const Download = ({ params: { locale } }: { params: { locale: string } }) => {
   return (
     <div className={'pt-16 pb-4'}>
       <div className={'max-w-screen-xl mx-auto space-y-4'}>
         <DownloadTitle />
         <DownloadWebgalTerre />
         <DownloadWebgal />
-        <OtherDownloadLink />
+        {
+          (locale === 'zh-cn') && <OtherDownloadLink />
+        }
         <SystemRequirements />
       </div>
     </div>
