@@ -3,6 +3,14 @@
     "home": {
       "description": "A brand new web Visual Novel engine",
       "keywords": "Visual Novel,galgame,Game Engine,Visual Editor"
+    },
+    "download": {
+      "title": "Download WebGAL",
+      "description": "WebGAL download page"
+    },
+    "games": {
+      "title": "WebGAL Games",
+      "description": "Games created using WebGAL"
     }
   },
   "common": {

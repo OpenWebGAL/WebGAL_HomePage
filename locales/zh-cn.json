@@ -3,6 +3,14 @@
     "home": {
       "description": "全新的网页端视觉小说引擎",
       "keywords": "视觉小说,美少女游戏,galgame,游戏引擎,可视化编辑器"
+    },
+    "download": {
+      "title": "下载 WebGAL",
+      "description": "WebGAL 下载页面"
+    },
+    "games": {
+      "title": "使用 WebGAL 创作的游戏",
+      "description": "使用 WebGAL 创作的游戏"
     }
   },
   "common": {

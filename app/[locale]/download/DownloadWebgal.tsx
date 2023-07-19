@@ -1,3 +1,5 @@
+'use client'
+
 import Button from '@/app/components/Button/Button'
 import useWebgalAssets from '@/hooks/useWebgalAssets'
 import { i18n } from '@/i18n'

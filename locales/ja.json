@@ -3,6 +3,14 @@
     "home": {
       "description": "未だかつてない Web ベースビジュアルノベルエンジン",
       "keywords": "ビジュアルノベル,美少女ゲーム,ギャルゲーム,ゲームエンジン,ビジュアルエディター"
+    },
+    "download": {
+      "title": "WebGAL をダウンロード",
+      "description": "WebGAL をダウンロードページ"
+    },
+    "games": {
+      "title": "WebGAL で制作されたゲーム",
+      "description": "WebGAL で制作されたゲーム"
     }
   },
   "common": {
@@ -19,7 +27,7 @@
     "viewDocument": "ドキュメントに移動"
   },
   "games": {
-    "webgalGames": "WebGALで制作されたゲーム",
+    "webgalGames": "WebGAL で制作されたゲーム",
     "webgalGamesInfo": "おすすめのゲームをチェックしよう",
     "showCaseYourGame": "作品を出展しよう",
     "viewMoreGames": "作品をもっと見る",

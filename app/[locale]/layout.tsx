@@ -63,6 +63,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     openGraph: {
       title: 'WebGAL',
       description: t('metadata.home.description'),
+      images: [
+        {
+          url: '../favicon.ico',
+          width: 512,
+          height: 512,
+        },
+      ],
     },
   }
 }

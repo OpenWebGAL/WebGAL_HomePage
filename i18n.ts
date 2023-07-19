@@ -4,5 +4,5 @@ export const i18n = {
     { lang: 'English', code: 'en' },
     { lang: '日本语', code: 'ja' },
   ],
-  defaultLocale: 'zh-cn',
+  defaultLocale: 'en',
 }
