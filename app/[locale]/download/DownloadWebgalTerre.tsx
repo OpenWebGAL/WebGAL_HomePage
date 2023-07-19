@@ -1,3 +1,5 @@
+'use client'
+
 import Button from '@/app/components/Button/Button'
 import useWebgalTerreAssets from '@/hooks/useWebgalTerreAssets'
 import Link from 'next/link'
