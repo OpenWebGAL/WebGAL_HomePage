@@ -57,19 +57,16 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const t = createTranslator({ locale, messages })
 
   return {
+    metadataBase: new URL('https://openwebgal.com'),
     title: 'WebGAL',
     description: t('metadata.home.description'),
     keywords: t('metadata.home.keywords'),
     openGraph: {
       title: 'WebGAL',
       description: t('metadata.home.description'),
-      images: [
-        {
-          url: '../favicon.ico',
-          width: 512,
-          height: 512,
-        },
-      ],
     },
+    // twitter: {
+    //   card: 'summary_large_image', // Twitter 大卡片
+    // },
   }
 }
