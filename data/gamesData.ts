@@ -11,7 +11,7 @@ export const gamesData: Game[] = [
     developer: '星奈组',
     releaseDate: '2022-06-28',
     url: 'http://hoshinasuzu.cn/',
-    cover: '/images/games/suzu.webp'
+    cover: 'suzu.webp'
   },
   {
     id: 'elf-of-era-idols-project',
@@ -19,6 +19,6 @@ export const gamesData: Game[] = [
     developer: 'Elf of Era! Idols Project 制作组',
     releaseDate: '2023-06-22',
     url: 'https://store.steampowered.com/app/2414730/Elf_of_Era_Idols_Project/',
-    cover: '/images/games/elf-of-Era!-Idols-Project.webp'
+    cover: 'elf-of-Era!-Idols-Project.webp'
   },
 ]

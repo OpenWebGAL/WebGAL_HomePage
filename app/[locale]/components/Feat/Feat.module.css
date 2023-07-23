@@ -1,0 +1,41 @@
+.container {
+  @apply max-w-screen-xl mx-auto px-4 py-8;
+}
+
+.box {
+  @apply grid grid-cols-2 text-center;
+}
+
+.card {
+  @apply flex flex-col items-center;
+}
+
+.icon {
+  @apply grid grid-flow-col justify-center items-center p-4;
+}
+
+.icon svg {
+  @apply w-auto h-16;
+}
+
+.icon-grid {
+  @apply grid grid-cols-2 justify-center items-center p-4;
+}
+
+.icon-grid svg {
+  @apply w-auto h-8;
+}
+
+.title {
+  @apply text-lg font-medium;
+}
+
+.info {
+  @apply text-base font-light text-gray-700;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    @apply grid-cols-1 gap-8;
+  }
+}

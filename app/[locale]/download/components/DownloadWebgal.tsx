@@ -6,7 +6,7 @@ import { i18n } from '@/i18n'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { RiGithubFill, RiDownloadFill } from 'react-icons/ri'
-import styles from './Download.module.css'
+import styles from '../Download.module.css'
 
 const DownloadWebgal = () => {
 

@@ -1,16 +1,10 @@
+import { WebgalAssets } from '@/types'
 import { parseReleaseNote } from '@/utils'
 import { useEffect, useState } from 'react'
 
-export type Assets = {
-  version: string,
-  releaseTime: string,
-  releaseNote: string[][];
-  downloadUrl: string,
-}
-
 const useWebgalAssets = (webgalApiUrl: string) => {
 
-  const [webgalAssets, setWebgalAssets] = useState<Assets>()
+  const [webgalAssets, setWebgalAssets] = useState<WebgalAssets>()
 
   useEffect(() => {
     try {

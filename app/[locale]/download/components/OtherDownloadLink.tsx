@@ -2,7 +2,7 @@
 
 import Button from '@/app/components/Button/Button'
 import Link from 'next/link'
-import styles from './Download.module.css'
+import styles from '../Download.module.css'
 import { useTranslations } from 'next-intl'
 
 const OtherDownloadLink = () => {

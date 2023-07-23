@@ -1,14 +1,14 @@
 
-import GamesTitle from './GamesTitle'
-import GamesList from './GamesList'
-import GamesDisclaimer from './GamesDisclaimer'
+import GamesTitle from './components/GamesTitle'
+import GamesList from './components/GamesList'
+import GamesDisclaimer from './components/GamesDisclaimer'
 import { createTranslator } from 'next-intl'
 
 const Games = () => {
 
   return (
     <div className={'pt-16 pb-4'}>
-      <div className={'max-w-screen-xl mx-auto space-y-4'}>
+      <div className={'max-w-screen-xl mx-auto'}>
         <GamesTitle />
         <GamesList />
         <GamesDisclaimer />

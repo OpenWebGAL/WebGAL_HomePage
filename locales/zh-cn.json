@@ -34,7 +34,7 @@
     "disclaimer": "免责申明",
     "disclaimerInfo": {
       "line0": "本页面不提供游戏下载，仅用作收集使用 WebGAL 创作的游戏",
-      "line1": "非 WebGAL 开发组发布的游戏与 WebGAL 开发组无关",
+      "line1": "非 WebGAL 开发者发布的游戏与 WebGAL 开发者无关",
       "line2": "如果有游戏侵犯了您的权益，请发送电子邮件到"
     }
   },
@@ -58,6 +58,16 @@
         "line1": "只要你有灵感，就可以立刻开始开始创作你自己的 视觉小说！"
       },
       "nowDownload": "立即下载 WebGAL"
+    },
+    "openSource": {
+      "title": "开源免费",
+      "line0": "WebGAL 和 WebGAL Terre 采用 MPL-2.0 开源许可",
+      "line1": "可免费用于非商业项目和商业项目"
+    },
+    "multiplatform": {
+      "title": "多平台支持",
+      "line0": "WebGAL Terre 支持 Windows / macOS / Linux",
+      "line1": "导出游戏支持 Web / Windows / macOS / Linux / android"
     }
   },
   "download": {
@@ -76,9 +86,38 @@
     "downloadLinux": "下载 Linux 压缩包",
     "otherDownloadLink": "其它下载地址",
     "otherDownloadLinkInfo": "如果上面的下载地址下载速度比较慢，请尝试使用以下下载地址",
-    "systemRequirements": "系统需求",
-    "systemRequirementsSystem": "系统: Windows 10+ / macOS 10.14+ / Linux 桌面版",
-    "systemRequirementsBrowser": "浏览器: Google Chrome / Mozilla Firefox / Microsoft Edge / 其他现代浏览器"
+    "systemRequirements": {
+      "title": "系统需求",
+      "system": "系统: Windows 10+ / macOS 10.14+ / Linux 桌面版",
+      "browser": "浏览器: Google Chrome / Mozilla Firefox / Microsoft Edge / 其他现代浏览器"
+    },
+    "readFirst": {
+      "title": "更多信息",
+      "firstUse": {
+        "part0": "如果您是第一次使用 WebGAL，请查看",
+        "part1": "WebGAL 游戏开发指引",
+        "part2": "来学习开发游戏"
+      },
+      "getHelp": "如果您在开发过程中遇到问题，请先查看游戏开发指引，如果无法解决请前往 GitHub 或交流社区来获取帮助",
+      "webGALScriptBasics": {
+        "part0": "如果您使用 Visual Studio Code 进行开发，可以安装",
+        "part1": "插件实现语法高亮"
+      }
+    }
+  },
+  "license": {
+    "title": "许可",
+    "line0": {
+      "part0": "WebGAL 和 WebGAL Terre 采用",
+      "part1": "许可"
+    },
+    "line1": "可免费用于非商业项目和商业项目",
+    "line2": "同时使用者还必须遵守以下额外条款：",
+    "additional": {
+      "line0": "“本软件” 指 WebGAL 和 WebGAL Terre",
+      "line1": "使用本软件开发的作品在发布时必须保留 WebGAL 相关的版权声明",
+      "line2": "使用本软件所造成的一切风险由使用者自行承担"
+    }
   },
   "footer": {
     "products": "产品",
@@ -86,8 +125,9 @@
     "community": "社区",
     "developer": "开发者",
     "sponsor": "赞助",
+    "gameDevelopDoc": "游戏开发文档",
     "contribute": "参与开发",
-    "technical": "技术介绍",
+    "technical": " 技术介绍",
     "qqGroup": "QQ群",
     "bilibili": "哔哩哔哩"
   }

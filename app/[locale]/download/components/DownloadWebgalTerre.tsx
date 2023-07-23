@@ -4,7 +4,7 @@ import Button from '@/app/components/Button/Button'
 import useWebgalTerreAssets from '@/hooks/useWebgalTerreAssets'
 import Link from 'next/link'
 import { RiGithubFill, RiMicrosoftFill, RiAppleFill, RiUbuntuFill } from 'react-icons/ri'
-import styles from './Download.module.css'
+import styles from '../Download.module.css'
 import { useLocale, useTranslations } from 'next-intl'
 import { i18n } from '@/i18n'
 

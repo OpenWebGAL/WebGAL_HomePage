@@ -2,6 +2,12 @@
 
 [WebGAL Homepage](https://openwebgal.com)
 
+## How to run
+
+``` shell
+npm i && npm run dev
+```
+
 ## How to improve or add translations
 
 To improve a translation, open the `/locales/` folder and modify the corresponding json file.  

@@ -28,7 +28,7 @@
 }
 
 .feature-info {
-  @apply text-lg text-gray-700 font-normal;
+  @apply text-lg text-gray-700 font-normal leading-loose
 }
 
 @media screen and (max-width: 768px) {
