@@ -58,6 +58,16 @@
         "line1": "ビジュアルエディターの操作を覚えるのにかかる時間は、たったの3分。構想さえあれば、ゲーム開発経験ゼロでノベルゲームが作れる！"
       },
       "nowDownload": "WebGAL を今すぐダウンロード"
+    },
+    "openSource": {
+      "title": "Open Source",
+      "line0": "WebGAL and WebGAL Terre are licensed under the MPL-2.0",
+      "line1": "Free to use for non-commercial and commercial projects"
+    },
+    "multiplatform": {
+      "title": "Multi Platform",
+      "line0": "WebGAL Terre support Windows / macOS / Linux",
+      "line1": "Export game support Web / Windows / macOS / Linux / android"
     }
   },
   "download": {
@@ -76,9 +86,38 @@
     "downloadLinux": "Linux zip をダウンロード",
     "otherDownloadLink": "その他のダウンロードリンク",
     "otherDownloadLinkInfo": "上記のダウンロードリンクが遅い場合は、以下のダウンロードリンクをお試しください",
-    "systemRequirements": "システム要件",
-    "systemRequirementsSystem": "OS: Windows 10+ / macOS 10.14+ / Linux デスクトップ",
-    "systemRequirementsBrowser": "Webブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
+    "systemRequirements": {
+      "title": "システム要件",
+      "system": "OS: Windows 10+ / macOS 10.14+ / Linux デスクトップ",
+      "browser": "Webブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
+    },
+    "readFirst": {
+      "title": "More Info",
+      "firstUse": {
+        "part0": "If this is your first using WebGAL, please see the",
+        "part1": "WebGAL Game Development Guide",
+        "part2": "learn to develop games"
+      },
+      "getHelp": "If you encounter problems during development, please see the game development guide first, and if you can't solve them, please go to GitHub or the community to get help",
+      "webGALScriptBasics": {
+        "part0": "If you are developing in Visual Studio Code, you can install the",
+        "part1": "plugin for syntax highlighting"
+      }
+    }
+  },
+  "license": {
+    "title": "License",
+    "line0": {
+      "part0": "WebGAL and WebGAL Terre are licensed under the",
+      "part1": ""
+    },
+    "line1": "Free to use for non-commercial and commercial projects",
+    "line2": "Users must also comply with the following additional terms:",
+    "additional": {
+      "line0": "\" this Software \" means WebGAL and WebGAL Terre",
+      "line1": "Works developed using this software must be distributed with the WebGAL copyright notice intact",
+      "line2": "The use of this software is at the user's own risk"
+    }
   },
   "footer": {
     "products": "プロダクト",
@@ -86,6 +125,7 @@
     "community": "コミュニティ",
     "developer": "開発者",
     "sponsor": "スポンサー",
+    "gameDevelopDoc": "Game Develop Document",
     "contribute": "コントリビューション",
     "technical": "技術紹介",
     "qqGroup": "QQ グループ",

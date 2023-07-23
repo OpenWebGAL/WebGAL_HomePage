@@ -5,10 +5,14 @@ export default function RootPage() {
   // redirect(`/${i18n.defaultLocale}`)
   return (
     <html>
+      <head>
+        <title>WebGAL</title>
+        <meta name="description" content="A brand new web Visual Novel engine | 全新的网页端视觉小说引擎 | 未だかつてない Web ベースビジュアルノベルエンジン" />
+      </head>
       <body>
         <div className='flex justify-center items-center h-screen w-full'>
           <div className='flex flex-row justify-center items-end w-fit gap-4'>
-            <Image src={'/favicon.ico'} width={64} height={64} alt='logo' />
+            <Image src={'/images/logo.svg'} width={64} height={64} alt='logo' />
             <div>
               <h1 className='text-xl font-semibold'>WebGAL HomePage</h1>
               <p className='text-lg text-gray-800'>Loading...</p>

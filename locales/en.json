@@ -58,6 +58,16 @@
         "line1": "With your idea, strat creating your OWN visual novel !"
       },
       "nowDownload": "Now download WebGAL"
+    },
+    "openSource": {
+      "title": "Open Source",
+      "line0": "WebGAL and WebGAL Terre are licensed under the MPL-2.0",
+      "line1": "Free to use for non-commercial and commercial projects"
+    },
+    "multiplatform": {
+      "title": "Multi Platform",
+      "line0": "WebGAL Terre support Windows / macOS / Linux",
+      "line1": "Export game support Web / Windows / macOS / Linux / android"
     }
   },
   "download": {
@@ -76,9 +86,38 @@
     "downloadLinux": "Download Linux zip",
     "otherDownloadLink": "Other Download Link",
     "otherDownloadLinkInfo": "If the above download address is slow, please try using the following download address",
-    "systemRequirements": "System Requirements",
-    "systemRequirementsSystem": "System: Windows 10+ / macOS 10.14+ / Linux Desktop",
-    "systemRequirementsBrowser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge / Other modern browser"
+    "systemRequirements": {
+      "title": "System Requirements",
+      "system": "System: Windows 10+ / macOS 10.14+ / Linux Desktop",
+      "browser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge / Other modern browser"
+    },
+    "readFirst": {
+      "title": "More Info",
+      "firstUse": {
+        "part0": "If this is your first using WebGAL, please see the",
+        "part1": "WebGAL Game Development Guide",
+        "part2": "learn to develop games"
+      },
+      "getHelp": "If you encounter problems during development, please see the game development guide first, and if you can't solve them, please go to GitHub or the community to get help",
+      "webGALScriptBasics": {
+        "part0": "If you are developing in Visual Studio Code, you can install the",
+        "part1": "plugin for syntax highlighting"
+      }
+    }
+  },
+  "license": {
+    "title": "License",
+    "line0": {
+      "part0": "WebGAL and WebGAL Terre are licensed under the",
+      "part1": ""
+    },
+    "line1": "Free to use for non-commercial and commercial projects",
+    "line2": "Users must also comply with the following additional terms:",
+    "additional": {
+      "line0": "\" this Software \" means WebGAL and WebGAL Terre",
+      "line1": "Works developed using this software must be distributed with the WebGAL copyright notice intact",
+      "line2": "The use of this software is at the user's own risk"
+    }
   },
   "footer": {
     "products": "Products",
@@ -86,6 +125,7 @@
     "community": "Community",
     "developer": "Developer",
     "sponsor": "Sponsor",
+    "gameDevelopDoc": "Game Develop Document",
     "contribute": "Contributing Guide",
     "technical": "Technical Introduction",
     "qqGroup": "QQ Group",

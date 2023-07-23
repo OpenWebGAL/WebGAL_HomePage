@@ -1,21 +1,10 @@
+import { WebgalTerreAssets } from '@/types'
 import { findAssetsUrl, parseReleaseNote } from '@/utils'
 import { useState, useEffect } from 'react'
 
-type Assets = {
-  version: string,
-  releaseTime: string,
-  releaseNote: string[][],
-  downloadUrl: {
-    windows?: string,
-    windowsSetup?: string,
-    macos?: string,
-    linux?: string,
-  },
-}
-
 const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
 
-  const [webgalTerreAssets, setWebgalTerreAssets] = useState<Assets>()
+  const [webgalTerreAssets, setWebgalTerreAssets] = useState<WebgalTerreAssets>()
 
   useEffect(() => {
     try {

@@ -1,21 +1,25 @@
 import { createTranslator } from 'next-intl'
-import DownloadWebgalTerre from './DownloadWebgalTerre'
-import DownloadWebgal from './DownloadWebgal'
-import SystemRequirements from './SystemRequirements'
-import OtherDownloadLink from './OtherDownloadLink'
-import DownloadTitle from './DownloadTitle'
+import DownloadWebgalTerre from './components/DownloadWebgalTerre'
+import DownloadWebgal from './components/DownloadWebgal'
+import SystemRequirements from './components/SystemRequirements'
+import OtherDownloadLink from './components/OtherDownloadLink'
+import DownloadTitle from './components/DownloadTitle'
+import ReadFirst from './components/ReadFirst'
+import License from './components/License'
 
 const Download = ({ params: { locale } }: { params: { locale: string } }) => {
   return (
     <div className={'pt-16 pb-4'}>
-      <div className={'max-w-screen-xl mx-auto space-y-4'}>
+      <div className={'max-w-screen-xl mx-auto'}>
         <DownloadTitle />
+        <ReadFirst />
         <DownloadWebgalTerre />
         <DownloadWebgal />
         {
           (locale === 'zh-cn') && <OtherDownloadLink />
         }
         <SystemRequirements />
+        <License />
       </div>
     </div>
   )

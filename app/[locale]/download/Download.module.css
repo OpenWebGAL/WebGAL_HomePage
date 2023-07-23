@@ -23,13 +23,17 @@
 }
 
 .card-info {
-  @apply text-gray-700 font-normal;
+  @apply text-gray-700 font-normal leading-relaxed space-y-1;
 }
 
 .card-button-gourp {
   @apply flex flex-row flex-wrap gap-2;
 }
 
-.list {
+.card ul {
   @apply list-disc list-inside pl-4;
+}
+
+.card ol {
+  @apply list-decimal list-inside pl-4;
 }

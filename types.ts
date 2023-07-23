@@ -6,3 +6,22 @@ export type Game = {
   url: string,
   cover: string,
 }
+
+export type WebgalAssets = {
+  version: string,
+  releaseTime: string,
+  releaseNote: string[][];
+  downloadUrl: string,
+}
+
+export type WebgalTerreAssets = {
+  version: string,
+  releaseTime: string,
+  releaseNote: string[][],
+  downloadUrl: {
+    windows?: string,
+    windowsSetup?: string,
+    macos?: string,
+    linux?: string,
+  },
+}

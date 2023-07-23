@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className={styles.navbarContainer}>
 
         <Link href={`/${locale}/`} className={styles['navbar-title']}>
-          <Image src={'/favicon.ico'} width={32} height={32} alt='logo' />
+          <Image src={'/images/logo.svg'} width={32} height={32} alt='logo' />
           <h1>WebGAL</h1>
         </Link>
 
