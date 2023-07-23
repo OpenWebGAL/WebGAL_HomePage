@@ -9,6 +9,15 @@ const WebGALGames = () => {
   const t = useTranslations('games')
   const locale = useLocale()
 
+  // Depending on the language type of the browser, get the URL of showcase-your-game
+  const showcaseYourGameURL = () => {
+    if (locale === 'zh-cn') {
+      return 'https://docs.openwebgal.com/guide/showcase-your-game'
+    } else {
+      return `https://docs.openwebgal.com/${locale}/guide/showcase-your-game`
+    }
+  }
+
   return (
     <div className={'flex flex-col flex-wrap justify-center item-center py-4 pb-8 gap-4 text-center bg-white'}>
       <div className={'w-full pt-2'}>
@@ -26,7 +35,7 @@ const WebGALGames = () => {
       </div>
       <div className={'grid grid-cols-2 gap-4 px-4 max-w-fit mx-auto'}>
         <Button>
-          <Link href={'https://docs.openwebgal.com/guide/showcase-your-game'} target={'_blank'}> {t('showCaseYourGame')}</Link>
+          <Link href={showcaseYourGameURL()} target={'_blank'}> {t('showCaseYourGame')}</Link>
         </Button>
         <Button>
           <Link href={`/${locale}/games/`}> {t('viewMoreGames')}</Link>
