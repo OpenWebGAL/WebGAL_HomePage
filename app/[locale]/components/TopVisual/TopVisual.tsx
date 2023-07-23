@@ -20,6 +20,11 @@ const TopVisual = () => {
     },
   ]
 
+  // Depending on the language type of the browser, get the URL of docs
+  const docsURL = () => {
+    return `https://docs.openwebgal.com${ locale === 'zh-cn' ? '' : `/${locale}/` }`
+  }
+
   const [topVisualImageIndex, setTopVisualImageIndex] = useState(0)
 
   useEffect(() => {
@@ -50,7 +55,7 @@ const TopVisual = () => {
               <Link href={`/${locale}/download/`} >{t('nowDownload')}</Link>
             </Button>
             <Button>
-              <Link href={'https://docs.openwebgal.com/'} target={'_blank'}>{t('viewDocument')}</Link>
+              <Link href={docsURL()} target={'_blank'}>{t('viewDocument')}</Link>
             </Button>
           </div>
         </div>
