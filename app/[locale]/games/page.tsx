@@ -30,6 +30,14 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     openGraph: {
       title: t('metadata.games.title'),
       description: t('metadata.games.description'),
+      url: `/${locale}/games`,
+      images: [
+        {
+          url: '/images/opengraph-image.png',
+          width: 512,
+          height: 512,
+        },
+      ],
     },
   }
 }

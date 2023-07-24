@@ -1,7 +1,7 @@
 import Button from '@/app/components/Button/Button'
 import GameCard from '@/app/components/GameCard/GameCard'
 import { gamesData, homeGamesId } from '@/data/gamesData'
-import { useDocsRedirect } from '@/hooks/useDocsRedirect'
+import useRedirect from '@/hooks/useRedirect'
 import { gamesDataSort } from '@/utils'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
@@ -9,6 +9,7 @@ import Link from 'next/link'
 const WebGALGames = () => {
   const t = useTranslations('games')
   const locale = useLocale()
+  const { docsRedirect } = useRedirect()
 
   return (
     <div className={'flex flex-col flex-wrap justify-center item-center py-4 pb-8 gap-4 text-center bg-white'}>
@@ -27,7 +28,7 @@ const WebGALGames = () => {
       </div>
       <div className={'grid grid-cols-2 gap-4 px-4 max-w-fit mx-auto'}>
         <Button>
-          <Link href={useDocsRedirect('/guide/showcase-your-game')} target={'_blank'}> {t('showCaseYourGame')}</Link>
+          <Link href={docsRedirect('/guide/showcase-your-game')} target={'_blank'}> {t('showCaseYourGame')}</Link>
         </Button>
         <Button>
           <Link href={`/${locale}/games/`}> {t('viewMoreGames')}</Link>

@@ -92,7 +92,6 @@
       "browser": "Web ブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
     },
     "readFirst": {
-      "title": "詳細情報",
       "firstUse": {
         "part0": "WebGAL を初めて使用する場合は、",
         "part1": "WebGAL ゲーム開発ガイド",
