@@ -1,6 +1,6 @@
 import { useLocale } from 'next-intl'
 
-export const docsRedirect = (
+export const useDocsRedirect = (
   label: '/' | '/developers' | '/tech' | '/sponsor' | '/guide' | '/guide/showcase-your-game'
 ) => {
   const docsPath = 'https://docs.openwebgal.com'

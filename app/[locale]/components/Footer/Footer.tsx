@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import styles from './Footer.module.css'
 import { useTranslations } from 'next-intl'
-import { docsRedirect } from '@/docsRedirect'
+import { useDocsRedirect } from '@/hooks/useDocsRedirect'
 
 const Footer = () => {
   const t = useTranslations('footer')
@@ -19,9 +19,9 @@ const Footer = () => {
     {
       title: t('development'),
       links: [
-        { href: docsRedirect('/'), label: t('gameDevelopDoc') },
-        { href: docsRedirect('/developers'), label: t('contribute') },
-        { href: docsRedirect('/tech'), label: t('technical') }
+        { href: useDocsRedirect('/'), label: t('gameDevelopDoc') },
+        { href: useDocsRedirect('/developers'), label: t('contribute') },
+        { href: useDocsRedirect('/tech'), label: t('technical') }
       ],
     },
     {
@@ -41,7 +41,7 @@ const Footer = () => {
     {
       title: t('sponsor'),
       links: [
-        { href: docsRedirect('/sponsor'), label: t('sponsor') },
+        { href: useDocsRedirect('/sponsor'), label: t('sponsor') },
       ],
     },
   ]

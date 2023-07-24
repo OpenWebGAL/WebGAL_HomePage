@@ -4,7 +4,7 @@ import Link from 'next/link'
 import styles from './TopVisual.module.css'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { docsRedirect } from '@/docsRedirect'
+import { useDocsRedirect } from '@/hooks/useDocsRedirect'
 
 const TopVisual = () => {
   const t = useTranslations('home')
@@ -51,7 +51,7 @@ const TopVisual = () => {
               <Link href={`/${locale}/download/`} >{t('nowDownload')}</Link>
             </Button>
             <Button>
-              <Link href={docsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>
+              <Link href={useDocsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>
             </Button>
           </div>
         </div>
