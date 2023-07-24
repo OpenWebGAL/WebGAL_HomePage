@@ -4,6 +4,7 @@ import Link from 'next/link'
 import styles from './TopVisual.module.css'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import { docsRedirect } from '@/docsRedirect'
 
 const TopVisual = () => {
   const t = useTranslations('home')
@@ -19,11 +20,6 @@ const TopVisual = () => {
       src: '/images/title.webp',
     },
   ]
-
-  // Depending on the language type of the browser, get the URL of docs
-  const docsURL = () => {
-    return `https://docs.openwebgal.com${ locale === 'zh-cn' ? '' : `/${locale}/` }`
-  }
 
   const [topVisualImageIndex, setTopVisualImageIndex] = useState(0)
 
@@ -55,7 +51,7 @@ const TopVisual = () => {
               <Link href={`/${locale}/download/`} >{t('nowDownload')}</Link>
             </Button>
             <Button>
-              <Link href={docsURL()} target={'_blank'}>{t('viewDocument')}</Link>
+              <Link href={docsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>
             </Button>
           </div>
         </div>
