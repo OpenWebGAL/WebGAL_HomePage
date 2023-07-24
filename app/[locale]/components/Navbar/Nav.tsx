@@ -2,7 +2,7 @@ import { RiMenuFill } from 'react-icons/ri'
 import styles from './Nav.module.css'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-import { docsRedirect } from '@/docsRedirect'
+import { useDocsRedirect } from '@/hooks/useDocsRedirect'
 
 const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
 
@@ -12,7 +12,7 @@ const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
     { label: t('home'), href: `/${locale}/` },
     { label: t('download'), href: `/${locale}/download/` },
     { label: t('demo'), href: 'https://demo.openwebgal.com/' },
-    { label: t('document'), href: docsRedirect('/') },
+    { label: t('document'), href: useDocsRedirect('/') },
     { label: t('games'), href: `/${locale}/games/` }
   ]
 

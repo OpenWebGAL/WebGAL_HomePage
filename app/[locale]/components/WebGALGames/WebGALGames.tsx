@@ -1,7 +1,7 @@
 import Button from '@/app/components/Button/Button'
 import GameCard from '@/app/components/GameCard/GameCard'
 import { gamesData, homeGamesId } from '@/data/gamesData'
-import { docsRedirect } from '@/docsRedirect'
+import { useDocsRedirect } from '@/hooks/useDocsRedirect'
 import { gamesDataSort } from '@/utils'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
@@ -27,7 +27,7 @@ const WebGALGames = () => {
       </div>
       <div className={'grid grid-cols-2 gap-4 px-4 max-w-fit mx-auto'}>
         <Button>
-          <Link href={docsRedirect('/guide/showcase-your-game')} target={'_blank'}> {t('showCaseYourGame')}</Link>
+          <Link href={useDocsRedirect('/guide/showcase-your-game')} target={'_blank'}> {t('showCaseYourGame')}</Link>
         </Button>
         <Button>
           <Link href={`/${locale}/games/`}> {t('viewMoreGames')}</Link>
