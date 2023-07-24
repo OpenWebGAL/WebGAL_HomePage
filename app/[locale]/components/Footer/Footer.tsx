@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import styles from './Footer.module.css'
 import { useTranslations } from 'next-intl'
+import { docsRedirect } from '@/docsRedirect'
 
 const Footer = () => {
   const t = useTranslations('footer')
@@ -18,9 +19,9 @@ const Footer = () => {
     {
       title: t('development'),
       links: [
-        { href: 'https://docs.openwebgal.com/', label: t('gameDevelopDoc') },
-        { href: 'https://docs.openwebgal.com/developers', label: t('contribute') },
-        { href: 'https://docs.openwebgal.com/tech', label: t('technical') }
+        { href: docsRedirect('/'), label: t('gameDevelopDoc') },
+        { href: docsRedirect('/developers'), label: t('contribute') },
+        { href: docsRedirect('/tech'), label: t('technical') }
       ],
     },
     {
@@ -40,7 +41,7 @@ const Footer = () => {
     {
       title: t('sponsor'),
       links: [
-        { href: 'https://docs.openwebgal.com/sponsor/', label: t('sponsor') },
+        { href: docsRedirect('/sponsor'), label: t('sponsor') },
       ],
     },
   ]

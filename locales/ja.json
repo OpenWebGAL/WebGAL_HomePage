@@ -60,14 +60,14 @@
       "nowDownload": "WebGAL を今すぐダウンロード"
     },
     "openSource": {
-      "title": "Open Source",
-      "line0": "WebGAL and WebGAL Terre are licensed under the MPL-2.0",
-      "line1": "Free to use for non-commercial and commercial projects"
+      "title": "オープンソース & 商業利用フリー",
+      "line0": "WebGAL および WebGAL Terre は MPL-2.0 の下でライセンスされている",
+      "line1": "商用・非商用問わず無料"
     },
     "multiplatform": {
-      "title": "Multi Platform",
-      "line0": "WebGAL Terre support Windows / macOS / Linux",
-      "line1": "Export game support Web / Windows / macOS / Linux / android"
+      "title": "マルチプラットフォームのサポート",
+      "line0": "WebGAL Terre が Windows / macOS / Linux での開発をサポート",
+      "line1": "開発したゲームは Web / Windows / macOS / Linux / Android でプレイできる"
     }
   },
   "download": {
@@ -89,34 +89,34 @@
     "systemRequirements": {
       "title": "システム要件",
       "system": "OS: Windows 10+ / macOS 10.14+ / Linux デスクトップ",
-      "browser": "Webブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
+      "browser": "Web ブラウザ: Google Chrome / Mozilla Firefox / Microsoft Edge / その他"
     },
     "readFirst": {
-      "title": "More Info",
+      "title": "詳細情報",
       "firstUse": {
-        "part0": "If this is your first using WebGAL, please see the",
-        "part1": "WebGAL Game Development Guide",
-        "part2": "learn to develop games"
+        "part0": "WebGAL を初めて使用する場合は、",
+        "part1": "WebGAL ゲーム開発ガイド",
+        "part2": "を参照してください。"
       },
-      "getHelp": "If you encounter problems during development, please see the game development guide first, and if you can't solve them, please go to GitHub or the community to get help",
+      "getHelp": "開発中に問題が発生した場合は、まずゲーム開発ガイドを参照し、解決できない場合は GitHub またはコミュニティにアクセスしてサポートを受けてください。",
       "webGALScriptBasics": {
-        "part0": "If you are developing in Visual Studio Code, you can install the",
-        "part1": "plugin for syntax highlighting"
+        "part0": "Visual Studio Code を使用して開発する場合、構文の強調表示のために",
+        "part1": "プラグインをインストールすることをお勧めします。"
       }
     }
   },
   "license": {
-    "title": "License",
+    "title": "ライセンス",
     "line0": {
-      "part0": "WebGAL and WebGAL Terre are licensed under the",
-      "part1": ""
+      "part0": "WebGAL および WebGAL Terre は",
+      "part1": "の下でライセンスされています。"
     },
-    "line1": "Free to use for non-commercial and commercial projects",
-    "line2": "Users must also comply with the following additional terms:",
+    "line1": "商用・非商用問わず利用することができます",
+    "line2": "ユーザーは、下記の内容を守って頂く必要があります。",
     "additional": {
-      "line0": "\" this Software \" means WebGAL and WebGAL Terre",
-      "line1": "Works developed using this software must be distributed with the WebGAL copyright notice intact",
-      "line2": "The use of this software is at the user's own risk"
+      "line0": "「本ソフトウェア」とは、WebGAL および WebGAL Terre を意味します。",
+      "line1": "本ソフトウェアを使用して開発された著作物は、配布時に WebGAL に関する著作権表示を記載する必要があります。",
+      "line2": "本ソフトウェアの使用に起因するすべてのリスクは、ユーザーが負担するものとします。"
     }
   },
   "footer": {
@@ -125,7 +125,7 @@
     "community": "コミュニティ",
     "developer": "開発者",
     "sponsor": "スポンサー",
-    "gameDevelopDoc": "Game Develop Document",
+    "gameDevelopDoc": "ゲーム開発ドキュメント",
     "contribute": "コントリビューション",
     "technical": "技術紹介",
     "qqGroup": "QQ グループ",
