@@ -1,4 +1,4 @@
-import { Game } from "./types"
+import { Game } from './types'
 
 /**
  * 根据文件名查询下载链接

@@ -64,6 +64,14 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     openGraph: {
       title: 'WebGAL',
       description: t('metadata.home.description'),
+      url: `/${locale}`,
+      images: [
+        {
+          url: '/images/opengraph-image.png',
+          width: 512,
+          height: 512,
+        },
+      ],
     },
     // twitter: {
     //   card: 'summary_large_image', // Twitter 大卡片

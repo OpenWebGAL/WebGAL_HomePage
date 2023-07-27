@@ -9,7 +9,7 @@
       "description": "WebGAL download page"
     },
     "games": {
-      "title": "WebGAL Games",
+      "title": "WebGAL GAMES",
       "description": "Games created using WebGAL"
     }
   },
@@ -92,7 +92,6 @@
       "browser": "Browser: Google Chrome / Mozilla Firefox / Microsoft Edge / Other modern browser"
     },
     "readFirst": {
-      "title": "More Info",
       "firstUse": {
         "part0": "If this is your first using WebGAL, please see the",
         "part1": "WebGAL Game Development Guide",

@@ -38,6 +38,14 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     openGraph: {
       title: t('metadata.download.title'),
       description: t('metadata.download.description'),
+      url: `/${locale}/download`,
+      images: [
+        {
+          url: '/images/opengraph-image.png',
+          width: 512,
+          height: 512,
+        },
+      ],
     },
   }
 }

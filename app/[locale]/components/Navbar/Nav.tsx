@@ -2,17 +2,18 @@ import { RiMenuFill } from 'react-icons/ri'
 import styles from './Nav.module.css'
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
-import { useDocsRedirect } from '@/hooks/useDocsRedirect'
+import useRedirect from '@/hooks/useRedirect'
 
 const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
 
   const t = useTranslations('common')
+  const { docsRedirect } = useRedirect()
 
   const navData = [
     { label: t('home'), href: `/${locale}/` },
     { label: t('download'), href: `/${locale}/download/` },
     { label: t('demo'), href: 'https://demo.openwebgal.com/' },
-    { label: t('document'), href: useDocsRedirect('/') },
+    { label: t('document'), href: docsRedirect('/') },
     { label: t('games'), href: `/${locale}/games/` }
   ]
 
