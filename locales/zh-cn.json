@@ -118,6 +118,9 @@
       "line2": "使用本软件所产生的一切风险由使用者自行承担"
     }
   },
+  "contributors": {
+    "contributors": "贡献者"
+  },
   "footer": {
     "products": "产品",
     "development": "开发",

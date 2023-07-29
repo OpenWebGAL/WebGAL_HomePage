@@ -25,3 +25,19 @@ export type WebgalTerreAssets = {
     linux?: string,
   },
 }
+
+export type Person = {
+  name: string,
+  avatarUrl: string,
+  url: string,
+}
+
+export type Sponsors = {
+  special: Person[] | null,
+  platinum: Person[] | null,
+  gold: Person[] | null,
+  silver: Person[] | null,
+  sponsors: Person[] | null,
+}
+
+export type Contributor = Person
