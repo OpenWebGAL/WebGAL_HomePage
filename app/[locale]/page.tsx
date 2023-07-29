@@ -14,7 +14,7 @@ export default function Home() {
       <Feat />
       <WebGALGames />
       <Features />
-      <div className={'max-w-screen-xl mx-auto px-4 py-8 gap-4 grid grid-cols-2 max-md:grid-cols-1'}>
+      <div className={'max-w-screen-xl mx-auto px-20 max-md:px-6 py-8 gap-4 grid grid-cols-2 max-md:grid-cols-1'}>
         <Sponsor />
         <Contributor />
       </div>
