@@ -7,7 +7,7 @@ about: The template for apply to showcase your game in WebGal official web's hom
 
 - Game ID: 
 - Game Title: 
-- Info of Developer/Team: 
+- Name of Developer/Team: 
 - Release Date: 
-- Publish Address (The link of the game) : 
-- Game Cover (616px * 353px, .webp) : 
+- Publish Address: 
+- Game Cover (616px * 353px) : 
