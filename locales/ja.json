@@ -118,6 +118,9 @@
       "line2": "本ソフトウェアの使用に起因するすべてのリスクは、ユーザーが負担するものとします。"
     }
   },
+  "contributors": {
+    "contributors": "Contributors"
+  },
   "footer": {
     "products": "プロダクト",
     "development": "エンジン開発",

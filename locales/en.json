@@ -118,6 +118,9 @@
       "line2": "The use of this software is at the user's own risk"
     }
   },
+  "contributors": {
+    "contributors": "Contributors"
+  },
   "footer": {
     "products": "Products",
     "development": "Development",
