@@ -1,5 +1,5 @@
 import PersonsCard from '@/app/components/PersonsCard/PersonsCard'
-import { contributiors } from '@/data/contributiorsData'
+import { contributiors } from '@/data/contributiors'
 import { useTranslations } from 'next-intl'
 
 const Contributor = () => {

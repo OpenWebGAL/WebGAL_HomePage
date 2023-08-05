@@ -1,5 +1,5 @@
 import PersonsCard from '@/app/components/PersonsCard/PersonsCard'
-import { sponsors } from '@/data/sponsorsData'
+import { sponsors } from '@/data/sponsors'
 
 const Sponsor = () => {
   return (

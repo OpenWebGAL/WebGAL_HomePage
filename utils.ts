@@ -38,13 +38,13 @@ export const parseReleaseNote = (body: string) => {
 
 /**
  * 游戏排序
- * @param gamesData 游戏数据
+ * @param games 游戏
  * @param sortBy 根据日期或标题排序
  * @returns 
  */
-export const gamesDataSort = (gamesData: Game[], sortBy: 'date' | 'title') => {
+export const gamesSort = (games: Game[], sortBy: 'date' | 'title') => {
   if (sortBy === 'date')
-    return [...gamesData].sort((a, b) => {
+    return [...games].sort((a, b) => {
       const dateA = Number(a.releaseDate.replaceAll('-', ''))
       const dateB = Number(b.releaseDate.replaceAll('-', ''))
       if (dateA < dateB)
@@ -54,8 +54,8 @@ export const gamesDataSort = (gamesData: Game[], sortBy: 'date' | 'title') => {
       return 0
     })
   if (sortBy === 'title')
-    return [...gamesData].sort((a, b) => {
+    return [...games].sort((a, b) => {
       return a.title.localeCompare(b.title, 'en')
     })
-  return gamesData
+  return games
 }

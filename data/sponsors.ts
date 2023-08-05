@@ -23,6 +23,10 @@ export const sponsors: Sponsors = {
       avatarUrl: 'https://avatars.githubusercontent.com/u/71590526?v=4',
       url: 'https://github.com/generalfreed',
     },
+    {
+      name: 'labiker(Iara)',
+      avatarUrl: 'https://avatars.githubusercontent.com/u/49630998?v=4',
+      url: 'https://github.com/labiker',
+    },
   ]
-
 }
