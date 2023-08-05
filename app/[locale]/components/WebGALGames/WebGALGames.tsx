@@ -1,8 +1,8 @@
 import Button from '@/app/components/Button/Button'
 import GameCard from '@/app/components/GameCard/GameCard'
-import { gamesData, homeGamesId } from '@/data/gamesData'
+import { games, homeGamesId } from '@/data/games'
 import useRedirect from '@/hooks/useRedirect'
-import { gamesDataSort } from '@/utils'
+import { gamesSort } from '@/utils'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 
@@ -19,7 +19,7 @@ const WebGALGames = () => {
       </div>
       <div className={'max-w-screen-xl mx-auto grid grid-cols-2 md:grid-cols-4 px-4 gap-4'}>
         {
-          gamesDataSort(gamesData, 'date')
+          gamesSort(games, 'date')
             .filter(game => homeGamesId.find(id => id === game.id))
             .map((game) =>
               <GameCard game={game} key={game.id} />

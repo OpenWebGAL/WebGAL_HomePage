@@ -4,7 +4,7 @@ import { Game } from '@/types'
 export const homeGamesId: Game['id'][] = ['elf-of-era-idols-project', 'hoshinasuzu']
 
 // 全部游戏
-export const gamesData: Game[] = [
+export const games: Game[] = [
   {
     id: 'hoshinasuzu',
     title: '铃色☆记忆',
