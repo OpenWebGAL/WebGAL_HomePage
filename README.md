@@ -23,6 +23,4 @@ Open `/data/sponsors.ts` and edit it.
 
 ## Add contributiors
 
-Download [get-webgal-contributors.js](https://gist.github.com/nini22P/1b6060b99f1833fdc1a557fc662e5774) and run `node get-webgal-contributors.js`.
-
-Open `/data/contributiors.ts`, replace with data fetched by the script.
+Run `node get-webgal-contributors.js`, open `/data/contributiors.ts`, replace with data fetched by the script.
