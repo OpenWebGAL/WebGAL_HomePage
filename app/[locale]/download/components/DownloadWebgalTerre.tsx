@@ -63,6 +63,18 @@ const DownloadWebgalTerre = () => {
           </Button>
         }
         {
+          (webgalTerreAssets?.downloadUrl.windowsArm64) &&
+          <Button terre>
+            <Link href={webgalTerreAssets?.downloadUrl.windowsArm64} target='_top'><RiMicrosoftFill />{t('downloadWindowsSetup')}</Link>
+          </Button>
+        }
+        {
+          (webgalTerreAssets?.downloadUrl.windowsArm64Setup) &&
+          <Button terre>
+            <Link href={webgalTerreAssets?.downloadUrl.windowsArm64Setup} target='_top'><RiMicrosoftFill />{t('downloadWindowsSetup')}</Link>
+          </Button>
+        }
+        {
           (webgalTerreAssets?.downloadUrl.macos) &&
           <Button terre>
             <Link href={webgalTerreAssets?.downloadUrl.macos} target='_top'><RiAppleFill />{t('downloadMacos')}</Link>
@@ -72,6 +84,12 @@ const DownloadWebgalTerre = () => {
           (webgalTerreAssets?.downloadUrl.linux) &&
           <Button terre>
             <Link href={webgalTerreAssets?.downloadUrl.linux} target='_top'><RiUbuntuFill />{t('downloadLinux')}</Link>
+          </Button>
+        }
+        {
+          (webgalTerreAssets?.downloadUrl.linuxArm64) &&
+          <Button terre>
+            <Link href={webgalTerreAssets?.downloadUrl.linuxArm64} target='_top'><RiUbuntuFill />{t('downloadLinux')}</Link>
           </Button>
         }
       </div>

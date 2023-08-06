@@ -21,8 +21,11 @@ export type WebgalTerreAssets = {
   downloadUrl: {
     windows?: string,
     windowsSetup?: string,
+    windowsArm64?: string,
+    windowsArm64Setup?: string,
     macos?: string,
     linux?: string,
+    linuxArm64?: string
   },
 }
 
