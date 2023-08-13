@@ -18,8 +18,11 @@ const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
             downloadUrl: {
               windows: findAssetsUrl(data.assets, 'Windows.*.zip'),
               windowsSetup: findAssetsUrl(data.assets, 'Windows_Setup.*.exe'),
+              windowsArm64: findAssetsUrl(data.assets, 'Windows_Arm64.*.zip'),
+              windowsArm64Setup: findAssetsUrl(data.assets, 'Windows_Arm64_Setup.*.exe'),
               macos: findAssetsUrl(data.assets, 'mac.*.zip'),
               linux: findAssetsUrl(data.assets, 'Linux.*.zip'),
+              linuxArm64: findAssetsUrl(data.assets, 'Linux_Arm64.*.zip')
             }
           }
         ))

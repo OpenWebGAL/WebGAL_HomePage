@@ -82,8 +82,11 @@
     "gitHubReleases": "前往 GitHub 下载",
     "downloadWindows": "下载 Windows 压缩包",
     "downloadWindowsSetup": "下载 Windows 安装文件",
+    "downloadWindowsArm64": "下载 Windows Arm64 压缩包",
+    "downloadWindowsArm64Setup": "下载 Windows Arm64 安装文件",
     "downloadMacos": "下载 macOS 压缩包",
     "downloadLinux": "下载 Linux 压缩包",
+    "downloadLinuxArm64": "下载 Linux Arm64 压缩包",
     "otherDownloadLink": "其它下载地址",
     "otherDownloadLinkInfo": "如果上面的下载地址下载速度比较慢，请尝试使用以下下载地址",
     "systemRequirements": {

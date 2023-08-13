@@ -82,8 +82,11 @@
     "gitHubReleases": "GitHub からダウンロード",
     "downloadWindows": "Windows zip をダウンロード",
     "downloadWindowsSetup": "Windows setup をダウンロード",
+    "downloadWindowsArm64": "Windows Arm64 zip をダウンロード",
+    "downloadWindowsArm64Setup": "Windows Arm64 setup をダウンロード",
     "downloadMacos": "macOS zip をダウンロード",
     "downloadLinux": "Linux zip をダウンロード",
+    "downloadLinuxArm64": "Linux Arm64 zip をダウンロード",
     "otherDownloadLink": "その他のダウンロードリンク",
     "otherDownloadLinkInfo": "上記のダウンロードリンクが遅い場合は、以下のダウンロードリンクをお試しください",
     "systemRequirements": {

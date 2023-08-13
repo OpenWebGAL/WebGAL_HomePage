@@ -82,8 +82,11 @@
     "gitHubReleases": "GitHub Releases",
     "downloadWindows": "Download Windows zip",
     "downloadWindowsSetup": "Download Windows setup",
+    "downloadWindowsArm64": "Download Windows Arm64 zip",
+    "downloadWindowsArm64Setup": "Download Windows Arm64 setup",
     "downloadMacos": "Download macOS zip",
     "downloadLinux": "Download Linux zip",
+    "downloadLinuxArm64": "Download Linux Arm64 zip",
     "otherDownloadLink": "Other Download Link",
     "otherDownloadLinkInfo": "If the above download address is slow, please try using the following download address",
     "systemRequirements": {
