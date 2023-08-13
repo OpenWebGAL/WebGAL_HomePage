@@ -21,6 +21,6 @@ Open `/data/games.ts` and add game.
 
 Open `/data/sponsors.ts` and edit it.
 
-## Add contributiors
+## Update contributiors
 
-Run `node get-webgal-contributors.js`, open `/data/contributiors.ts`, replace with data fetched by the script.
+Run `node update-contributors.js`.

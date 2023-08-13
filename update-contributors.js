@@ -1,3 +1,5 @@
+const fs = require('fs')
+
 const repos = [
   'MakinoharaShoko/WebGAL',
   'MakinoharaShoko/WebGAL_Terre',
@@ -44,6 +46,17 @@ const getContributors = async () => {
   )
 
   console.log(allContributors)
+
+  fs.readFile('./data/contributiors.ts', 'utf-8', (err, data) => {
+    if (err) throw err
+    else {
+      newFile = data.replace(/contributiors: Contributor\[\] = \[.*\]/s, `contributiors: Contributor[] = ${JSON.stringify(allContributors)}`).replaceAll('"', '\'')
+      fs.writeFile('./data/contributiors.ts', newFile, (err) => {
+        if (err) throw err
+        else console.log('Successfully!')
+      })
+    }
+  })
 }
 
 getContributors()
