@@ -28,7 +28,7 @@ const WebGALGames = () => {
       </div>
       <div className={'grid grid-cols-2 gap-4 px-4 max-w-fit mx-auto'}>
         <Button>
-          <Link href={docsRedirect('/guide/showcase-your-game')} target={'_blank'}> {t('showCaseYourGame')}</Link>
+          <Link href={docsRedirect('/showcase-your-game')} target={'_blank'}> {t('showCaseYourGame')}</Link>
         </Button>
         <Button>
           <Link href={`/${locale}/games/`}> {t('viewMoreGames')}</Link>
