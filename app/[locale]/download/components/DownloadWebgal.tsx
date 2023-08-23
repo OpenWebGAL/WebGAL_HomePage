@@ -5,7 +5,7 @@ import useWebgalAssets from '@/hooks/useWebgalAssets'
 import { i18n } from '@/i18n'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
-import { RiGithubFill, RiDownloadFill } from 'react-icons/ri'
+import { RiGithubFill } from 'react-icons/ri'
 import styles from '../Download.module.css'
 
 const DownloadWebgal = () => {
@@ -42,14 +42,8 @@ const DownloadWebgal = () => {
       </div>
       <div className={styles['card-button-gourp']}>
         <Button>
-          <Link href={webgalUrl} target={'_blank'} ><RiGithubFill />{t('gitHubReleases')}</Link>
+          <Link href={webgalUrl} target={'_blank'} ><RiGithubFill />GitHub</Link>
         </Button>
-        {
-          (webgalAssets?.downloadUrl) &&
-          <Button>
-            <Link href={webgalAssets?.downloadUrl} target='_top'><RiDownloadFill />{t('downloadWebgal')}</Link>
-          </Button>
-        }
       </div>
     </div>
   )

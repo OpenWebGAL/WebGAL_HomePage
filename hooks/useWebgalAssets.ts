@@ -15,7 +15,6 @@ const useWebgalAssets = (webgalApiUrl: string) => {
             version: data.tag_name,
             releaseTime: data.published_at,
             releaseNote: parseReleaseNote(data.body),
-            downloadUrl: data.assets[0].browser_download_url
           }
         ))
     } catch (error) {
