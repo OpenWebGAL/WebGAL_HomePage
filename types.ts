@@ -17,15 +17,7 @@ export type WebgalTerreAssets = {
   version: string,
   releaseTime: string,
   releaseNote: string[][],
-  downloadUrl: {
-    windows?: string,
-    windowsSetup?: string,
-    windowsArm64?: string,
-    windowsArm64Setup?: string,
-    macos?: string,
-    linux?: string,
-    linuxArm64?: string
-  },
+  downloadUrl: { platform: string, url: string }[],
 }
 
 export type Person = {

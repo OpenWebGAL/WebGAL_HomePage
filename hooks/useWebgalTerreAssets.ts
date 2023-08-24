@@ -15,15 +15,16 @@ const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
             version: data.tag_name,
             releaseTime: data.published_at,
             releaseNote: parseReleaseNote(data.body),
-            downloadUrl: {
-              windows: findAssetsUrl(data.assets, 'Windows.*.zip'),
-              windowsSetup: findAssetsUrl(data.assets, 'Windows_Setup.*.exe'),
-              windowsArm64: findAssetsUrl(data.assets, 'Windows_Arm64.*.zip'),
-              windowsArm64Setup: findAssetsUrl(data.assets, 'Windows_Arm64_Setup.*.exe'),
-              macos: findAssetsUrl(data.assets, 'mac.*.zip'),
-              linux: findAssetsUrl(data.assets, 'Linux.*.zip'),
-              linuxArm64: findAssetsUrl(data.assets, 'Linux_Arm64.*.zip')
-            }
+            downloadUrl: [
+              { platform: 'windows', url: findAssetsUrl(data.assets, 'Windows.*.zip') },
+              { platform: 'windowsSetup', url: findAssetsUrl(data.assets, 'Windows_Setup.*.exe') },
+              { platform: 'windowsArm64', url: findAssetsUrl(data.assets, 'Windows_Arm64.*.zip') },
+              { platform: 'windowsArm64Setup', url: findAssetsUrl(data.assets, 'Windows_Arm64_Setup.*.exe') },
+              { platform: 'macos', url: findAssetsUrl(data.assets, 'mac.*.zip') },
+              { platform: 'linux', url: findAssetsUrl(data.assets, 'Linux.*.zip') },
+              { platform: 'linuxArm64', url: findAssetsUrl(data.assets, 'Linux_Arm64.*.zip') },
+            ]
+
           }
         ))
     } catch (error) {
