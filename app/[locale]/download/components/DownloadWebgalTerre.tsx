@@ -27,6 +27,8 @@ const DownloadWebgalTerre = () => {
         ? webgalTerreAssets?.releaseNote[1]
         : null
 
+  const isZh = locale === 'zh-cn'
+  const ghproxyStr = 'https://ghproxy.com/'
   return (
     <div className={styles.card}>
       <h2 className={`${styles['card-title']} border-terre`}>{t('webgalTerre')}</h2>
@@ -93,6 +95,60 @@ const DownloadWebgalTerre = () => {
           </Button>
         }
       </div>
+      {isZh&&<div className={styles.cndownload}>
+          <div style={{
+            marginBottom:'15px'
+          }}>
+              中国大陆（内地）地区的用户如果使用上面的链接下载速度较慢，可以使用以下代理链接：
+          </div>
+        <div className={styles['card-button-gourp']}>
+          <Button terre>
+            <Link href={webgalTerreUrl} target={'_blank'}><RiGithubFill />{t('gitHubReleases')}</Link>
+          </Button>
+          {
+            (webgalTerreAssets?.downloadUrl.windows) &&
+              <Button terre>
+                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windows} target='_top'><RiMicrosoftFill />{t('downloadWindows')}</Link>
+              </Button>
+          }
+          {
+            (webgalTerreAssets?.downloadUrl.windowsSetup) &&
+              <Button terre>
+                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windowsSetup} target='_top'><RiMicrosoftFill />{t('downloadWindowsSetup')}</Link>
+              </Button>
+          }
+          {
+            (webgalTerreAssets?.downloadUrl.windowsArm64) &&
+              <Button terre>
+                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windowsArm64} target='_top'><RiMicrosoftFill />{t('downloadWindowsArm64')}</Link>
+              </Button>
+          }
+          {
+            (webgalTerreAssets?.downloadUrl.windowsArm64Setup) &&
+              <Button terre>
+                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windowsArm64Setup} target='_top'><RiMicrosoftFill />{t('downloadWindowsArm64Setup')}</Link>
+              </Button>
+          }
+          {
+            (webgalTerreAssets?.downloadUrl.macos) &&
+              <Button terre>
+                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.macos} target='_top'><RiAppleFill />{t('downloadMacos')}</Link>
+              </Button>
+          }
+          {
+            (webgalTerreAssets?.downloadUrl.linux) &&
+              <Button terre>
+                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.linux} target='_top'><RiUbuntuFill />{t('downloadLinux')}</Link>
+              </Button>
+          }
+          {
+            (webgalTerreAssets?.downloadUrl.linuxArm64) &&
+              <Button terre>
+                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.linuxArm64} target='_top'><RiUbuntuFill />{t('downloadLinuxArm64')}</Link>
+              </Button>
+          }
+        </div>
+      </div>}
     </div>
   )
 }

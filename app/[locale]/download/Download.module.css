@@ -37,3 +37,9 @@
 .card ol {
   @apply list-decimal list-inside pl-4;
 }
+
+.cndownload{
+  border-radius: 4px;
+  background: rgba(0, 92, 175, 0.1);
+  padding: 15px;
+}

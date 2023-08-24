@@ -15,9 +15,9 @@ const Download = ({ params: { locale } }: { params: { locale: string } }) => {
         <ReadFirst />
         <DownloadWebgalTerre />
         <DownloadWebgal />
-        {
-          (locale === 'zh-cn') && <OtherDownloadLink />
-        }
+        {/*{*/}
+        {/*  (locale === 'zh-cn') && <OtherDownloadLink />*/}
+        {/*}*/}
         <SystemRequirements />
         <License />
       </div>
