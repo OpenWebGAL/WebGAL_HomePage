@@ -27,8 +27,26 @@ const DownloadWebgalTerre = () => {
         ? webgalTerreAssets?.releaseNote[1]
         : null
 
+  const platformMap = [
+    { platform: 'windows', icon: <RiMicrosoftFill />, label: t('downloadWindows') },
+    { platform: 'windowsSetup', icon: <RiMicrosoftFill />, label: t('downloadWindowsSetup') },
+    { platform: 'windowsArm64', icon: <RiMicrosoftFill />, label: t('downloadWindowsArm64') },
+    { platform: 'windowsArm64Setup', icon: <RiMicrosoftFill />, label: t('downloadWindowsArm64Setup') },
+    { platform: 'macos', icon: <RiAppleFill />, label: t('downloadMacos') },
+    { platform: 'linux', icon: <RiUbuntuFill />, label: t('downloadLinux') },
+    { platform: 'linuxArm64', icon: <RiUbuntuFill />, label: t('downloadLinuxArm64') },
+  ]
+
+  const downloadUrls = webgalTerreAssets?.downloadUrl
+    .map((item) => {
+      const test = platformMap.find(platform => item.platform === platform.platform)
+      if (test)
+        return { url: item.url, ...test }
+    })
+
   const isZh = locale === 'zh-cn'
   const ghproxyStr = 'https://ghproxy.com/'
+
   return (
     <div className={styles.card}>
       <h2 className={`${styles['card-title']} border-terre`}>{t('webgalTerre')}</h2>
@@ -53,102 +71,36 @@ const DownloadWebgalTerre = () => {
           <Link href={webgalTerreUrl} target={'_blank'}><RiGithubFill />{t('gitHubReleases')}</Link>
         </Button>
         {
-          (webgalTerreAssets?.downloadUrl.windows) &&
-          <Button terre>
-            <Link href={webgalTerreAssets?.downloadUrl.windows} target='_top'><RiMicrosoftFill />{t('downloadWindows')}</Link>
-          </Button>
+          downloadUrls &&
+          downloadUrls.map((item) =>
+            item?.url &&
+            <Button terre key={item.platform}>
+              <Link href={item.url} target='_top'>{item.icon}{item.label}</Link>
+            </Button>
+          )
         }
-        {
-          (webgalTerreAssets?.downloadUrl.windowsSetup) &&
-          <Button terre>
-            <Link href={webgalTerreAssets?.downloadUrl.windowsSetup} target='_top'><RiMicrosoftFill />{t('downloadWindowsSetup')}</Link>
-          </Button>
-        }
-        {
-          (webgalTerreAssets?.downloadUrl.windowsArm64) &&
-          <Button terre>
-            <Link href={webgalTerreAssets?.downloadUrl.windowsArm64} target='_top'><RiMicrosoftFill />{t('downloadWindowsArm64')}</Link>
-          </Button>
-        }
-        {
-          (webgalTerreAssets?.downloadUrl.windowsArm64Setup) &&
-          <Button terre>
-            <Link href={webgalTerreAssets?.downloadUrl.windowsArm64Setup} target='_top'><RiMicrosoftFill />{t('downloadWindowsArm64Setup')}</Link>
-          </Button>
-        }
-        {
-          (webgalTerreAssets?.downloadUrl.macos) &&
-          <Button terre>
-            <Link href={webgalTerreAssets?.downloadUrl.macos} target='_top'><RiAppleFill />{t('downloadMacos')}</Link>
-          </Button>
-        }
-        {
-          (webgalTerreAssets?.downloadUrl.linux) &&
-          <Button terre>
-            <Link href={webgalTerreAssets?.downloadUrl.linux} target='_top'><RiUbuntuFill />{t('downloadLinux')}</Link>
-          </Button>
-        }
-        {
-          (webgalTerreAssets?.downloadUrl.linuxArm64) &&
-          <Button terre>
-            <Link href={webgalTerreAssets?.downloadUrl.linuxArm64} target='_top'><RiUbuntuFill />{t('downloadLinuxArm64')}</Link>
-          </Button>
-        }
+
       </div>
-      {isZh&&<div className={styles.cndownload}>
-          <div style={{
-            marginBottom:'15px'
-          }}>
-              中国大陆（内地）地区的用户如果使用上面的链接下载速度较慢，可以使用以下代理链接：
-          </div>
-        <div className={styles['card-button-gourp']}>
-          <Button terre>
-            <Link href={webgalTerreUrl} target={'_blank'}><RiGithubFill />{t('gitHubReleases')}</Link>
-          </Button>
-          {
-            (webgalTerreAssets?.downloadUrl.windows) &&
-              <Button terre>
-                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windows} target='_top'><RiMicrosoftFill />{t('downloadWindows')}</Link>
-              </Button>
-          }
-          {
-            (webgalTerreAssets?.downloadUrl.windowsSetup) &&
-              <Button terre>
-                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windowsSetup} target='_top'><RiMicrosoftFill />{t('downloadWindowsSetup')}</Link>
-              </Button>
-          }
-          {
-            (webgalTerreAssets?.downloadUrl.windowsArm64) &&
-              <Button terre>
-                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windowsArm64} target='_top'><RiMicrosoftFill />{t('downloadWindowsArm64')}</Link>
-              </Button>
-          }
-          {
-            (webgalTerreAssets?.downloadUrl.windowsArm64Setup) &&
-              <Button terre>
-                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.windowsArm64Setup} target='_top'><RiMicrosoftFill />{t('downloadWindowsArm64Setup')}</Link>
-              </Button>
-          }
-          {
-            (webgalTerreAssets?.downloadUrl.macos) &&
-              <Button terre>
-                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.macos} target='_top'><RiAppleFill />{t('downloadMacos')}</Link>
-              </Button>
-          }
-          {
-            (webgalTerreAssets?.downloadUrl.linux) &&
-              <Button terre>
-                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.linux} target='_top'><RiUbuntuFill />{t('downloadLinux')}</Link>
-              </Button>
-          }
-          {
-            (webgalTerreAssets?.downloadUrl.linuxArm64) &&
-              <Button terre>
-                  <Link href={ghproxyStr+webgalTerreAssets?.downloadUrl.linuxArm64} target='_top'><RiUbuntuFill />{t('downloadLinuxArm64')}</Link>
-              </Button>
-          }
+      {
+        isZh && downloadUrls && <div className={styles.cndownload}>
+          <details className='space-y-4'>
+            <summary className='cursor-pointer text-terre select-none'>
+              中国大陆（内地）地区的用户如果使用上面的链接下载速度较慢，请点这里使用代理链接
+            </summary>
+            <div className={styles['card-button-gourp']}>
+              {
+                downloadUrls &&
+                downloadUrls.map((item) =>
+                  item?.url &&
+                  <Button terre key={item.platform}>
+                    <Link href={ghproxyStr + item.url} target='_top'>{item.icon}{item.label}</Link>
+                  </Button>
+                )
+              }
+            </div>
+          </details>
         </div>
-      </div>}
+      }
     </div>
   )
 }
