@@ -10,13 +10,13 @@ export type Game = {
 export type WebgalAssets = {
   version: string,
   releaseTime: string,
-  releaseNote: string[][],
+  releaseNote: string[],
 }
 
 export type WebgalTerreAssets = {
   version: string,
   releaseTime: string,
-  releaseNote: string[][],
+  releaseNote: string[],
   downloadUrl: { platform: string, url: string }[],
 }
 

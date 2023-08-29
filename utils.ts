@@ -1,4 +1,7 @@
+import { remark } from 'remark'
 import { Game } from './types'
+import remarkHtml from 'remark-html'
+import remarkGfm from 'remark-gfm'
 
 /**
  * 根据文件名查询下载链接
@@ -15,25 +18,28 @@ export const findAssetsUrl = (assets: any[], arg: string) => {
   }
 }
 
-/**
- * 解析发布日志
- * @param body 
- * @returns 
- */
-export const parseReleaseNote = (body: string) => {
+const mdToHtml = async (md: string) => {
+  const processedContent = await remark()
+    .use(remarkHtml)
+    .use(remarkGfm)
+    .process(md)
+
+  return processedContent.value.toString()
+}
+
+export const parseReleaseNotes = async (body: string) => {
   try {
-    return body
-      .split(/\r\n\r\n## /)
-      .filter(item => item !== '')
-      .map(item =>
-        item
-          .split(/\r\n### .*\r\n/)[1]
-          .split('\r\n')
-          .filter(item => item !== '')
-      )
+    const releaseNotes = body
+      .split(/\r\n## /)
+      .map(item => item.split(/\r\n### .*\r\n/)[1])
+
+    const releaseNotesHtml = await Promise.all(releaseNotes.map(async item => await mdToHtml(item)))
+
+    return releaseNotesHtml
   } catch (error) {
     return []
   }
+
 }
 
 /**

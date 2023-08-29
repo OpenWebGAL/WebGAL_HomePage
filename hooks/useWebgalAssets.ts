@@ -1,5 +1,5 @@
 import { WebgalAssets } from '@/types'
-import { parseReleaseNote } from '@/utils'
+import { parseReleaseNotes } from '@/utils'
 import { useEffect, useState } from 'react'
 
 const useWebgalAssets = (webgalApiUrl: string) => {
@@ -10,11 +10,11 @@ const useWebgalAssets = (webgalApiUrl: string) => {
     try {
       fetch(webgalApiUrl)
         .then(response => response.json())
-        .then(data => setWebgalAssets(
+        .then(async data => setWebgalAssets(
           {
             version: data.tag_name,
             releaseTime: data.published_at,
-            releaseNote: parseReleaseNote(data.body),
+            releaseNote: await parseReleaseNotes(data.body),
           }
         ))
     } catch (error) {

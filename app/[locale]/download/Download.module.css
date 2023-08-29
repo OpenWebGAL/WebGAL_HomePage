@@ -19,7 +19,7 @@
 }
 
 .card-title {
-  @apply text-xl font-medium border-b-2;
+  @apply text-2xl font-medium border-b-2;
 }
 
 .card-info {
@@ -43,4 +43,12 @@
   background: rgba(0, 92, 175, 0.1);
   padding: 16px;
   margin-top: 8px;
+}
+
+.release-note {
+  @apply px-4 py-2 font-light;
+}
+
+.release-note>h4 {
+  @apply font-medium;
 }

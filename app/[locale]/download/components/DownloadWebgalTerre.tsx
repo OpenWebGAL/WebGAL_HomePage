@@ -54,16 +54,14 @@ const DownloadWebgalTerre = () => {
         {/* <div className={styles.corner}>
           <p className={`${styles['corner-text']} bg-terre`}>{t('recommend')}</p>
         </div> */}
-        <p>{t('version')}: {webgalTerreAssets?.version ? webgalTerreAssets?.version : t('fetching')}</p>
-        <p>{t('releaseTime')}: {webgalTerreAssets?.releaseTime ? webgalTerreAssets?.releaseTime.split('T')[0] : t('fetching')} </p>
+        <p><strong>{t('version')}:</strong> {webgalTerreAssets?.version ? webgalTerreAssets?.version : t('fetching')}</p>
+        <p><strong>{t('releaseTime')}:</strong> {webgalTerreAssets?.releaseTime ? webgalTerreAssets?.releaseTime.split('T')[0] : t('fetching')} </p>
         <div>
-          <p>{t('releaseNote')}: {!(releaseNote) && t('fetching')}</p>
-          <ul className={styles.list}>
-            {
-              releaseNote &&
-              releaseNote.map((item, index) => <li key={index}>{item}</li>)
-            }
-          </ul>
+          <p><strong>{t('releaseNote')}:</strong> {!(releaseNote) && t('fetching')}</p>
+          {
+            releaseNote &&
+            < div dangerouslySetInnerHTML={{ __html: releaseNote }} className={styles['release-note']} />
+          }
         </div>
       </div>
       <div className={styles['card-button-gourp']}>
