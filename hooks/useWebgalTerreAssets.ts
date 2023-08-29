@@ -1,5 +1,5 @@
 import { WebgalTerreAssets } from '@/types'
-import { findAssetsUrl, parseReleaseNote } from '@/utils'
+import { findAssetsUrl, parseReleaseNotes } from '@/utils'
 import { useState, useEffect } from 'react'
 
 const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
@@ -10,11 +10,11 @@ const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
     try {
       fetch(webgalTerreApiUrl)
         .then(response => response.json())
-        .then(data => setWebgalTerreAssets(
+        .then(async data => setWebgalTerreAssets(
           {
             version: data.tag_name,
             releaseTime: data.published_at,
-            releaseNote: parseReleaseNote(data.body),
+            releaseNote: await parseReleaseNotes(data.body),
             downloadUrl: [
               { platform: 'windows', url: findAssetsUrl(data.assets, 'Windows.*.zip') },
               { platform: 'windowsSetup', url: findAssetsUrl(data.assets, 'Windows_Setup.*.exe') },

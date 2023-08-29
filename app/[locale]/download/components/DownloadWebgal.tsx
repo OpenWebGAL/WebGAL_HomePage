@@ -28,16 +28,14 @@ const DownloadWebgal = () => {
     <div className={styles.card}>
       <h2 className={`${styles['card-title']} border-webgal`}>{t('webgal')}</h2>
       <div className={styles['card-info']}>
-        <p>{t('version')}: {webgalAssets?.version ? webgalAssets?.version : t('fetching')}</p>
-        <p>{t('releaseTime')}: {webgalAssets?.releaseTime ? webgalAssets?.releaseTime.split('T')[0] : t('fetching')} </p>
+        <p><strong>{t('version')}:</strong> {webgalAssets?.version ? webgalAssets?.version : t('fetching')}</p>
+        <p><strong>{t('releaseTime')}:</strong> {webgalAssets?.releaseTime ? webgalAssets?.releaseTime.split('T')[0] : t('fetching')} </p>
         <div>
-          <p>{t('releaseNote')}: {!(releaseNote) && t('fetching')}</p>
-          <ul className={styles.list}>
-            {
-              releaseNote &&
-              releaseNote.map((item, index) => <li key={index}>{item}</li>)
-            }
-          </ul>
+          <p><strong>{t('releaseNote')}:</strong> {!(releaseNote) && t('fetching')}</p>
+          {
+            releaseNote &&
+            < div dangerouslySetInnerHTML={{ __html: releaseNote }} className={styles['release-note']} />
+          }
         </div>
       </div>
       <div className={styles['card-button-gourp']}>
