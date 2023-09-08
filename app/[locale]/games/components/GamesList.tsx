@@ -1,5 +1,5 @@
 import { games } from '@/data/games'
-import GameCard from '@/app/components/GameCard/GameCard'
+import GameCard from '@/components/GameCard/GameCard'
 import { gamesSort } from '@/utils'
 
 const GamesList = () => {

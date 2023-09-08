@@ -1,4 +1,4 @@
-import Button from '@/app/components/Button/Button'
+import Button from '@/components/Button/Button'
 import { useLocale, useTranslations } from 'next-intl'
 import Link from 'next/link'
 import styles from './Features.module.css'
