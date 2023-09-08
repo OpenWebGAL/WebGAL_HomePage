@@ -5,7 +5,7 @@
       "keywords": "Visual Novel,galgame,Game Engine,Visual Editor"
     },
     "download": {
-      "title": "Download WebGAL",
+      "title": "WebGAL Download",
       "description": "WebGAL download page"
     },
     "games": {
@@ -71,7 +71,7 @@
     }
   },
   "download": {
-    "downloadWebgal": "Download WebGAL",
+    "downloadWebgal": "WebGAL Download",
     "recommend": "Recommend",
     "webgal": "WebGAL",
     "webgalTerre": "WebGAL Terre Visual Editor",

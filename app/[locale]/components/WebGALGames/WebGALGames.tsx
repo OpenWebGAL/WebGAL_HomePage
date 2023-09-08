@@ -1,5 +1,5 @@
-import Button from '@/app/components/Button/Button'
-import GameCard from '@/app/components/GameCard/GameCard'
+import Button from '@/components/Button/Button'
+import GameCard from '@/components/GameCard/GameCard'
 import { games, homeGamesId } from '@/data/games'
 import useRedirect from '@/hooks/useRedirect'
 import { gamesSort } from '@/utils'

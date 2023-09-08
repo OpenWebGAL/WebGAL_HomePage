@@ -5,7 +5,7 @@
       "keywords": "视觉小说,美少女游戏,galgame,游戏引擎,可视化编辑器"
     },
     "download": {
-      "title": "下载 WebGAL",
+      "title": "WebGAL 下载",
       "description": "WebGAL 下载页面"
     },
     "games": {
@@ -71,7 +71,7 @@
     }
   },
   "download": {
-    "downloadWebgal": "下载 WebGAL",
+    "downloadWebgal": "WebGAL 下载",
     "recommend": "推荐",
     "webgal": "WebGAL",
     "webgalTerre": "WebGAL Terre 可视化编辑器",

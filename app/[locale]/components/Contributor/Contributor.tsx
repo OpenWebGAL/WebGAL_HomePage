@@ -1,4 +1,4 @@
-import PersonsCard from '@/app/components/PersonsCard/PersonsCard'
+import PersonsCard from '@/components/PersonsCard/PersonsCard'
 import { contributiors } from '@/data/contributiors'
 import { useTranslations } from 'next-intl'
 
