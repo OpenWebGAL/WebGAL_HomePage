@@ -45,6 +45,12 @@ const Footer = () => {
         { href: docsRedirect('/sponsor'), label: t('sponsor') },
       ],
     },
+    {
+      title: t('links'),
+      links: [
+        { href: 'https://www.cngal.org/', label: 'CnGal' },
+      ],
+    },
   ]
 
   return (
