@@ -1,4 +1,4 @@
-import { Sponsors } from '@/types'
+import {Sponsors} from '@/types'
 
 export const sponsors: Sponsors = {
   special: null,
@@ -8,6 +8,11 @@ export const sponsors: Sponsors = {
       name: 'T2-official (T2)',
       avatarUrl: 'https://avatars.githubusercontent.com/u/91712707?v=4',
       url: 'https://github.com/T2-official',
+    },
+    {
+      name: 'Alex Shan',
+      avatarUrl: 'https://avatars.githubusercontent.com/u/36291011?v=4',
+      url: 'https://github.com/Shan-mx',
     },
   ],
   silver: [
