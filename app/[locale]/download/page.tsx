@@ -5,6 +5,7 @@ import SystemRequirements from './components/SystemRequirements'
 import DownloadTitle from './components/DownloadTitle'
 import ReadFirst from './components/ReadFirst'
 import License from './components/License'
+import { siteConfig } from '@/site.config'
 
 const Download = () => {
   return (
@@ -29,6 +30,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const t = createTranslator({ locale, messages })
 
   return {
+    metadataBase: new URL(siteConfig.baseUrl),
     title: t('metadata.download.title'),
     description: t('metadata.download.description'),
     openGraph: {

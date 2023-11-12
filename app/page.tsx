@@ -1,7 +1,9 @@
 import Redirect from '@/components/Redirect/Redirect'
+import { siteConfig } from '@/site.config'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.baseUrl),
   title: 'WebGAL',
   description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎 | 未だかつてない Web ベースビジュアルノベルエンジン',
   openGraph: {

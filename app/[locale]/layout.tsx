@@ -1,5 +1,5 @@
 import { Noto_Sans_SC } from 'next/font/google'
-import { NextIntlClientProvider, createTranslator } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { i18n } from '../../i18n'
 import Footer from './components/Footer/Footer'
@@ -49,32 +49,4 @@ export default async function LangLayout({ children, params: { locale } }
       </body>
     </html>
   )
-}
-
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const messages = (await import(`../../locales/${locale}.json`)).default
-
-  const t = createTranslator({ locale, messages })
-
-  return {
-    metadataBase: new URL('https://openwebgal.com'),
-    title: 'WebGAL',
-    description: t('metadata.home.description'),
-    keywords: t('metadata.home.keywords'),
-    openGraph: {
-      title: 'WebGAL',
-      description: t('metadata.home.description'),
-      url: `/${locale}`,
-      images: [
-        {
-          url: '/images/opengraph-image.png',
-          width: 512,
-          height: 512,
-        },
-      ],
-    },
-    // twitter: {
-    //   card: 'summary_large_image', // Twitter 大卡片
-    // },
-  }
 }

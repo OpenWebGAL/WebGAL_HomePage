@@ -1,8 +1,8 @@
-
 import GamesTitle from './components/GamesTitle'
 import GamesList from './components/GamesList'
 import GamesDisclaimer from './components/GamesDisclaimer'
 import { createTranslator } from 'next-intl'
+import { siteConfig } from '@/site.config'
 
 const Games = () => {
 
@@ -25,6 +25,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const t = createTranslator({ locale, messages })
 
   return {
+    metadataBase: new URL(siteConfig.baseUrl),
     title: t('metadata.games.title'),
     description: t('metadata.games.description'),
     openGraph: {

@@ -1,3 +1,5 @@
+'use client'
+
 import { RiAndroidLine, RiAppleLine, RiLightbulbFlashLine, RiMicrosoftLine, RiUbuntuLine } from 'react-icons/ri'
 import styles from './Feat.module.css'
 import { useTranslations } from 'next-intl'
