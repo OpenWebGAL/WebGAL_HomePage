@@ -1,7 +1,7 @@
-import { Game } from '@/types'
+import {Game} from '@/types'
 
 // 首页显示的游戏id，建议最多只放4个
-export const homeGamesId: Game['id'][] = ['elf-of-era-idols-project', 'hoshinasuzu', 'observer']
+export const homeGamesId: Game['id'][] = ['elf-of-era-idols-project', 'hoshinasuzu', 'observer','agnostic-requiem']
 
 // 全部游戏
 export const games: Game[] = [
@@ -10,7 +10,7 @@ export const games: Game[] = [
     title: '铃色☆记忆',
     developer: '星奈组',
     releaseDate: '2022-06-28',
-    url: 'http://hoshinasuzu.cn/',
+    url: 'https://hoshinasuzu.cc/suzu-memory/',
     cover: 'suzu.webp',
   },
   {
@@ -28,5 +28,13 @@ export const games: Game[] = [
     releaseDate: '2023-11-12',
     url: 'https://digigame-webgal.onrender.com/',
     cover: 'observer.webp',
+  },
+  {
+    id: 'agnostic-requiem',
+    title: 'Agnostic Requiem',
+    developer: 'WasabiStone',
+    releaseDate: '2023-11-5',
+    url: 'https://store.steampowered.com/app/2645190/Agnostic_Requiem/',
+    cover: 'agnostic-requiem.png',
   },
 ]
