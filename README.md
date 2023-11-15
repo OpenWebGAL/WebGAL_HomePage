@@ -24,4 +24,3 @@ Open `/data/sponsors.ts` and edit it.
 ## Update contributiors
 
 Run `node update-contributors.js`.
-
