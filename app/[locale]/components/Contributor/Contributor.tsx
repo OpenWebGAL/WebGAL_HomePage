@@ -1,3 +1,5 @@
+'use client'
+
 import PersonsCard from '@/components/PersonsCard/PersonsCard'
 import { contributiors } from '@/data/contributiors'
 import { useTranslations } from 'next-intl'

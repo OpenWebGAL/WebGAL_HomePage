@@ -1,3 +1,5 @@
+'use client'
+
 import Button from '@/components/Button/Button'
 import GameCard from '@/components/GameCard/GameCard'
 import { games, homeGamesId } from '@/data/games'

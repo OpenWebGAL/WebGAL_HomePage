@@ -1,0 +1,36 @@
+.card {
+  @apply bg-white drop-shadow rounded-md;
+  @apply hover:drop-shadow-md;
+}
+
+.imageContainer {
+  @apply rounded-t-md aspect-video bg-gray-100;
+}
+
+.image {
+  @apply w-max h-auto shadow-inner rounded-t-md aspect-video;
+}
+
+.info {
+  @apply p-4 pb-0;
+}
+
+.title {
+  @apply w-full text-lg text-gray-700 text-ellipsis overflow-hidden break-words whitespace-nowrap
+}
+
+.subinfo {
+  @apply p-4 flex;
+}
+
+.tags {
+  @apply flex-auto flex gap-2;
+}
+
+.tag {
+  @apply bg-gray-100 text-sm px-1.5 py-0.5 rounded-md break-words whitespace-nowrap h-fit;
+}
+
+.extra {
+  @apply text-sm text-gray-500 text-right;
+}

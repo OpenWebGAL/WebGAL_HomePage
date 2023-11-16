@@ -11,6 +11,10 @@
     "games": {
       "title": "WebGAL GAMES",
       "description": "Games created using WebGAL"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "WebGAL blog page"
     }
   },
   "common": {
@@ -18,7 +22,8 @@
     "download": "DOWNLOAD",
     "demo": "DEMO",
     "document": "DOCUMENT",
-    "games": "GAMES"
+    "games": "GAMES",
+    "blog": "BLOG"
   },
   "home": {
     "title": "WebGAL",

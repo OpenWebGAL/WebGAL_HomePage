@@ -1,7 +1,9 @@
 import Redirect from '@/components/Redirect/Redirect'
+import { siteConfig } from '@/site.config'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.baseUrl),
   title: 'WebGAL Download',
   description: 'WebGAL Download',
   openGraph: {

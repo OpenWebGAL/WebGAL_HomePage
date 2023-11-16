@@ -1,0 +1,5 @@
+.posts-grid {
+  @apply px-4 grid grid-cols-3 gap-4;
+  @apply max-lg:grid-cols-2;
+  @apply max-sm:grid-cols-1;
+}
