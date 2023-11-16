@@ -23,7 +23,7 @@ export default function Home() {
 }
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const messages = (await import(`../../locales/${locale}.json`)).default
+  const messages = (await import(`/locales/${locale}.json`)).default
 
   const t = createTranslator({ locale, messages })
 

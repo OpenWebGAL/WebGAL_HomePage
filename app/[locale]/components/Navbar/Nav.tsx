@@ -9,12 +9,13 @@ const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
   const t = useTranslations('common')
   const { docsRedirect } = useRedirect()
 
-  const navData = [
+  const navData: { label: string, href: string }[] = [
     { label: t('home'), href: `/${locale}/` },
+    { label: t('blog'), href: `/${locale}/blog/` },
     { label: t('download'), href: `/${locale}/download/` },
     { label: t('demo'), href: 'https://demo.openwebgal.com/' },
     { label: t('document'), href: docsRedirect('/') },
-    { label: t('games'), href: `/${locale}/games/` }
+    { label: t('games'), href: `/${locale}/games/` },
   ]
 
   return (
@@ -25,7 +26,7 @@ const Nav = ({ locale, pathname }: { locale: string, pathname: string }) => {
       <div className={styles.navLinks}>
         {
           navData.map((link) => {
-            const isActive = pathname === link.href
+            const isActive = (link.href === `/${locale}/`) ? pathname === link.href : pathname.includes(link.href)
             return (
               <Link
                 key={link.label}

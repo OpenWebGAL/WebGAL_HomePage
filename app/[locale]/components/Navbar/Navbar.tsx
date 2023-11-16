@@ -24,7 +24,7 @@ const Navbar = () => {
           <h1>WebGAL</h1>
         </Link>
 
-        <div className={'flex flex-row-reverse items-center md:flex-row'}>
+        <div className={'flex flex-row-reverse items-center min-[900px]:flex-row'}>
 
           <Nav locale={locale} pathname={pathname} />
 

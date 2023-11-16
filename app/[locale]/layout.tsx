@@ -20,7 +20,7 @@ export default async function LangLayout({ children, params: { locale } }
 
   let locales
   try {
-    locales = (await import(`../../locales/${locale}.json`)).default
+    locales = (await import(`/locales/${locale}.json`)).default
   } catch (error) {
     notFound()
   }

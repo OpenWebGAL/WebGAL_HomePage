@@ -3,11 +3,17 @@
 }
 
 .card:hover {
-  @apply drop-shadow-md -translate-y-0.5;
+  @apply drop-shadow-md;
 }
 
 .link {
   @apply flex flex-col items-center;
+}
+
+.imageContainer {
+  @apply rounded-t-md aspect-video bg-gray-100;
+  width: -moz-available;
+  width: -webkit-fill-available;
 }
 
 .image {

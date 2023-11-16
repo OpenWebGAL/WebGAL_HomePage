@@ -11,6 +11,10 @@
     "games": {
       "title": "WebGAL で制作されたゲーム",
       "description": "WebGAL で制作されたゲーム"
+    },
+    "blog": {
+      "title": "ブログ",
+      "description": "WebGAL ブログページ"
     }
   },
   "common": {
@@ -18,7 +22,8 @@
     "download": "ダウンロード",
     "demo": "デモ",
     "document": "ドキュメント",
-    "games": "ゲーム"
+    "games": "ゲーム",
+    "blog": "ブログ"
   },
   "home": {
     "title": "WebGAL",

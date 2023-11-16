@@ -1,0 +1,87 @@
+.tags {
+  @apply flex-auto flex gap-2 text-webgal py-2;
+}
+
+.tag {
+  @apply bg-gray-100 text-sm px-1.5 py-0.5 rounded-md break-words whitespace-nowrap h-fit;
+}
+
+.article {
+  @apply text-gray-800;
+}
+
+.article p {
+  @apply my-4;
+}
+
+.article h1 a,
+.article h2 a,
+.article h3 a,
+.article h4 a,
+.article h5 a,
+.article h6 a {
+  @apply text-gray-900;
+}
+
+.article h1 {
+  @apply text-4xl font-normal py-4;
+}
+
+.article h2 {
+  @apply text-2xl font-semibold py-2;
+}
+
+.article h3 {
+  @apply text-lg font-semibold;
+}
+
+.article h4 {
+  @apply text-base font-semibold;
+}
+
+.article h5 {
+  @apply text-sm font-semibold;
+}
+
+.article h6 {
+  @apply text-xs font-semibold;
+}
+
+.article a {
+  @apply decoration-transparent text-webgal hover:underline;
+}
+
+.article img {
+  @apply block max-w-full;
+}
+
+.article code {
+  @apply px-1.5 py-0.5 bg-gray-100 rounded-md;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+.article pre {
+  @apply overflow-auto p-3 bg-gray-100 rounded-md;
+  font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+}
+
+.article pre>code {
+  @apply p-0;
+}
+
+.article ul {
+  @apply list-disc pl-6;
+}
+
+.article ol {
+  @apply list-decimal pl-6;
+}
+
+.article table {
+  @apply w-max max-w-full overflow-auto;
+}
+
+.article table th,
+.article table td {
+  @apply px-3 py-1.5 border border-gray-300;
+}

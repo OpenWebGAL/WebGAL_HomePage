@@ -6,26 +6,25 @@ import DownloadTitle from './components/DownloadTitle'
 import ReadFirst from './components/ReadFirst'
 import License from './components/License'
 import { siteConfig } from '@/site.config'
+import Container from '@/components/Container/Container'
 
 const Download = () => {
   return (
-    <div className={'pt-16 pb-4'}>
-      <div className={'max-w-screen-xl mx-auto'}>
-        <DownloadTitle />
-        <ReadFirst />
-        <DownloadWebgalTerre />
-        <DownloadWebgal />
-        <SystemRequirements />
-        <License />
-      </div>
-    </div>
+    <Container>
+      <DownloadTitle />
+      <ReadFirst />
+      <DownloadWebgalTerre />
+      <DownloadWebgal />
+      <SystemRequirements />
+      <License />
+    </Container>
   )
 }
 
 export default Download
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const messages = (await import(`../../../locales/${locale}.json`)).default
+  const messages = (await import(`/locales/${locale}.json`)).default
 
   const t = createTranslator({ locale, messages })
 

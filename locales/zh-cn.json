@@ -11,6 +11,10 @@
     "games": {
       "title": "使用 WebGAL 创作的游戏",
       "description": "使用 WebGAL 创作的游戏"
+    },
+    "blog": {
+      "title": "博客",
+      "description": "WebGAL 博客页面"
     }
   },
   "common": {
@@ -18,7 +22,8 @@
     "download": "下载",
     "demo": "演示",
     "document": "文档",
-    "games": "游戏"
+    "games": "游戏",
+    "blog": "博客"
   },
   "home": {
     "title": "WebGAL",
