@@ -1,17 +1,17 @@
 'use client'
 
 import Button from '@/components/Button/Button'
-import { useLocale, useTranslations } from 'next-intl'
+import {useLocale, useTranslations} from 'next-intl'
 import Link from 'next/link'
 import styles from './TopVisual.module.css'
 import Image from 'next/image'
-import { useEffect, useState } from 'react'
+import {useEffect, useState} from 'react'
 import useRedirect from '@/hooks/useRedirect'
 
 const TopVisual = () => {
   const t = useTranslations('home')
   const locale = useLocale()
-  const { docsRedirect } = useRedirect()
+  const {docsRedirect} = useRedirect()
 
   const topVisualImagesData = [
     {
@@ -40,6 +40,8 @@ const TopVisual = () => {
     }
   }, [topVisualImageIndex, topVisualImagesData.length])
 
+  const docsLocale = locale === 'zh-cn' ? '' : `/${locale}`
+
   return (
     <div className={styles.topVisual}>
       <div className={styles.background}>
@@ -51,7 +53,10 @@ const TopVisual = () => {
           <p className={'text-xl font-medium'}>{t('subTitle')}</p>
           <div className={'flex flex-row justify-center items-center gap-4'}>
             <Button>
-              <Link href={`/${locale}/download/`} >{t('nowDownload')}</Link>
+              <Link href={`/${locale}/download/`}>{t('nowDownload')}</Link>
+            </Button>
+            <Button>
+              <Link href={`https://docs.openwebgal.com${docsLocale}/sponsor/`}>{t('sponsor')}</Link>
             </Button>
             <Button>
               <Link href={docsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>
@@ -68,7 +73,7 @@ const TopVisual = () => {
                 width={720}
                 height={1280}
                 className={styles['card-image']}
-                style={index === topVisualImageIndex ? { display: 'block' } : { display: 'none' }}
+                style={index === topVisualImageIndex ? {display: 'block'} : {display: 'none'}}
                 priority
               />
             )

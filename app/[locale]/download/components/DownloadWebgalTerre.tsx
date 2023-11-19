@@ -83,7 +83,7 @@ const DownloadWebgalTerre = () => {
         isZh && downloadUrls && <div className={styles.cndownload}>
           <details className='space-y-4'>
             <summary className='cursor-pointer text-terre select-none'>
-              中国大陆（内地）地区的用户如果使用上面的链接下载速度较慢，请点这里使用代理链接
+              {t('otherDownloadLinkInfo')}
             </summary>
             <div className={styles['card-button-gourp']}>
               {

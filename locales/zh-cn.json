@@ -29,7 +29,8 @@
     "title": "WebGAL",
     "subTitle": "全新的网页端视觉小说引擎",
     "nowDownload": "立即下载",
-    "viewDocument": "查看文档"
+    "viewDocument": "查看文档",
+    "sponsor": "赞助 WebGAL"
   },
   "games": {
     "webgalGames": "使用 WebGAL 创作的游戏",
@@ -67,7 +68,7 @@
     "openSource": {
       "title": "开源免费",
       "line0": "WebGAL 和 WebGAL Terre 采用 MPL-2.0 开源许可",
-      "line1": "可免费用于非商业项目和商业项目"
+      "line1": "可免费用于商业项目和非商业项目"
     },
     "multiplatform": {
       "title": "多平台支持",
@@ -118,11 +119,11 @@
       "part0": "WebGAL 和 WebGAL Terre 采用",
       "part1": "许可"
     },
-    "line1": "可免费用于非商业项目和商业项目",
+    "line1": "可免费用于商业项目和非商业项目",
     "line2": "同时使用者还必须遵守以下额外条款：",
     "additional": {
       "line0": "“本软件” 指 WebGAL 和 WebGAL Terre",
-      "line1": "使用本软件开发的作品在发布时必须保留 WebGAL 相关的版权声明",
+      "line1": "使用本软件开发的作品在发布时须保留 WebGAL 相关的版权声明，但游戏的版权完全归于您自己所有。",
       "line2": "使用本软件所产生的一切风险由使用者自行承担"
     }
   },

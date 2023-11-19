@@ -29,7 +29,8 @@
     "title": "WebGAL",
     "subTitle": "A brand new web Visual Novel engine",
     "nowDownload": "Download",
-    "viewDocument": "Document"
+    "viewDocument": "Document",
+    "sponsor": "Sponsor"
   },
   "games": {
     "webgalGames": "WebGAL GAMES",
@@ -67,7 +68,7 @@
     "openSource": {
       "title": "Open Source",
       "line0": "WebGAL and WebGAL Terre are licensed under the MPL-2.0",
-      "line1": "Free to use for non-commercial and commercial projects"
+      "line1": "Free to use for commercial and non-commercial projects"
     },
     "multiplatform": {
       "title": "Multi Platform",
@@ -118,11 +119,11 @@
       "part0": "WebGAL and WebGAL Terre are licensed under the",
       "part1": ""
     },
-    "line1": "Free to use for non-commercial and commercial projects",
+    "line1": "Free to use for commercial and non-commercial projects",
     "line2": "Users must also comply with the following additional terms:",
     "additional": {
       "line0": "\" this Software \" means WebGAL and WebGAL Terre",
-      "line1": "Works developed using this software must be distributed with the WebGAL copyright notice intact",
+      "line1": "Works developed using this software must be distributed with the WebGAL copyright notice intact, but the game is fully copyrighted to you.",
       "line2": "The use of this software is at the user's own risk"
     }
   },
