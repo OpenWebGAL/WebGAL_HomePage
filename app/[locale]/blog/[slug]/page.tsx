@@ -87,10 +87,19 @@ export async function generateMetadata({ params: { locale, slug } }: { params: {
       images: [
         {
           url: `/images/${slug}/summary.png`,
-          width: 1920,
-          height: 1080,
+          width: 1280,
+          height: 720,
         },
       ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.data.title} | ${t('metadata.blog.title')} | WebGAL`,
+      description: post.data.title,
+      images: {
+        url: `/images/${slug}/summary.png`,
+        alt: post.data.title,
+      },
     },
   }
 }
