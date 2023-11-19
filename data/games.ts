@@ -33,7 +33,7 @@ export const games: Game[] = [
     id: 'agnostic-requiem',
     title: 'Agnostic Requiem',
     developer: 'WasabiStone',
-    releaseDate: '2023-11-5',
+    releaseDate: '2023-11-05',
     url: 'https://store.steampowered.com/app/2645190/Agnostic_Requiem/',
     cover: 'agnostic-requiem.png',
   },
