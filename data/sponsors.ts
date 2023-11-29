@@ -33,5 +33,10 @@ export const sponsors: Sponsors = {
       avatarUrl: 'https://avatars.githubusercontent.com/u/49630998?v=4',
       url: 'https://github.com/labiker',
     },
+    {
+      name: '衔尾工业(XianWeiGP-R)',
+      avatarUrl: 'https://github.com/MakinoharaShoko/WebGAL/assets/30483415/5df81f7f-abb3-40f0-9861-13a62a0ea427',
+      url: 'https://github.com/XianWeiGP-R',
+    },
   ]
 }
