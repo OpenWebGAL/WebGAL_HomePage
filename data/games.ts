@@ -1,7 +1,12 @@
-import {Game} from '@/types'
+import { Game } from '@/types'
 
 // 首页显示的游戏id，建议最多只放4个
-export const homeGamesId: Game['id'][] = ['elf-of-era-idols-project', 'hoshinasuzu', 'observer','agnostic-requiem']
+export const homeGamesId: Game['id'][] = [
+  'elf-of-era-idols-project',
+  'observer',
+  'agnostic-requiem',
+  'safe-house',
+]
 
 // 全部游戏
 export const games: Game[] = [
@@ -36,5 +41,13 @@ export const games: Game[] = [
     releaseDate: '2023-11-05',
     url: 'https://store.steampowered.com/app/2645190/Agnostic_Requiem/',
     cover: 'agnostic-requiem.png',
+  },
+  {
+    id: 'safe-house',
+    title: 'Safe House',
+    developer: 'HuangZeXin',
+    releaseDate: '2023-12-30',
+    url: 'https://store.steampowered.com/app/2707580/Safe_House/',
+    cover: 'safe-house.png',
   },
 ]
