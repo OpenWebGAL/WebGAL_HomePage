@@ -38,5 +38,10 @@ export const sponsors: Sponsors = {
       avatarUrl: 'https://github.com/MakinoharaShoko/WebGAL/assets/30483415/5df81f7f-abb3-40f0-9861-13a62a0ea427',
       url: 'https://github.com/XianWeiGP-R',
     },
+    {
+      name: 'JuHuo',
+      avatarUrl: 'https://avatars.githubusercontent.com/u/154034055?v=4',
+      url: 'https://github.com/JuHuo777',
+    },
   ]
 }
