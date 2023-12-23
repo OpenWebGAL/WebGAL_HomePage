@@ -52,7 +52,7 @@
     },
     "fullFunction": {
       "title": "Powerful Functions",
-      "info": "WebGAL not only supports most of the common features found in mainstream visual novel engines, but also provides custom effects with Pixi.js!."
+      "info": "WebGAL not only supports most of the common features found in mainstream visual novel engines, but also provides custom effects with Pixi.js."
     },
     "easyToDevelop": {
       "title": "Easy to develop",
@@ -63,7 +63,7 @@
         "line0": "Code once, run everywhere. You can learn the core functions in just 3 minutes, without any prior knowlegde!",
         "line1": "Ready to bring your fantasies to life? Start creating a VISUAL NOVEL now!"
       },
-      "nowDownload": "Download WebGAL Now"
+      "nowDownload": "Download WebGAL"
     },
     "openSource": {
       "title": "Open Source",
