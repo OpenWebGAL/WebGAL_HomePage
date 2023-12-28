@@ -1,8 +1,8 @@
 {
   "metadata": {
     "home": {
-      "description": "A brand new web Visual Novel engine",
-      "keywords": "Visual Novel,galgame,Game Engine,Visual Editor"
+      "description": "The new web-based Visual Novel Engine",
+      "keywords": "Visual Novel,Anime Games,galgame,Game Engine,Visual Editor"
     },
     "download": {
       "title": "WebGAL Download",
@@ -21,15 +21,15 @@
     "home": "HOME",
     "download": "DOWNLOAD",
     "demo": "DEMO",
-    "document": "DOCUMENT",
+    "document": "DOCUMENTS",
     "games": "GAMES",
     "blog": "BLOG"
   },
   "home": {
     "title": "WebGAL",
-    "subTitle": "A brand new web Visual Novel engine",
+    "subTitle": "The new web-based Visual Novel Engine",
     "nowDownload": "Download",
-    "viewDocument": "Document",
+    "viewDocument": "Documents",
     "sponsor": "Sponsor"
   },
   "games": {
@@ -47,23 +47,23 @@
   "features": {
     "features": "FEATURES",
     "niceUI": {
-      "title": "Nice UI",
-      "info": "Aesthetically pleasing and elegant graphical user interface with interactive effects, providing a better using experience."
+      "title": "Elegant UI",
+      "info": "Boost your user experience with our aesthetically pleasing and elegant user interface, enhancing your every interactions."
     },
     "fullFunction": {
-      "title": "Full Function",
-      "info": "WebGAL not only supports most of the features found in mainstream visual novel engines, but you can also use Pixi.js to add custom effects to your game."
+      "title": "Powerful Functions",
+      "info": "WebGAL not only supports most of the common features found in mainstream visual novel engines, but also provides custom effects with Pixi.js."
     },
     "easyToDevelop": {
       "title": "Easy to develop",
-      "info": "Whether you use WebGAL scripting or the visual editor for development, it is simple and natural."
+      "info": "From WebGAL scripting to the visual editor, everything is simple and intuitive."
     },
     "nowDownload": {
       "info": {
-        "line0": "Once coding, it can run on most platforms. There is no need of Html5 knowledge. You can learn and understand the core function within 3 minutes. ",
-        "line1": "With your idea, strat creating your OWN visual novel !"
+        "line0": "Code once, run everywhere. You can learn the core functions in just 3 minutes, without any prior knowlegde!",
+        "line1": "Ready to bring your fantasies to life? Start creating your own VISUAL NOVEL now!"
       },
-      "nowDownload": "Now download WebGAL"
+      "nowDownload": "Download WebGAL"
     },
     "openSource": {
       "title": "Open Source",
@@ -102,11 +102,11 @@
     },
     "readFirst": {
       "firstUse": {
-        "part0": "If this is your first using WebGAL, please see the",
+        "part0": "If you're new to WebGAL, please check out the",
         "part1": "WebGAL Game Development Guide",
-        "part2": "learn to develop games"
+        "part2": "to get started."
       },
-      "getHelp": "If you encounter problems during development, please see the game development guide first, and if you can't solve them, please go to GitHub or the community to get help",
+      "getHelp": "Stuck on a development issue? Check the game development guide first. If you're still stumped, GitHub and the community are here to help!",
       "webGALScriptBasics": {
         "part0": "If you are developing in Visual Studio Code, you can install the",
         "part1": "plugin for syntax highlighting"
@@ -122,7 +122,7 @@
     "line1": "Free to use for commercial and non-commercial projects",
     "line2": "Users must also comply with the following additional terms:",
     "additional": {
-      "line0": "\" this Software \" means WebGAL and WebGAL Terre",
+      "line0": "\" this Software \" refers to WebGAL and WebGAL Terre",
       "line1": "Works developed using this software must be distributed with the WebGAL copyright notice intact, but the game is fully copyrighted to you.",
       "line2": "The use of this software is at the user's own risk"
     }
@@ -136,7 +136,7 @@
     "community": "Community",
     "developer": "Developer",
     "sponsor": "Sponsor",
-    "gameDevelopDoc": "Game Develop Document",
+    "gameDevelopDoc": "Game Develop Documents",
     "contribute": "Contributing Guide",
     "technical": "Technical Introduction",
     "qqGroup": "QQ Group",

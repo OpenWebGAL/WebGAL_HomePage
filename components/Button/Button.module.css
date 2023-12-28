@@ -1,5 +1,5 @@
 .btn {
-  @apply bg-webgal text-white px-2.5 py-1.5 rounded-md shadow flex flex-row;
+  @apply bg-webgal text-white px-2.5 py-1.5 rounded-md shadow flex flex-row justify-center;
 }
 
 @media (any-hover:hover) {
