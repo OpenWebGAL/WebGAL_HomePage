@@ -61,14 +61,14 @@
     "nowDownload": {
       "info": {
         "line0": "Code once, run everywhere. You can learn the core functions in just 3 minutes, without any prior knowlegde!",
-        "line1": "Ready to bring your fantasies to life? Start creating a VISUAL NOVEL now!"
+        "line1": "Ready to bring your fantasies to life? Start creating your own VISUAL NOVEL now!"
       },
       "nowDownload": "Download WebGAL"
     },
     "openSource": {
       "title": "Open Source",
       "line0": "WebGAL and WebGAL Terre are licensed under the MPL-2.0",
-      "line1": "Free to use for commercial and non-commercial projects"
+      "line1": "Free for commercial and non-commercial use"
     },
     "multiplatform": {
       "title": "Multi Platform",
@@ -102,11 +102,11 @@
     },
     "readFirst": {
       "firstUse": {
-        "part0": "If this is your first using WebGAL, please see the",
+        "part0": "If you're new to WebGAL, please check out the",
         "part1": "WebGAL Game Development Guide",
-        "part2": "learn to develop games"
+        "part2": "to get started."
       },
-      "getHelp": "If you encounter problems during development, please see the game development guide first, and if you can't solve them, please go to GitHub or the community to get help",
+      "getHelp": "Stuck on a development issue? Check the game development guide first. If you're still stumped, GitHub and the community are here to help!",
       "webGALScriptBasics": {
         "part0": "If you are developing in Visual Studio Code, you can install the",
         "part1": "plugin for syntax highlighting"
@@ -122,7 +122,7 @@
     "line1": "Free to use for commercial and non-commercial projects",
     "line2": "Users must also comply with the following additional terms:",
     "additional": {
-      "line0": "\" this Software \" means WebGAL and WebGAL Terre",
+      "line0": "\" this Software \" refers to WebGAL and WebGAL Terre",
       "line1": "Works developed using this software must be distributed with the WebGAL copyright notice intact, but the game is fully copyrighted to you.",
       "line2": "The use of this software is at the user's own risk"
     }
