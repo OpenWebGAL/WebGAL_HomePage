@@ -43,5 +43,10 @@ export const sponsors: Sponsors = {
       avatarUrl: 'https://avatars.githubusercontent.com/u/154034055?v=4',
       url: 'https://github.com/JuHuo777',
     },
+    {
+      name:'夏颜',
+      avatarUrl:'https://github.com/OpenWebGAL/WebGAL/assets/30483415/49242533-e2ca-49e1-8686-e423455c857a',
+      url:'https://weibo.com/u/5794895530'
+    }
   ]
 }
