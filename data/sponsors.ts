@@ -44,9 +44,14 @@ export const sponsors: Sponsors = {
       url: 'https://github.com/JuHuo777',
     },
     {
-      name:'夏颜',
-      avatarUrl:'https://github.com/OpenWebGAL/WebGAL/assets/30483415/49242533-e2ca-49e1-8686-e423455c857a',
-      url:'https://weibo.com/u/5794895530'
-    }
+      name: '夏颜',
+      avatarUrl: 'https://github.com/OpenWebGAL/WebGAL/assets/30483415/49242533-e2ca-49e1-8686-e423455c857a',
+      url: 'https://weibo.com/u/5794895530'
+    },
+    {
+      name: '两仪院水月(unlimitedcodeG)',
+      avatarUrl: 'https://avatars.githubusercontent.com/u/48639567?v=4',
+      url: 'https://github.com/unlimitedcodeG'
+    },
   ]
 }
