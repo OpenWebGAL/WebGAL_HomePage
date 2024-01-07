@@ -35,7 +35,7 @@
   @apply text-webgal;
 }
 
-@media (width < 900px) {
+@media screen and (max-width: 900px) {
 
   .nav {
     padding-right: 0;
