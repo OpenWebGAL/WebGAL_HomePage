@@ -1,10 +1,10 @@
 const fs = require('fs')
 
 const repos = [
-  'MakinoharaShoko/WebGAL',
-  'MakinoharaShoko/WebGAL_Terre',
-  'MakinoharaShoko/WebGAL_Doc',
-  'MakinoharaShoko/WebGAL_HomePage'
+  'OpenWebGAL/WebGAL',
+  'OpenWebGAL/WebGAL_Terre',
+  'OpenWebGAL/WebGAL_Doc',
+  'OpenWebGAL/WebGAL_HomePage'
 ]
 
 const contributorsList = repos.map(repo => `https://api.github.com/repos/${repo}/contributors`)
