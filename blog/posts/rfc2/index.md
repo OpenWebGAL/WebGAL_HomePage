@@ -55,7 +55,7 @@ useApplyStyle('UI/Title/title.css',{"Title_button":styles.Title_button});
 
 `title.css`
 
-```json
+```css
 .Title_button {
   color: #005CAF;
   background: rgba(0, 0, 0, 0.1);
@@ -144,7 +144,7 @@ registerStyleEditor('UI/Title/title.css', "Title_button", t("标题按钮")) // 
 还记得我们定义的 `useApplyStyle` 吗？在这个函数中，我们在全局注册一个文件路径到指定的 `style` 块的映射，比如
 
 ```ts
-const useApplyStyle = (url:string,classNameMap:Record<string,string>){
+const useApplyStyle = (url:string,classNameMap:Record<string,string>) => {
     const applyStyle = ()=>{
         // ...... 其他代码
     }
