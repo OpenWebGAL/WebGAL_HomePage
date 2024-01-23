@@ -7,15 +7,15 @@ import Link from 'next/link'
  * @persons 人员
  * @title 卡片标题
  * @avatar 头像大小
- * @returns 
+ * @returns
  */
-const PersonsCard = ({ persons, title, avatar }: { persons: Person[], title?: string, avatar?: 'small' | 'normal' | 'large' }) => {
+const PersonsCard = ({ persons, title, avatar }: { persons: Person[], title?: string, avatar?: 'small' | 'normal' | 'large'| 'special' }) => {
   const avatarSize =
-    avatar === 'small'
-      ? 40
-      : avatar === 'large'
-        ? 100
-        : 60
+    avatar ===
+    'small' ? 40
+      : avatar === 'large' ? 150
+        : avatar === 'special'? 200
+          : 60
 
   return (
     <div className={'space-y-4'}>

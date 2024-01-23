@@ -2,7 +2,13 @@ import {Sponsors} from '@/types'
 
 export const sponsors: Sponsors = {
   special: null,
-  platinum: null,
+  platinum: [
+    {
+      name: 'AnyMate',
+      avatarUrl: '/images/sponsors/any-mate.png',
+      url: 'https://www.any-mate.com/',
+    },
+  ],
   gold: [
     {
       name: 'T2-official (T2)',

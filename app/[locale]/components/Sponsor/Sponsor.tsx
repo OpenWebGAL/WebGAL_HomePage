@@ -5,10 +5,10 @@ const Sponsor = () => {
   return (
     <div className={'space-y-2'}>
       {
-        sponsors.special && <PersonsCard persons={sponsors.special} title='Special Sponsors' avatar='large' />
+        sponsors.special && <PersonsCard persons={sponsors.special} title='Special Sponsors' avatar='special' />
       }
       {
-        sponsors.platinum && <PersonsCard persons={sponsors.platinum} title='Platinum Sponsors' />
+        sponsors.platinum && <PersonsCard persons={sponsors.platinum} title='Platinum Sponsors' avatar='large' />
       }
       {
         sponsors.gold && <PersonsCard persons={sponsors.gold} title='Gold Sponsors' />
