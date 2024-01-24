@@ -7,6 +7,8 @@ tags: ['RFC']
 
 第一次提交版本，2024年1月20日。
 
+第二次提交版本，2024年1月24日，更新了有关切换类名的指令、模板数据结构和具体的 CSS 替换实现方案的内容。
+
 ## 总体方案
 
 WebGAL 将使用模板思想进行 UI 自定义。在 WebGAL Terre 编辑器中，额外添加一个模板编辑器。在创建 WebGAL 游戏时和创建 WebGAL 游戏后，可以选择要使用的模板。
@@ -19,6 +21,7 @@ WebGAL 将使用模板思想进行 UI 自定义。在 WebGAL Terre 编辑器中�
 
 ```
 templateName/
+├── template.json
 ├── assets/
 └── UI/
     └── Title/
@@ -26,6 +29,16 @@ templateName/
 ```
 
 其中，`assets` 是资源目录。
+
+模板的数据结构是：
+
+```json
+{
+    "name":"模板名称",
+    "version":"4.4.10",
+    "其他字段":"待定......"
+}
+```
 
 ### 模板配置文件定义
 
@@ -64,6 +77,63 @@ useApplyStyle('UI/Title/title.css',{"Title_button":styles.Title_button});
 ```
 
 这样就完成了对某个页面元素的 UI 自定义。
+
+### 切换类名的指令
+
+有时候，用户可能准备了多个类名以定义不同的样式，并希望使用脚本切换以达到某些表现效果。`applyStyle` 指令可以切换类名。
+
+```
+; 将 Title_button 类切换到 Title_button_2 类
+applyStyle:Title_button->Title_button_2;
+; 可以同时应用多个切换
+applyStyle:Title_button->Title_button_2, Dialog->Dialog_1;
+```
+
+### 实现方法概览
+
+首先，在初始化模板时，WebGAL 维护一个从原始的模板中类名到 css module 生成的类名的映射：
+
+```
+const styleMap = new Map<string,{targetClass:string, currentApplyClass:string}>();
+```
+
+`targetClass` 代表要替换到的目标类名，比如 `styles.Title_button`（这是 css module 生成的，运行时会替换为一个随机字符串），`currentApplyClass` 代表目前应用的类名，在初始化时与模板默认类名保持一致，但是可以被 `applyStyle` 指令切换。
+
+在注册时，就订阅类名切换的事件。如果某个插入的 css 段中的类名发生了“切换类名”，那么这个事件就会发出。指令会重新注册 `currentApplyClass`，然后清除原有的 css 段，并重新字符串替换后插入新的 css 段。
+
+比如，原有的 `styleMap` 中有一个实体 `"Title_button"->{targetClass:styles.Title_button, currentApplyClass:"Title_button"}`
+
+运行了指令`applyStyle:Title_button->Title_button_2;`
+
+此时更新 Map，注册为 `Title_button"->{targetClass:styles.Title_button, currentApplyClass:"Title_button_2"}`
+
+这时候，要替换到 `stytle.Title_button` 的类名就变为 `Title_button_2`，原有的 `Title_button` 由于不被替换，所以无法生效。
+
+由此可见，切换类名的脚本要发出事件
+
+```
+// ... 其他逻辑
+eventBus.emit('classname-change',类名)
+```
+
+`useApplyStyle` 要接受事件并判断是否要重新替换 CSS：
+
+```ts
+const useApplyStyle = (url:string,classNameMap:Record<string,string>) => {
+    useEffect(()=>{
+        const applyStyle = ()=>{
+        // ...... 其他代码
+    	}
+    	eventBus.on('classname-change',className=>{
+        	const isHotReplace = Object.keys(classNameMap).findIndex(e === className) > -1;
+        	if(isHotReplace) applyStyle();
+    	})
+        return ()=>{
+            eventBus.off(......)
+        }
+    },[])
+}
+```
 
 ### 引用资源
 
@@ -145,10 +215,12 @@ registerStyleEditor('UI/Title/title.css', "Title_button", t("标题按钮")) // 
 
 ```ts
 const useApplyStyle = (url:string,classNameMap:Record<string,string>) => {
-    const applyStyle = ()=>{
+    useEffect(()=>{
+        const applyStyle = ()=>{
         // ...... 其他代码
-    }
-    register(url, applyStyle);// 注册回调函数，当编辑器后端通知时，重新跑一遍 applyStyle
+    	}
+    	register(url, applyStyle);// 注册回调函数，当编辑器后端通知时，重新跑一遍 applyStyle
+    },[])
 }
 ```
 
