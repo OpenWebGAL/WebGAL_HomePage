@@ -137,7 +137,7 @@ const styleMap = new Map<string,{targetClass:string, currentApplyClass:string}>(
 
 此时更新 Map，注册为 `Title_button"->{targetClass:"Title_button", currentApplyClass:"Title_button_2"}`
 
-这时候，要替换到标识符被注册为`Title_button` 的类名就变为 `Title_button_2`，原有的 `Title_button` 由于不被替换，所以无法生效。
+这时候，要替换到标识符被注册为`Title_button` 的类名就变为 `Title_button_2`，原有的 `Title_button` 不再生效。
 
 由此可见，切换类名的脚本要发出事件
 
