@@ -50,4 +50,12 @@ export const games: Game[] = [
     url: 'https://store.steampowered.com/app/2707580/Safe_House/',
     cover: 'safe-house.png',
   },
+  {
+    id: 'fayanshideshiyan',
+    title: '法言使的誓言',
+    developer: '醉未了',
+    releaseDate: '2024-02-12',
+    url: 'https://www.bilibili.com/video/BV1ru4m1K7uj/',
+    cover: 'fayanshideshiyan.png',
+  },
 ]
