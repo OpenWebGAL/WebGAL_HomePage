@@ -11,6 +11,8 @@ tags: ['RFC']
 
 第三次提交版本，2024年1月31日，更新了有关应用 CSS IN JS 实现样式替换的方案。
 
+第四次提交版本，2024年2月16日，更新了有关 `applyStyle` 指令如何运转的描述和热替换的新方案。
+
 ## 总体方案
 
 WebGAL 将使用模板思想进行 UI 自定义。在 WebGAL Terre 编辑器中，额外添加一个模板编辑器。在创建 WebGAL 游戏时和创建 WebGAL 游戏后，可以选择要使用的模板。
@@ -123,47 +125,21 @@ applyStyle:Title_button->Title_button_2, Dialog->Dialog_1;
 
 首先，在初始化模板时，WebGAL 维护一个从原始的模板中类名到要应用的类名的映射：
 
+```ts
+type replacedUIlable = Record<string, string>
 ```
-const styleMap = new Map<string,{targetClass:string, currentApplyClass:string}>();
-```
 
-`targetClass` 代表在 `applyStyle` 时注册的某个组件的标识符，比如 `Title_button`，`currentApplyClass` 代表目前应用的类名，在初始化时与标识符保持一致，但是可以被 `applyStyle` 指令切换。
+`键` 代表在 `applyStyle` 时注册的某个组件的标识符，比如 `Title_button`，`值` 代表目前应用的类名，由 `applyStyle` 指令写入。
 
-在注册时，就订阅类名切换的事件。如果某个插入的 css 段中的类名发生了“切换类名”，那么这个事件就会发出。指令会重新注册 `currentApplyClass`，然后重新在获取到的样式文件中寻找指定的类名，然后使用 CSS IN JS 框架应用。
+如果 `applyStyle` 指令被执行，指令会写 `replacedUIlable`，更新状态，然后被 CSS IN JS 框架应用。
 
-比如，原有的 `styleMap` 中有一个实体 `"Title_button"->{targetClass:"Title_button", currentApplyClass:"Title_button"}`
+比如，原有的 `replacedUIlable` 中有一个实体 `"Title_button"->"Title_button"`
 
 运行了指令`applyStyle:Title_button->Title_button_2;`
 
-此时更新 Map，注册为 `Title_button"->{targetClass:"Title_button", currentApplyClass:"Title_button_2"}`
+此时更新为 `Title_button"->"Title_button_2"`
 
 这时候，要替换到标识符被注册为`Title_button` 的类名就变为 `Title_button_2`，原有的 `Title_button` 不再生效。
-
-由此可见，切换类名的脚本要发出事件
-
-```
-// ... 其他逻辑
-eventBus.emit('classname-change',类名)
-```
-
-`useApplyStyle` 要接受事件并判断是否要重新替换 CSS：
-
-```ts
-const useApplyStyle = (url:string) => {
-    useEffect(()=>{
-        const applyStyle = ()=>{
-        // ...... 其他代码
-    	}
-    	eventBus.on('classname-change',className=>{
-        	const isHotReplace = Object.keys(classNameMap).findIndex(e === className) > -1;
-        	if(isHotReplace) applyStyle();
-    	})
-        return ()=>{
-            eventBus.off(......)
-        }
-    },[])
-}
-```
 
 ### 引用资源
 
@@ -241,20 +217,7 @@ registerStyleEditor('UI/Title/title.scss', "Title_button", t("标题按钮")) //
 
 为了在编辑的流程中优化编辑体验，要实现热替换特性。
 
-还记得我们定义的 `useApplyStyle` 吗？在这个函数中，我们在全局注册一个文件路径到指定的 `style` 块的映射，比如
-
-```ts
-const useApplyStyle = (url:string) => {
-    useEffect(()=>{
-        const applyStyle = ()=>{
-        // ...... 其他代码
-    	}
-    	register(url, applyStyle);// 注册回调函数，当编辑器后端通知时，重新跑一遍 applyStyle
-    },[])
-}
-```
-
-这样，当我们的编辑器后端向引擎发送一个 WebSocket 消息时，就可以让引擎重新请求对应的 scss 文件，然后删除之前动态添加的 style 标签，重新转换 css ，然后动态添加标签。
+编辑器只需要向引擎发送一个消息，让引擎去重新请求所有的样式文件就可以了。由于编辑器大多数情况下在本地运行，所以网络请求的延迟可以忽略不计。
 
 ## 双模编辑
 
