@@ -62,6 +62,14 @@ const TopVisual = () => {
               <Link href={docsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>
             </Button>
           </div>
+          <div className={'flex flex-row justify-center items-center gap-4 pt-6'}>
+            <a
+              href="https://www.producthunt.com/posts/webgal?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webgal"
+              target="_blank"><img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=443280&theme=light"
+              alt="WebGAL - Galgame&#0032;Editing&#0046;&#0032;Redefined | Product Hunt"
+              style={{width: 250, height: 54}} width="250" height="54"/></a>
+          </div>
         </div>
         <div className={styles.card}>
           {
