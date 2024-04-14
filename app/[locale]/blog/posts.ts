@@ -43,7 +43,7 @@ export const getPost = async (slug: string) => {
     .process(matterResult.content)
   const contentHtml = processedContent
     .toString()
-    .replace('<img src="image', `<img src="/images/${slug}/image`)
+    .replaceAll('<img src="image', `<img src="/images/${slug}/image`)
 
   return {
     slug,
