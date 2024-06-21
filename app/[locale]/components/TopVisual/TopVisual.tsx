@@ -48,10 +48,11 @@ const TopVisual = () => {
         {/* <Image src={'/images/main.webp'} fill alt='background' className={'object-cover object-center'} /> */}
       </div>
       <div className={styles.container}>
-        <div className={'flex flex-col item-center gap-2 pb-8 pt-20 text-center'}>
-          <h1 className={'text-5xl font-bold'}>{t('title')}</h1>
-          <p className={'text-xl font-medium'}>{t('subTitle')}</p>
-          <div className={'flex flex-row justify-center items-center gap-4'}>
+        <div className={styles.titlearea}>
+          <h1 className={'text-5xl font-bold'} style={{display: 'block'}}>{t('title-l1')}</h1>
+          <h1 className={'text-5xl font-bold'} style={{display: 'block'}}>{t('title-l2')}</h1>
+          <p className={'text-lg'}>{t('subTitle')}</p>
+          <div className={'flex flex-row items-center gap-4 flex-wrap'}>
             <Button>
               <Link href={`/${locale}/download/`}>{t('nowDownload')}</Link>
             </Button>
@@ -62,7 +63,7 @@ const TopVisual = () => {
               <Link href={docsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>
             </Button>
           </div>
-          <div className={'flex flex-row justify-center items-center gap-4 pt-6'}>
+          <div className={'flex flex-row justify-center items-center gap-4 pt-2'}>
             <a
               href="https://www.producthunt.com/posts/webgal?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-webgal"
               target="_blank"><img

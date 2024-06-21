@@ -26,8 +26,9 @@
     "blog": "BLOG"
   },
   "home": {
-    "title": "WebGAL",
-    "subTitle": "The new web-based Visual Novel Engine",
+    "title-l1": "Creating visual novels, ",
+    "title-l2": "who needs coding?",
+    "subTitle": "Without writing any code, WebGAL will help you create fully functional visual novels with beautiful UI.",
     "nowDownload": "Download",
     "viewDocument": "Documents",
     "sponsor": "Sponsor"

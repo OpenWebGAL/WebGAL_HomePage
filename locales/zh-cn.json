@@ -26,8 +26,9 @@
     "blog": "博客"
   },
   "home": {
-    "title": "WebGAL",
-    "subTitle": "全新的网页端视觉小说引擎",
+    "title-l1": "创作视觉小说，",
+    "title-l2": "何须会编程？",
+    "subTitle": "无需编写任何代码，WebGAL 将帮助你制作出功能完备、界面美观的视觉小说游戏。",
     "nowDownload": "立即下载",
     "viewDocument": "查看文档",
     "sponsor": "赞助 WebGAL"

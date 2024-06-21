@@ -1,49 +1,62 @@
 .topVisual {
-  @apply pt-16 pb-8;
+    @apply pt-16 pb-8;
 }
 
 @media screen and (max-width: 768px) {
-  .topVisual {
-    @apply pt-16 pb-4;
-  }
+    .topVisual {
+        @apply pt-16 pb-4;
+    }
 }
 
 .background {
-  position: fixed;
-  top: -100vh;
-  left: -100%;
-  z-index: -1;
-  height: 300vh;
-  width: 300%;
-  background: linear-gradient(135deg, rgba(0, 93, 175, 0.1), rgba(181, 73, 91, 0.1));
-  animation: rotatebg 10s infinite linear;
+    position: fixed;
+    top: -100vh;
+    left: -100%;
+    z-index: -1;
+    height: 300vh;
+    width: 300%;
+    background: linear-gradient(135deg, rgba(0, 93, 175, 0.1), rgba(181, 73, 91, 0.1));
+    animation: rotatebg 10s infinite linear;
 }
 
 @keyframes rotatebg {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .container {
-  @apply max-w-screen-xl mx-auto h-full p-4;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
+    @apply max-w-screen-xl mx-auto h-full p-4;
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.titlearea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    text-align: left;
+    padding: 4px 0 0 0;
+    max-width: 350px;
 }
 
 .card {
-  @apply max-w-screen-md mx-auto drop-shadow rounded-md;
-  transform: translateY(4px);
-  /* transform: translateY(calc(768px/120)); */
-  /* max-height: calc(768px/3); */
-  transition: 0.35s ease-out;
-  float: left;
+    @apply max-w-screen-md mx-auto drop-shadow rounded-md;
+    transform: translateY(4px);
+    /* transform: translateY(calc(768px/120)); */
+    /* max-height: calc(768px/3); */
+    transition: 0.35s ease-out;
+    float: left;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -54,9 +67,9 @@
 } */
 
 .card:hover {
-  transform: none;
+    transform: none;
 }
 
 .card-image {
-  @apply h-full w-full object-cover rounded-md;
+    @apply h-full w-full object-cover rounded-md;
 }
