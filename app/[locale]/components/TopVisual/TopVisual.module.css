@@ -34,7 +34,7 @@
     display: flex;
     /*flex-direction: column;*/
     justify-content: center;
-    align-items: center;
+    /*align-items: flex-end;*/
     flex-wrap: wrap;
     overflow: hidden;
     margin-top: 2rem;
@@ -44,6 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-end;
     gap: 0.8rem;
     text-align: left;
     /*padding: 0 0 4px 0;*/
@@ -57,6 +58,8 @@
     /* max-height: calc(768px/3); */
     transition: 0.35s ease-out;
     float: left;
+    display: flex;
+    align-items: flex-start;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -72,4 +75,5 @@
 
 .card-image {
     @apply h-full w-full object-cover rounded-md;
+    object-fit: contain;
 }
