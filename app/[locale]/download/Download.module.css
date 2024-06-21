@@ -1,54 +1,73 @@
 .card {
-  @apply flex flex-col gap-2 p-4;
-  position: relative;
+    @apply flex flex-col gap-2 p-4;
+    position: relative;
+
+    .p {
+        padding: 3px 10px;
+        font-size: larger;
+    }
 }
 
 .corner {
-  @apply max-w-screen-xl;
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  right: 1rem;
-  overflow: hidden;
-  transform: translate(0, -8px)
+    @apply max-w-screen-xl;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 1rem;
+    overflow: hidden;
+    transform: translate(0, -8px)
 }
 
 .corner-text {
-  @apply w-40 p-2 text-white text-center;
-  transform: rotate(45deg) translate(70px, -46px);
+    @apply w-40 p-2 text-white text-center;
+    transform: rotate(45deg) translate(70px, -46px);
 }
 
 .card-title {
-  @apply text-2xl font-medium border-b-2;
+    @apply text-2xl font-medium border-b-2;
 }
 
 .card-info {
-  @apply text-gray-700 font-normal leading-relaxed space-y-1;
+    @apply text-gray-700 font-normal leading-relaxed space-y-1;
 }
 
 .card-button-gourp {
-  @apply flex flex-row flex-wrap gap-2;
+    @apply flex flex-row flex-wrap gap-2;
+    padding: 10px 0 0 0
 }
 
 .card ul {
-  @apply list-disc list-inside pl-4;
+    @apply list-disc list-inside pl-4;
 }
 
 .card ol {
-  @apply list-decimal list-inside pl-4;
+    @apply list-decimal list-inside pl-4;
 }
 
 .cndownload {
-  border-radius: 4px;
-  background: rgba(0, 92, 175, 0.1);
-  padding: 16px;
-  margin-top: 8px;
+    border-radius: 4px;
+    background: rgba(0, 92, 175, 0.1);
+    padding: 16px;
+    margin-top: 8px;
 }
 
 .release-note {
-  @apply px-4 py-2 font-light;
+    @apply px-4 py-2 font-light;
 }
 
-.release-note>h4 {
-  @apply font-medium;
+.release-note > h4 {
+    @apply font-medium;
+}
+
+.hlrf {
+    font-size: x-large;
+    padding: 15px 10px;
+    border-radius: 4px;
+    background: rgba(181, 73, 91, 0.05);
+    color: #B5495B;
+}
+
+.link {
+    font-weight: bold;
+    padding: 0 4px;
 }
