@@ -15,12 +15,16 @@ const TopVisual = () => {
 
   const topVisualImagesData = [
     {
+      title: 'game',
+      src: '/images/game.png',
+    },
+    {
       title: 'terre',
-      src: '/images/terre.webp',
+      src: '/images/terre.png',
     },
     {
       title: 'title',
-      src: '/images/title.webp',
+      src: '/images/title.png',
     },
   ]
 
