@@ -5,7 +5,8 @@ export const homeGamesId: Game['id'][] = [
   'elf-of-era-idols-project',
   'observer',
   'agnostic-requiem',
-  'safe-house',
+  // 'safe-house',
+  'qinglian'
 ]
 
 // 全部游戏
@@ -57,5 +58,13 @@ export const games: Game[] = [
     releaseDate: '2024-02-12',
     url: 'https://www.bilibili.com/video/BV1ru4m1K7uj/',
     cover: 'fayanshideshiyan.png',
+  },
+  {
+    id: 'qinglian',
+    title: '青恋',
+    developer: '阿牛, NICE',
+    releaseDate: '2024-06-28',
+    url: 'https://store.steampowered.com/app/3043160/_/',
+    cover: 'ql.png',
   },
 ]
