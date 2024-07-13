@@ -41,7 +41,7 @@ export const games: Game[] = [
     developer: 'WasabiStone',
     releaseDate: '2023-11-05',
     url: 'https://store.steampowered.com/app/2645190/Agnostic_Requiem/',
-    cover: 'agnostic-requiem.png',
+    cover: 'agnostic-requiem.webp',
   },
   {
     id: 'safe-house',
@@ -49,7 +49,7 @@ export const games: Game[] = [
     developer: 'HuangZeXin',
     releaseDate: '2023-12-30',
     url: 'https://store.steampowered.com/app/2707580/Safe_House/',
-    cover: 'safe-house.png',
+    cover: 'safe-house.webp',
   },
   {
     id: 'fayanshideshiyan',
@@ -57,7 +57,7 @@ export const games: Game[] = [
     developer: '醉未了',
     releaseDate: '2024-02-12',
     url: 'https://www.bilibili.com/video/BV1ru4m1K7uj/',
-    cover: 'fayanshideshiyan.png',
+    cover: 'fayanshideshiyan.webp',
   },
   {
     id: 'qinglian',
@@ -65,7 +65,7 @@ export const games: Game[] = [
     developer: '阿牛, NICE',
     releaseDate: '2024-06-28',
     url: 'https://store.steampowered.com/app/3043160/_/',
-    cover: 'ql.png',
+    cover: 'ql.webp',
   },
   {
     id: 'xinxi',
@@ -73,6 +73,6 @@ export const games: Game[] = [
     developer: '三玖谁顶的住啊',
     releaseDate: '2024-07-10',
     url: 'https://www.bilibili.com/video/BV1aH4y1w7g4/',
-    cover: 'xinxi.jpg',
+    cover: 'xinxi.webp',
   }
 ]
