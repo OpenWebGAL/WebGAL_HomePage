@@ -67,4 +67,12 @@ export const games: Game[] = [
     url: 'https://store.steampowered.com/app/3043160/_/',
     cover: 'ql.png',
   },
+  {
+    id: 'xinxi',
+    title: '信息',
+    developer: '三玖谁顶的住啊',
+    releaseDate: '2024-07-10',
+    url: 'https://www.bilibili.com/video/BV1aH4y1w7g4/',
+    cover: 'xinxi.jpg',
+  }
 ]
