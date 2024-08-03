@@ -16,7 +16,7 @@ tags: ['开发日志']
 简单来说，形如以下形式：
 
 ```
-(文本)[style=font-weight:bold\;color:#005CAF\;font-size:smaller\; ruby=wen ben tips=这是一段增强的文本]
+[文本](style=font-weight:bold\;color:#005CAF\;font-size:smaller\; ruby=wen ben tips=这是一段增强的文本)
 ```
 
 这代表这段文本的字体大小是偏小的，并应用了加粗，颜色为 #005CAF，并具有注音和提示。
