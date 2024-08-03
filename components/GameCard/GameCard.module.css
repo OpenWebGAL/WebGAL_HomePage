@@ -1,9 +1,9 @@
 .card {
-  @apply bg-white drop-shadow rounded-md transition-transform;
+  @apply bg-white drop-shadow rounded-md transition-transform duration-200;
 }
 
 .card:hover {
-  @apply drop-shadow-md;
+  @apply drop-shadow-md translate-y-[-2px];
 }
 
 .link {
@@ -11,7 +11,7 @@
 }
 
 .imageContainer {
-  @apply rounded-t-md aspect-video bg-gray-100;
+  @apply rounded-t-md aspect-video bg-gray-100 overflow-hidden;
   width: -moz-available;
   width: -webkit-fill-available;
 }
