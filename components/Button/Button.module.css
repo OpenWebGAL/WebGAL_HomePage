@@ -23,3 +23,8 @@
 .btn-terre {
   @apply bg-terre
 }
+
+.btn-large {
+  font-size: 125%;
+  padding: 7px 15px;
+}

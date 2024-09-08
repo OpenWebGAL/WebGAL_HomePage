@@ -18,6 +18,7 @@ const Feat = () => {
             <div className={styles.info}>
               <p>{t('openSource.line0')}</p>
               <p>{t('openSource.line1')}</p>
+              <a href={'https://github.com/OpenWebGAL/WebGAL'} target={'_blank'}>{t('openSource.repo')}</a>
             </div>
           </div>
           <div className={styles.card}>

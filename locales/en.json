@@ -30,7 +30,7 @@
     "title-l2": "who needs coding?",
     "subTitle": "Without writing any code, WebGAL will help you create fully functional visual novels with beautiful UI.",
     "nowDownload": "Download",
-    "viewDocument": "Documents",
+    "viewDocument": "View help documentation",
     "sponsor": "Sponsor"
   },
   "games": {
@@ -69,7 +69,8 @@
     "openSource": {
       "title": "Open Source",
       "line0": "WebGAL and WebGAL Terre are licensed under the MPL-2.0",
-      "line1": "Free to use for commercial and non-commercial projects"
+      "line1": "Free to use for commercial and non-commercial projects",
+      "repo": "View WebGAL source code repository"
     },
     "multiplatform": {
       "title": "Multi Platform",

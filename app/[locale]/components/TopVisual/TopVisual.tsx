@@ -57,14 +57,14 @@ const TopVisual = () => {
           <h1 className={'text-5xl font-bold'} style={{display: 'block'}}>{t('title-l2')}</h1>
           <p className={'text-lg'}>{t('subTitle')}</p>
           <div className={'flex flex-row items-center gap-4 flex-wrap'}>
-            <Button>
+            <Button large>
               <Link href={`/${locale}/download/`}>{t('nowDownload')}</Link>
             </Button>
-            <Button>
-              <Link href={`https://docs.openwebgal.com${docsLocale}/sponsor/`}>{t('sponsor')}</Link>
-            </Button>
-            <Button>
+            <Button large>
               <Link href={docsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>
+            </Button>
+            <Button large>
+              <Link href={`https://docs.openwebgal.com${docsLocale}/sponsor/`}>{t('sponsor')}</Link>
             </Button>
           </div>
           <div className={'flex flex-row justify-center items-center gap-4 pt-2'}>

@@ -30,7 +30,7 @@
     "title-l2": "何须会编程？",
     "subTitle": "无需编写任何代码，WebGAL 将帮助你制作出功能完备、界面美观的视觉小说游戏。",
     "nowDownload": "立即下载",
-    "viewDocument": "查看文档",
+    "viewDocument": "查看帮助文档",
     "sponsor": "赞助 WebGAL"
   },
   "games": {
@@ -69,7 +69,8 @@
     "openSource": {
       "title": "开源免费",
       "line0": "WebGAL 和 WebGAL Terre 采用 MPL-2.0 开源许可",
-      "line1": "可免费用于商业项目和非商业项目"
+      "line1": "可免费用于商业项目和非商业项目",
+      "repo": "查看 WebGAL 源代码仓库"
     },
     "multiplatform": {
       "title": "多平台支持",

@@ -30,7 +30,7 @@
     "title-l2": "ビジュアルノベルを作成！",
     "subTitle": "WebGALを使えば、コードを一切書かずに、高機能で美しいインターフェースのビジュアルノベルゲームを作成できます。",
     "nowDownload": "今すぐダウンロード",
-    "viewDocument": "ドキュメントに移動",
+    "viewDocument": "ヘルプドキュメントを見る",
     "sponsor": "スポンサー"
   },
   "games": {
@@ -69,7 +69,8 @@
     "openSource": {
       "title": "オープンソース & 商業利用フリー",
       "line0": "WebGAL および WebGAL Terre は MPL-2.0 の下でライセンスされている",
-      "line1": "商用・非商用問わず無料"
+      "line1": "商用・非商用問わず無料",
+      "repo": "WebGAL ソースコードリポジトリを見る"
     },
     "multiplatform": {
       "title": "マルチプラットフォームのサポート",
