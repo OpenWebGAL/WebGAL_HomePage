@@ -49,6 +49,7 @@ const Footer = () => {
       title: t('links'),
       links: [
         { href: 'https://www.cngal.org/', label: 'CnGal' },
+        { href: 'https://humihumi.com/', label: 'HumiHumi' },
       ],
     },
   ]
