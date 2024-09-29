@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation'
 import { i18n } from '../../i18n'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
-import Script from 'next/script'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const notoSansSC = Noto_Sans_SC({
   subsets: ['latin'],
@@ -27,25 +27,13 @@ export default async function LangLayout({ children, params: { locale } }
 
   return (
     <html lang={locale} className={notoSansSC.className}>
-      <head>
-        {/*Google tag (gtag.js)*/}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-6XPF6Q2WY0" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          
-          gtag('config', '6XPF6Q2WY0');
-        `}
-        </Script>
-      </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={locales}>
           <Navbar />
           {children}
           <Footer />
         </NextIntlClientProvider>
+        <GoogleAnalytics gaId="G-6XPF6Q2WY0" />
       </body>
     </html>
   )
