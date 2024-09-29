@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.13",
     "gray-matter": "^4.0.3",
     "next": "14.0.2",
     "next-intl": "^2.22.1",
