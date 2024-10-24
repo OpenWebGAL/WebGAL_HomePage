@@ -74,5 +74,13 @@ export const games: Game[] = [
     releaseDate: '2024-07-10',
     url: 'https://www.bilibili.com/video/BV1aH4y1w7g4/',
     cover: 'xinxi.webp',
-  }
+  },
+  {
+    id: 'devils-journey',
+    title: '恶魔之旅',
+    developer: 'Zombie Ass',
+    releaseDate: '2024-10-24',
+    url: 'https://www.bilibili.com/video/BV1jRyfYjEuX/',
+    cover: 'devils-journey.webp',
+  },
 ]
