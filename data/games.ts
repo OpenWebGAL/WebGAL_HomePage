@@ -91,4 +91,12 @@ export const games: Game[] = [
     url: 'https://www.bilibili.com/video/BV1WLDQYHEPN/',
     cover: 'dingyi.webp',
   },
+  {
+    id: 'lovegoal',
+    title: '愛情終點',
+    developer: '糖染川',
+    releaseDate: '2025-01-04',
+    url: 'https://store.steampowered.com/app/3365970/_/',
+    cover: 'lovegoal.webp',
+  },
 ]
