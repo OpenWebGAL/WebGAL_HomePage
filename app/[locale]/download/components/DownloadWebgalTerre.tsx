@@ -45,7 +45,7 @@ const DownloadWebgalTerre = () => {
     })
 
   const isZh = locale === 'zh-cn'
-  const ghproxyStr = 'https://ghp.ci/'
+  const ghproxyStr = 'https://ghgo.xyz/'
 
   return (
     <div className={styles.card}>
