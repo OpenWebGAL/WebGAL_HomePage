@@ -6,7 +6,8 @@ export const homeGamesId: Game['id'][] = [
   'observer',
   'agnostic-requiem',
   // 'safe-house',
-  'qinglian'
+  // 'qinglian',
+  'SuccubusGalGames',
 ]
 
 // 全部游戏
