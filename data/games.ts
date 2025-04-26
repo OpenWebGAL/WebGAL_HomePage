@@ -104,7 +104,7 @@ export const games: Game[] = [
     id: 'SuccubusGalGames',
     title: '玩魅魔GalGame的玩家都有魅魔陪着不是很正常的事情吗',
     developer: 'kzcserin',
-    releaseDate: '2025-4-19',
+    releaseDate: '2025-04-19',
     url: 'https://humihumi.com/game/a4d8509a-821a-4841-8e8e-c85094718216',
     cover: 'SuccubusGalGames.webp',
   },
