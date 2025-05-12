@@ -100,12 +100,20 @@ export const games: Game[] = [
     url: 'https://store.steampowered.com/app/3365970/_/',
     cover: 'lovegoal.webp',
   },
-    {
+  {
     id: 'SuccubusGalGames',
     title: '玩魅魔GalGame的玩家都有魅魔陪着不是很正常的事情吗',
     developer: 'kzcserin',
     releaseDate: '2025-04-19',
     url: 'https://humihumi.com/game/a4d8509a-821a-4841-8e8e-c85094718216',
     cover: 'SuccubusGalGames.webp',
+  },    
+  {
+    id: '_The_Neverending_Summer',
+    title: '周而复始的夏天',
+    developer: 'LSAusa',
+    releaseDate: '2025-04-28',
+    url: 'https://store.steampowered.com/app/3589940/_The_Neverending_Summer/',
+    cover: '_The_Neverending_Summer.jpg',
   },
 ]
