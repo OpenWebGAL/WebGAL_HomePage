@@ -27,6 +27,11 @@ export const sponsors: Sponsors = {
       avatarUrl: 'https://avatars.githubusercontent.com/u/103700780?v=4',
       url: 'https://github.com/IdrilK',
     },
+    {
+      name: 'LordCasser',
+      avatarUrl: 'https://avatars.githubusercontent.com/u/35390821?v=4',
+      url: 'https://github.com/LordCasser',
+    },
   ],
   sponsors: [
     {
