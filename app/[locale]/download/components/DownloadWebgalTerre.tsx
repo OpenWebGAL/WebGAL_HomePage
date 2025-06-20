@@ -10,8 +10,8 @@ import {i18n} from '@/i18n'
 
 const DownloadWebgalTerre = () => {
 
-  const webgalTerreUrl = 'https://github.com/MakinoharaShoko/WebGAL_Terre/releases'
-  const webgalTerreApiUrl = 'https://api.github.com/repos/MakinoharaShoko/WebGAL_Terre/releases/latest'
+  const webgalTerreUrl = 'https://github.com/OpenWebGAL/WebGAL_Terre/releases'
+  const webgalTerreApiUrl = 'https://api.github.com/repos/OpenWebGAL/WebGAL_Terre/releases/latest'
 
   const t = useTranslations('download')
   const locale = useLocale()

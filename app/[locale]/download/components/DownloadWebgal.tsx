@@ -10,8 +10,8 @@ import styles from '../Download.module.css'
 
 const DownloadWebgal = () => {
 
-  const webgalUrl = 'https://github.com/MakinoharaShoko/WebGAL'
-  const webgalApiUrl = 'https://api.github.com/repos/MakinoharaShoko/WebGAL/releases/latest'
+  const webgalUrl = 'https://github.com/OpenWebGAL/WebGAL'
+  const webgalApiUrl = 'https://api.github.com/repos/OpenWebGAL/WebGAL/releases/latest'
   const webgalAssets = useWebgalAssets(webgalApiUrl)
   const locale = useLocale()
   const releaseIndex = i18n.locales.findIndex(item => item.code === locale)

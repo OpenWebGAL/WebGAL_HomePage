@@ -13,8 +13,8 @@ const Footer = () => {
     {
       title: t('products'),
       links: [
-        { href: 'https://github.com/MakinoharaShoko/WebGAL', label: 'WebGAL' },
-        { href: 'https://github.com/MakinoharaShoko/WebGAL_Terre', label: 'WebGAL Terre' },
+        { href: 'https://github.com/OpenWebGAL/WebGAL', label: 'WebGAL' },
+        { href: 'https://github.com/OpenWebGAL/WebGAL_Terre', label: 'WebGAL Terre' },
       ],
     },
     {
@@ -75,10 +75,10 @@ const Footer = () => {
         </div>
       </div>
       <div className={'w-full p-2 text-sm font-light border-t'}>
-        <p>Powered by <Link href="https://github.com/MakinoharaShoko/WebGAL" target="_blank">WebGAL</Link> Framework</p>
+        <p>Powered by <Link href="https://github.com/OpenWebGAL/WebGAL" target="_blank">WebGAL</Link> Framework</p>
         <p>Made with ❤ by <Link href="https://github.com/MakinoharaShoko" target="_blank">Mahiru</Link></p>
         <p>
-          WebGAL and WebGAL Terre are licensed under the <Link href="https://github.com/MakinoharaShoko/WebGAL/blob/main/LICENSE" target="_blank" >Mozilla Public License 2.0 (MPL-2.0)</Link>
+          WebGAL and WebGAL Terre are licensed under the <Link href="https://github.com/OpenWebGAL/WebGAL/blob/main/LICENSE" target="_blank" >Mozilla Public License 2.0 (MPL-2.0)</Link>
         </p>
       </div>
     </footer>

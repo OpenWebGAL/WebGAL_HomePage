@@ -31,7 +31,7 @@ const Navbar = () => {
           {/* 导航栏图标 */}
           <div className={'flex flex-row items-center'} >
             <div className={styles.icon}>
-              <Link href={'https://github.com/MakinoharaShoko/WebGAL'} target={'_blank'} title='MakinoharaShoko/WebGAL'>
+              <Link href={'https://github.com/OpenWebGAL/WebGAL'} target={'_blank'} title='OpenWebGAL/WebGAL'>
                 <RiGithubFill />
               </Link>
             </div>
