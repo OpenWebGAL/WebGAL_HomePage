@@ -74,7 +74,7 @@
     },
     "multiplatform": {
       "title": "Multi Platform",
-      "line0": "WebGAL Terre support Windows / macOS / Linux",
+      "line0": "WebGAL Terre support Windows / macOS / Linux / android",
       "line1": "Export game support Web / Windows / macOS / Linux / android"
     }
   },
@@ -95,6 +95,7 @@
     "downloadMacos": "Download macOS zip",
     "downloadLinux": "Download Linux zip",
     "downloadLinuxArm64": "Download Linux Arm64 zip",
+    "downloadAndroid": "Download Android apk",
     "otherDownloadLink": "Other Download Link",
     "otherDownloadLinkInfo": "If the above download address is slow, please try using the following download address",
     "systemRequirements": {

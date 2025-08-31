@@ -74,7 +74,7 @@
     },
     "multiplatform": {
       "title": "マルチプラットフォームのサポート",
-      "line0": "WebGAL Terre が Windows / macOS / Linux での開発をサポート",
+      "line0": "WebGAL Terre が Windows / macOS / Linux / android での開発をサポート",
       "line1": "開発したゲームは Web / Windows / macOS / Linux / Android でプレイできる"
     }
   },
@@ -95,6 +95,7 @@
     "downloadMacos": "macOS zip をダウンロード",
     "downloadLinux": "Linux zip をダウンロード",
     "downloadLinuxArm64": "Linux Arm64 zip をダウンロード",
+    "downloadAndroid": "Android apk をダウンロード",
     "otherDownloadLink": "その他のダウンロードリンク",
     "otherDownloadLinkInfo": "上記のダウンロードリンクが遅い場合は、以下のダウンロードリンクをお試しください",
     "systemRequirements": {
