@@ -74,7 +74,7 @@
     },
     "multiplatform": {
       "title": "多平台支持",
-      "line0": "WebGAL Terre 支持 Windows / macOS / Linux",
+      "line0": "WebGAL Terre 支持 Windows / macOS / Linux / android",
       "line1": "导出游戏支持 Web / Windows / macOS / Linux / android"
     }
   },
@@ -95,6 +95,7 @@
     "downloadMacos": "下载 macOS 压缩包",
     "downloadLinux": "下载 Linux 压缩包",
     "downloadLinuxArm64": "下载 Linux Arm64 压缩包",
+    "downloadAndroid": "下载 Android apk",
     "otherDownloadLink": "其它下载地址",
     "otherDownloadLinkInfo": "如果上面的下载地址下载速度比较慢，请尝试使用以下下载地址",
     "systemRequirements": {

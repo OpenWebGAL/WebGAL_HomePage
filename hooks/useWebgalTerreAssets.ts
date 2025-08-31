@@ -23,8 +23,8 @@ const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
               { platform: 'macos', url: findAssetsUrl(data.assets, 'mac.*.zip') },
               { platform: 'linux', url: findAssetsUrl(data.assets, 'Linux.*.zip') },
               { platform: 'linuxArm64', url: findAssetsUrl(data.assets, 'Linux_Arm64.*.zip') },
+              { platform: 'android', url: findAssetsUrl(data.assets, 'Android.*.apk') }
             ]
-
           }
         ))
     } catch (error) {
