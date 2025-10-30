@@ -12,14 +12,14 @@ export const homeGamesId: Game['id'][] = [
 
 // 全部游戏
 export const games: Game[] = [
-  {
-    id: 'hoshinasuzu',
-    title: '铃色☆记忆',
-    developer: '星奈组',
-    releaseDate: '2022-06-28',
-    url: 'https://hoshinasuzu.cc/suzu-memory/',
-    cover: 'suzu.webp',
-  },
+  // {
+  //   id: 'hoshinasuzu',
+  //   title: '铃色☆记忆',
+  //   developer: '星奈组',
+  //   releaseDate: '2022-06-28',
+  //   url: 'https://hoshinasuzu.cc/suzu-memory/',
+  //   cover: 'suzu.webp',
+  // },
   {
     id: 'elf-of-era-idols-project',
     title: 'Elf of Era! Idols Project',
