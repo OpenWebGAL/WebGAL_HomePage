@@ -89,7 +89,7 @@ export const games: Game[] = [
     title: '定义',
     developer: '六白七十一',
     releaseDate: '2024-11-08',
-    url: 'https://www.acfun.cn/v/ac48199654',
+    url: 'https://www.acfun.cn/v/ac48199654/',
     cover: 'dingyi.webp',
   },
   {
@@ -105,7 +105,7 @@ export const games: Game[] = [
     title: '玩魅魔GalGame的玩家都有魅魔陪着不是很正常的事情吗',
     developer: 'kzcserin',
     releaseDate: '2025-04-19',
-    url: 'https://humihumi.com/game/a4d8509a-821a-4841-8e8e-c85094718216',
+    url: 'https://humihumi.com/game/a4d8509a-821a-4841-8e8e-c85094718216/',
     cover: 'SuccubusGalGames.webp',
   },    
   {
