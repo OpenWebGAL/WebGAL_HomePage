@@ -89,7 +89,7 @@ export const games: Game[] = [
     title: '定义',
     developer: '六白七十一',
     releaseDate: '2024-11-08',
-    url: 'https://www.bilibili.com/video/BV1WLDQYHEPN/',
+    url: 'https://www.acfun.cn/v/ac48199654',
     cover: 'dingyi.webp',
   },
   {
