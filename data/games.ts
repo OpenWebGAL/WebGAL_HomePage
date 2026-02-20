@@ -4,10 +4,12 @@ import { Game } from '@/types'
 export const homeGamesId: Game['id'][] = [
   'elf-of-era-idols-project',
   'observer',
-  'agnostic-requiem',
+  'lovegoal',
+  '_The_Neverending_Summer',
+  // 'agnostic-requiem',
   // 'safe-house',
   // 'qinglian',
-  'SuccubusGalGames',
+  // 'SuccubusGalGames',
 ]
 
 // 全部游戏
