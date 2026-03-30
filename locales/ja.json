@@ -31,7 +31,15 @@
     "subTitle": "WebGALを使えば、コードを一切書かずに、高機能で美しいインターフェースのビジュアルノベルゲームを作成できます。",
     "nowDownload": "今すぐダウンロード",
     "viewDocument": "ヘルプドキュメントを見る",
-    "sponsor": "スポンサー"
+    "sponsor": "スポンサー",
+    "jam": {
+      "title": "GALGAME JAM AI 創作コンテスト",
+      "description": "会話であなたの物語を生み出し、あなただけの GALGAME を作ろう",
+      "date": "開催期間: 3月31日から4月15日まで",
+      "cta": "イベントページへ",
+      "note": "応募者向けの AI アイデア特典については公式ページをご確認ください。",
+      "bannerLine1": "主催: MuleRun"
+    }
   },
   "games": {
     "webgalGames": "WebGAL で制作されたゲーム",

@@ -1,5 +1,6 @@
 import WebGALGames from './components/WebGALGames/WebGALGames'
 import TopVisual from './components/TopVisual/TopVisual'
+import JamPromo from './components/JamPromo/JamPromo'
 import Features from './components/Features/Features'
 import Feat from './components/Feat/Feat'
 import Sponsor from './components/Sponsor/Sponsor'
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <TopVisual />
+      <JamPromo />
       <Feat />
       <WebGALGames />
       <Features />
@@ -49,4 +51,3 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     // },
   }
 }
-

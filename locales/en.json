@@ -31,7 +31,15 @@
     "subTitle": "Without writing any code, WebGAL will help you create fully functional visual novels with beautiful UI.",
     "nowDownload": "Download",
     "viewDocument": "View help documentation",
-    "sponsor": "Sponsor"
+    "sponsor": "Sponsor",
+    "jam": {
+      "title": "GALGAME JAM AI Jam",
+      "description": "Create your story through dialogue and build a GALGAME of your own",
+      "date": "Event: March 31 to April 15",
+      "cta": "Open event page",
+      "note": "Registration includes AI idea credits. See the official event page for details.",
+      "bannerLine1": "Hosted by MuleRun"
+    }
   },
   "games": {
     "webgalGames": "WebGAL GAMES",

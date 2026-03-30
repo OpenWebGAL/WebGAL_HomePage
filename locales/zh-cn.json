@@ -31,7 +31,15 @@
     "subTitle": "无需编写任何代码，WebGAL 将帮助你制作出功能完备、界面美观的视觉小说游戏。",
     "nowDownload": "立即下载",
     "viewDocument": "查看帮助文档",
-    "sponsor": "赞助 WebGAL"
+    "sponsor": "赞助 WebGAL",
+    "jam": {
+      "title": "GALGAME JAM AI 创作赛",
+      "description": "用对话创造你的故事，做一款属于你的 GALGAME",
+      "date": "活动时间：3 月 31 日至 4 月 15 日",
+      "cta": "前往活动页面",
+      "note": "报名后可领取 AI 创意积分，详情请见活动页面说明。",
+      "bannerLine1": "活动主办：MuleRun"
+    }
   },
   "games": {
     "webgalGames": "使用 WebGAL 创作的游戏",
