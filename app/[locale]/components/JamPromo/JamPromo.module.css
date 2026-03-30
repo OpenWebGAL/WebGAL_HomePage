@@ -69,6 +69,10 @@
   max-height: 62px;
 }
 
+.logoLink {
+  @apply inline-flex;
+}
+
 .bannerText {
   @apply text-sm font-medium leading-6 text-gray-600;
 }

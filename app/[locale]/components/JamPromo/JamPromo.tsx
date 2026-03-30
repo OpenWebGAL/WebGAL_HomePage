@@ -30,13 +30,19 @@ const JamPromo = () => {
 
         <div className={styles.visual}>
           <div className={styles.banner}>
-            <Image
-              src="/images/sponsors/mulerun.svg"
-              alt="MuleRun"
-              width={312}
-              height={76}
-              className={styles.logo}
-            />
+            <Link
+              href="https://mulerun.com/?utm_source=openwebgal&utm_medium=referral&utm_campaign=openwebgal"
+              target="_blank"
+              className={styles.logoLink}
+            >
+              <Image
+                src="/images/sponsors/mulerun.svg"
+                alt="MuleRun"
+                width={312}
+                height={76}
+                className={styles.logo}
+              />
+            </Link>
             <p className={styles.bannerText}>{t('bannerLine1')}</p>
           </div>
         </div>
