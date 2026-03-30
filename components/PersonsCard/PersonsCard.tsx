@@ -29,11 +29,11 @@ const PersonsCard = ({ persons, title, avatar }: { persons: Person[], title?: st
             <Link href={person.url} target={'_blank'}>
               <Image
                 src={person.avatarUrl}
-                width={avatarSize}
-                height={avatarSize}
+                width={person.avatarWidth ?? avatarSize}
+                height={person.avatarHeight ?? avatarSize}
                 title={person.name}
                 alt={person.name}
-                className={'rounded-full drop-shadow-sm '}
+                className={person.noRounded ? 'drop-shadow-sm' : 'rounded-full drop-shadow-sm'}
               />
             </Link>
           </div>

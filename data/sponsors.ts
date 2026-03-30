@@ -4,6 +4,14 @@ export const sponsors: Sponsors = {
   special: null,
   platinum: [
     {
+      name: 'mulerun',
+      avatarUrl: '/images/sponsors/mulerun.svg',
+      url: 'https://mulerun.com/?utm_source=openwebgal&utm_medium=referral&utm_campaign=openwebgal',
+      avatarWidth: 148,
+      avatarHeight: 36,
+      noRounded: true,
+    },
+    {
       name: 'AnyMate',
       avatarUrl: '/images/sponsors/any-mate.png',
       url: 'https://www.any-mate.com/',

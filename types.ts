@@ -24,6 +24,9 @@ export type Person = {
   name: string,
   avatarUrl: string,
   url: string,
+  avatarWidth?: number,
+  avatarHeight?: number,
+  noRounded?: boolean,
 }
 
 export type Sponsors = {
