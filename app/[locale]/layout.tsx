@@ -5,6 +5,7 @@ import { i18n } from '../../i18n'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import AprilFools from './components/AprilFools/AprilFools'
 
 const notoSansSC = Noto_Sans_SC({
   subsets: ['latin'],
@@ -29,6 +30,7 @@ export default async function LangLayout({ children, params: { locale } }
     <html lang={locale} className={notoSansSC.className}>
       <body>
         <NextIntlClientProvider locale={locale} messages={locales}>
+          <AprilFools />
           <Navbar />
           {children}
           <Footer />
