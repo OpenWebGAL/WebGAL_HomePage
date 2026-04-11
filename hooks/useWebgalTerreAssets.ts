@@ -21,6 +21,7 @@ const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
               { platform: 'windowsArm64', url: findAssetsUrl(data.assets, 'Windows_Arm64.*.zip') },
               { platform: 'windowsArm64Setup', url: findAssetsUrl(data.assets, 'Windows_Arm64_Setup.*.exe') },
               { platform: 'macos', url: findAssetsUrl(data.assets, 'mac.*.zip') },
+              { platform: 'macosIntel', url: findAssetsUrl(data.assets, 'Mac_Intel.*.zip') },
               { platform: 'linux', url: findAssetsUrl(data.assets, 'Linux.*.zip') },
               { platform: 'linuxArm64', url: findAssetsUrl(data.assets, 'Linux_Arm64.*.zip') },
               { platform: 'android', url: findAssetsUrl(data.assets, 'Android.*.apk') }

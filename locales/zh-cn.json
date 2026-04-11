@@ -101,6 +101,7 @@
     "downloadWindowsArm64": "下载 Windows Arm64 压缩包",
     "downloadWindowsArm64Setup": "下载 Windows Arm64 安装文件",
     "downloadMacos": "下载 macOS 压缩包",
+    "downloadMacosIntel": "下载 macOS Intel 压缩包",
     "downloadLinux": "下载 Linux 压缩包",
     "downloadLinuxArm64": "下载 Linux Arm64 压缩包",
     "downloadAndroid": "下载 Android apk",

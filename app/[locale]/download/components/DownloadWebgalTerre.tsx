@@ -33,6 +33,7 @@ const DownloadWebgalTerre = () => {
     { platform: 'windowsArm64', icon: <RiMicrosoftFill />, label: t('downloadWindowsArm64') },
     { platform: 'windowsArm64Setup', icon: <RiMicrosoftFill />, label: t('downloadWindowsArm64Setup') },
     { platform: 'macos', icon: <RiAppleFill />, label: t('downloadMacos') },
+    { platform: 'macosIntel', icon: <RiAppleFill />, label: t('downloadMacosIntel') },
     { platform: 'linux', icon: <RiUbuntuFill />, label: t('downloadLinux') },
     { platform: 'linuxArm64', icon: <RiUbuntuFill />, label: t('downloadLinuxArm64') },
     { platform: 'android', icon: <RiAndroidFill />, label: t('downloadAndroid') }

@@ -101,6 +101,7 @@
     "downloadWindowsArm64": "Download Windows Arm64 zip",
     "downloadWindowsArm64Setup": "Download Windows Arm64 setup",
     "downloadMacos": "Download macOS zip",
+    "downloadMacosIntel": "Download macOS Intel zip",
     "downloadLinux": "Download Linux zip",
     "downloadLinuxArm64": "Download Linux Arm64 zip",
     "downloadAndroid": "Download Android apk",

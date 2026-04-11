@@ -101,6 +101,7 @@
     "downloadWindowsArm64": "Windows Arm64 zip をダウンロード",
     "downloadWindowsArm64Setup": "Windows Arm64 setup をダウンロード",
     "downloadMacos": "macOS zip をダウンロード",
+    "downloadMacosIntel": "macOS Intel zip をダウンロード",
     "downloadLinux": "Linux zip をダウンロード",
     "downloadLinuxArm64": "Linux Arm64 zip をダウンロード",
     "downloadAndroid": "Android apk をダウンロード",
