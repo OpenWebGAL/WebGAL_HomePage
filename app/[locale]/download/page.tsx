@@ -7,11 +7,13 @@ import ReadFirst from './components/ReadFirst'
 import License from './components/License'
 import { siteConfig } from '@/site.config'
 import Container from '@/components/Container/Container'
+import PrereleaseEntry from './components/PrereleaseEntry'
 
 const Download = () => {
   return (
     <Container>
       <DownloadTitle />
+      <PrereleaseEntry />
       <ReadFirst />
       <DownloadWebgalTerre />
       <DownloadWebgal />

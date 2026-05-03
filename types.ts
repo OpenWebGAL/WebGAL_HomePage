@@ -11,12 +11,14 @@ export type WebgalAssets = {
   version: string,
   releaseTime: string,
   releaseNote: string[],
+  releaseUrl?: string,
 }
 
 export type WebgalTerreAssets = {
   version: string,
   releaseTime: string,
   releaseNote: string[],
+  releaseUrl?: string,
   downloadUrl: { platform: string, url: string }[],
 }
 
