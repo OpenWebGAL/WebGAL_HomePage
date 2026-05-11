@@ -71,30 +71,3 @@
     font-weight: bold;
     padding: 0 4px;
 }
-
-.prerelease-entry {
-    @apply mx-4 mb-4 p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-5;
-    border-radius: 18px;
-    border: 1px solid rgba(0, 92, 175, 0.18);
-    background:
-        radial-gradient(circle at 18% 20%, rgba(0, 92, 175, 0.16), transparent 28%),
-        linear-gradient(135deg, rgba(0, 92, 175, 0.10), rgba(181, 73, 91, 0.08));
-    box-shadow: 0 18px 45px rgba(0, 92, 175, 0.10);
-}
-
-.prerelease-title {
-    @apply text-2xl font-semibold text-terre;
-}
-
-.prerelease-description {
-    @apply text-gray-700 leading-relaxed;
-}
-
-.prerelease-list {
-    @apply mt-3 list-disc list-inside text-gray-700 space-y-1;
-}
-
-.prerelease-kicker {
-    @apply text-sm font-semibold tracking-wider uppercase;
-    color: #B5495B;
-}

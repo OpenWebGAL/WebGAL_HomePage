@@ -8,17 +8,17 @@ import styles from '../Download.module.css'
 import { useLocale, useTranslations } from 'next-intl'
 import { i18n } from '@/i18n'
 
-const DownloadWebgalTerre = ({ prerelease = false }: { prerelease?: boolean }) => {
+const DownloadWebgalTerre = () => {
 
   const webgalTerreUrl = 'https://github.com/OpenWebGAL/WebGAL_Terre/releases'
-  const webgalTerreApiUrl = prerelease ? 'https://api.github.com/repos/OpenWebGAL/WebGAL_Terre/releases' : 'https://api.github.com/repos/OpenWebGAL/WebGAL_Terre/releases/latest'
+  const webgalTerreApiUrl = 'https://api.github.com/repos/OpenWebGAL/WebGAL_Terre/releases/latest'
 
   const t = useTranslations('download')
   const locale = useLocale()
 
   const releaseIndex = i18n.locales.findIndex(item => item.code === locale)
 
-  const webgalTerreAssets = useWebgalTerreAssets(webgalTerreApiUrl, prerelease)
+  const webgalTerreAssets = useWebgalTerreAssets(webgalTerreApiUrl)
 
   const releaseNote =
     webgalTerreAssets?.releaseNote[releaseIndex]
@@ -51,7 +51,7 @@ const DownloadWebgalTerre = ({ prerelease = false }: { prerelease?: boolean }) =
 
   return (
     <div className={styles.card}>
-      <h2 className={`${styles['card-title']} border-terre`}>{prerelease ? t('webgalTerrePrerelease') : t('webgalTerre')}</h2>
+      <h2 className={`${styles['card-title']} border-terre`}>{t('webgalTerre')}</h2>
       <div className={styles['card-info']}>
         {/* <div className={styles.corner}>
           <p className={`${styles['corner-text']} bg-terre`}>{t('recommend')}</p>

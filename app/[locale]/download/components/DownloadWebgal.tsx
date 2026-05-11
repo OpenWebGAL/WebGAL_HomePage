@@ -8,11 +8,11 @@ import Link from 'next/link'
 import { RiGithubFill } from 'react-icons/ri'
 import styles from '../Download.module.css'
 
-const DownloadWebgal = ({ prerelease = false }: { prerelease?: boolean }) => {
+const DownloadWebgal = () => {
 
   const webgalUrl = 'https://github.com/OpenWebGAL/WebGAL'
-  const webgalApiUrl = prerelease ? 'https://api.github.com/repos/OpenWebGAL/WebGAL/releases' : 'https://api.github.com/repos/OpenWebGAL/WebGAL/releases/latest'
-  const webgalAssets = useWebgalAssets(webgalApiUrl, prerelease)
+  const webgalApiUrl = 'https://api.github.com/repos/OpenWebGAL/WebGAL/releases/latest'
+  const webgalAssets = useWebgalAssets(webgalApiUrl)
   const locale = useLocale()
   const releaseIndex = i18n.locales.findIndex(item => item.code === locale)
   const t = useTranslations('download')
@@ -26,7 +26,7 @@ const DownloadWebgal = ({ prerelease = false }: { prerelease?: boolean }) => {
 
   return (
     <div className={styles.card}>
-      <h2 className={`${styles['card-title']} border-webgal`}>{prerelease ? t('webgalPrerelease') : t('webgal')}</h2>
+      <h2 className={`${styles['card-title']} border-webgal`}>{t('webgal')}</h2>
       <div className={styles['card-info']}>
         <p><strong>{t('version')}:</strong> {webgalAssets?.version ? webgalAssets?.version : t('fetching')}</p>
         <p><strong>{t('releaseTime')}:</strong> {webgalAssets?.releaseTime ? webgalAssets?.releaseTime.split('T')[0] : t('fetching')} </p>

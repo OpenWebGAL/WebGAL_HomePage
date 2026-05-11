@@ -15,10 +15,6 @@
     "blog": {
       "title": "Blog",
       "description": "WebGAL blog page"
-    },
-    "downloadPrerelease": {
-      "title": "WebGAL Pre-release Download",
-      "description": "Download beta pre-release builds of WebGAL and WebGAL Terre"
     }
   },
   "common": {
@@ -119,21 +115,6 @@
         "part0": "If you are developing in Visual Studio Code, you can install the",
         "part1": "plugin for syntax highlighting"
       }
-    },
-    "webgalPrerelease": "WebGAL Pre-release",
-    "webgalTerrePrerelease": "WebGAL Terre Pre-release",
-    "prereleaseEntry": {
-      "kicker": "4.6 Beta pre-release",
-      "title": "Try WebGAL 4.6 early",
-      "description": "Pre-release builds let you test new features before the stable release. They may still change, so production projects should prefer the stable version.",
-      "feature0": "New Terre user data directory layout, removing manual migration for future upgrades.",
-      "feature1": "Major improvements to WebGAL performance flow, fast preview, and stage state management.",
-      "feature2": "Beta builds are published as GitHub Release pre-releases.",
-      "action": "Download pre-release"
-    },
-    "prereleasePage": {
-      "title": "WebGAL 4.6 Beta Pre-release",
-      "description": "This page shows the latest GitHub Release pre-release builds for early testing of 4.6 features."
     }
   },
   "license": {

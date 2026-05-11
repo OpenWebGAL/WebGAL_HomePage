@@ -15,10 +15,6 @@
     "blog": {
       "title": "博客",
       "description": "WebGAL 博客页面"
-    },
-    "downloadPrerelease": {
-      "title": "WebGAL 预发布版本下载",
-      "description": "WebGAL 与 WebGAL Terre beta 预发布版本下载页面"
     }
   },
   "common": {
@@ -119,21 +115,6 @@
         "part0": "如果您使用 Visual Studio Code 进行开发，可以安装",
         "part1": "插件实现语法高亮"
       }
-    },
-    "webgalPrerelease": "WebGAL 预发布版本",
-    "webgalTerrePrerelease": "WebGAL Terre 预发布版本",
-    "prereleaseEntry": {
-      "kicker": "4.6 Beta 预发布",
-      "title": "抢先体验 WebGAL 4.6",
-      "description": "预发布版本用于在正式版发布前体验新功能并帮助测试。该版本可能仍有变动，生产项目请优先使用稳定版。",
-      "feature0": "新的 Terre 用户数据目录体系，后续升级不再需要手动迁移。",
-      "feature1": "WebGAL 演出流程、快速预览和舞台状态管理大幅增强。",
-      "feature2": "GitHub Release 中以 pre-release 形式发布 beta 构建。",
-      "action": "下载预发布版本"
-    },
-    "prereleasePage": {
-      "title": "WebGAL 4.6 Beta 预发布版本",
-      "description": "这里展示 GitHub Release 中最新的 pre-release 构建，适合提前测试 4.6 新功能。"
     }
   },
   "license": {

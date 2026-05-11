@@ -2,7 +2,7 @@ import { WebgalTerreAssets } from '@/types'
 import { findAssetsUrl, parseReleaseNotes } from '@/utils'
 import { useState, useEffect } from 'react'
 
-const useWebgalTerreAssets = (webgalTerreApiUrl: string, prerelease = false) => {
+const useWebgalTerreAssets = (webgalTerreApiUrl: string) => {
 
   const [webgalTerreAssets, setWebgalTerreAssets] = useState<WebgalTerreAssets>()
 
@@ -11,11 +11,7 @@ const useWebgalTerreAssets = (webgalTerreApiUrl: string, prerelease = false) => 
       fetch(webgalTerreApiUrl)
         .then(response => response.json())
         .then(async data => {
-          const release = prerelease && Array.isArray(data)
-            ? data.find(item => item.prerelease)
-            : data
-
-          if (!release) return
+          const release = data
 
           setWebgalTerreAssets(
             {

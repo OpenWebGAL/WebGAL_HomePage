@@ -15,10 +15,6 @@
     "blog": {
       "title": "ブログ",
       "description": "WebGAL ブログページ"
-    },
-    "downloadPrerelease": {
-      "title": "WebGAL プレリリース版ダウンロード",
-      "description": "WebGAL と WebGAL Terre の beta プレリリース版ダウンロードページ"
     }
   },
   "common": {
@@ -119,21 +115,6 @@
         "part0": "Visual Studio Code を使用して開発する場合、構文の強調表示のために",
         "part1": "プラグインをインストールすることをお勧めします。"
       }
-    },
-    "webgalPrerelease": "WebGAL プレリリース版",
-    "webgalTerrePrerelease": "WebGAL Terre プレリリース版",
-    "prereleaseEntry": {
-      "kicker": "4.6 Beta プレリリース",
-      "title": "WebGAL 4.6 を先行体験",
-      "description": "プレリリース版では、安定版の公開前に新機能を試してテストできます。内容は変更される可能性があるため、本番プロジェクトでは安定版を優先してください。",
-      "feature0": "Terre の新しいユーザーデータディレクトリ構成により、今後のアップグレードで手動移行が不要になります。",
-      "feature1": "WebGAL の演出フロー、高速プレビュー、ステージ状態管理を大幅に改善しました。",
-      "feature2": "Beta ビルドは GitHub Release の pre-release として公開されます。",
-      "action": "プレリリース版をダウンロード"
-    },
-    "prereleasePage": {
-      "title": "WebGAL 4.6 Beta プレリリース版",
-      "description": "このページでは、4.6 の新機能を先行テストするための最新 GitHub Release pre-release ビルドを表示します。"
     }
   },
   "license": {
