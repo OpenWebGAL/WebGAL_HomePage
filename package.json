@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node update-contributors.js && next build && node copy-blog-images.js",
+    "build": "next build && node copy-blog-images.js",
+    "uc":"node update-contributors.js",
     "start": "next start",
     "lint": "next lint"
   },
