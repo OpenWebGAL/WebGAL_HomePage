@@ -7,11 +7,13 @@ import styles from './TopVisual.module.css'
 import Image from 'next/image'
 import {useEffect, useState} from 'react'
 import useRedirect from '@/hooks/useRedirect'
+import {RiSteamFill} from 'react-icons/ri'
 
 const TopVisual = () => {
   const t = useTranslations('home')
   const locale = useLocale()
   const {docsRedirect} = useRedirect()
+  const webgalTerreSteamUrl = 'https://store.steampowered.com/app/2978410/WebGAL_Terre_Steam_Edition/'
 
   const topVisualImagesData = [
     {
@@ -59,6 +61,9 @@ const TopVisual = () => {
           <div className={'flex flex-row items-center gap-4 flex-wrap'}>
             <Button large>
               <Link href={`/${locale}/download/`}>{t('nowDownload')}</Link>
+            </Button>
+            <Button large>
+              <Link href={webgalTerreSteamUrl} target={'_blank'}><RiSteamFill />{t('steam')}</Link>
             </Button>
             <Button large>
               <Link href={docsRedirect('/')} target={'_blank'}>{t('viewDocument')}</Link>

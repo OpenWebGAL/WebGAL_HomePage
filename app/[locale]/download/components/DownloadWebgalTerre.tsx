@@ -12,6 +12,7 @@ const DownloadWebgalTerre = () => {
 
   const webgalTerreUrl = 'https://github.com/OpenWebGAL/WebGAL_Terre/releases'
   const webgalTerreApiUrl = 'https://api.github.com/repos/OpenWebGAL/WebGAL_Terre/releases/latest'
+  const webgalTerreSteamWidgetUrl = 'https://store.steampowered.com/widget/2978410/'
 
   const t = useTranslations('download')
   const locale = useLocale()
@@ -69,6 +70,7 @@ const DownloadWebgalTerre = () => {
           }
         </div>
       </div>
+      <iframe title='WebGAL Terre Steam' src={webgalTerreSteamWidgetUrl} className={styles['steam-widget']} loading='lazy' />
       <div className={styles['card-button-gourp']}>
         <Button terre>
           <Link href={webgalTerreAssets?.releaseUrl ?? webgalTerreUrl} target={'_blank'}><RiGithubFill />{t('gitHubReleases')}</Link>

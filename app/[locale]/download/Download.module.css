@@ -51,6 +51,13 @@
     margin-top: 8px;
 }
 
+.steam-widget {
+    width: 100%;
+    max-width: 646px;
+    height: 190px;
+    border: 0;
+}
+
 .release-note {
     @apply px-4 py-2 font-light;
 }
