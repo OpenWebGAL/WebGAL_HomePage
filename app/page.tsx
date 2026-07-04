@@ -5,10 +5,10 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.baseUrl),
   title: 'WebGAL',
-  description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎 | 未だかつてない Web ベースビジュアルノベルエンジン',
+  description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎 | 未だかつてない Web ベースビジュアルノベルエンジン | Новый веб-движок визуальных новелл',
   openGraph: {
     title: 'WebGAL',
-    description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎 | 未だかつてない Web ベースビジュアルノベルエンジン',
+    description: 'A brand new web Visual Novel engine | 全新的网页端视觉小说引擎 | 未だかつてない Web ベースビジュアルノベルエンジン | Новый веб-движок визуальных новелл',
     url: '/',
     images: [
       {
