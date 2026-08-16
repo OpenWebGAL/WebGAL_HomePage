@@ -3,13 +3,13 @@ import { Game } from '@/types'
 // 首页显示的游戏id，建议最多只放4个
 export const homeGamesId: Game['id'][] = [
   'A girl A rain',
-  // 'elf-of-era-idols-project',
+  'elf-of-era-idols-project',
   'observer',
-  'lovegoal',
   '_The_Neverending_Summer',
   // 'agnostic-requiem',
   // 'safe-house',
   // 'qinglian',
+  // 'lovegoal',
   // 'SuccubusGalGames',
 ]
 
