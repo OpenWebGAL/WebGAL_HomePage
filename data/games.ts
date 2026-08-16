@@ -2,7 +2,8 @@ import { Game } from '@/types'
 
 // 首页显示的游戏id，建议最多只放4个
 export const homeGamesId: Game['id'][] = [
-  'elf-of-era-idols-project',
+  'A girl A rain',
+  // 'elf-of-era-idols-project',
   'observer',
   'lovegoal',
   '_The_Neverending_Summer',
@@ -117,5 +118,13 @@ export const games: Game[] = [
     releaseDate: '2025-04-28',
     url: 'https://store.steampowered.com/app/3589940/_The_Neverending_Summer/',
     cover: '_The_Neverending_Summer.jpg',
+  },
+  {
+    id: 'A girl A rain',
+    title: '少女，一场雨',
+    developer: '三玖谁顶得住啊',
+    releaseDate: '2026-09-01',
+    url: 'https://store.steampowered.com/app/4914410/_/',
+    cover: 'a-girl-a-rain.png',
   },
 ]
