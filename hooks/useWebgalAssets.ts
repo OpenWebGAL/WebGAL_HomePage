@@ -2,7 +2,7 @@ import { WebgalAssets } from '@/types'
 import { parseReleaseNotes } from '@/utils'
 import { useEffect, useState } from 'react'
 
-const useWebgalAssets = (webgalApiUrl: string) => {
+const useWebgalAssets = (webgalApiUrl: string, prerelease = false) => {
 
   const [webgalAssets, setWebgalAssets] = useState<WebgalAssets>()
 
@@ -11,7 +11,11 @@ const useWebgalAssets = (webgalApiUrl: string) => {
       fetch(webgalApiUrl)
         .then(response => response.json())
         .then(async data => {
-          const release = data
+          const release = prerelease && Array.isArray(data)
+            ? data.find(item => item.prerelease && !item.draft)
+            : data
+
+          if (!release) return
 
           setWebgalAssets(
             {
@@ -25,7 +29,7 @@ const useWebgalAssets = (webgalApiUrl: string) => {
     } catch (error) {
       console.error(error)
     }
-  }, [webgalApiUrl])
+  }, [webgalApiUrl, prerelease])
 
   return webgalAssets
 }

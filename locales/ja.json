@@ -15,6 +15,10 @@
     "blog": {
       "title": "ブログ",
       "description": "WebGAL ブログページ"
+    },
+    "downloadPrerelease": {
+      "title": "WebGAL 4.7 Preview ダウンロード",
+      "description": "WebGAL と WebGAL Terre の 4.7 Preview ダウンロードページ"
     }
   },
   "common": {
@@ -116,6 +120,17 @@
         "part0": "Visual Studio Code を使用して開発する場合、構文の強調表示のために",
         "part1": "プラグインをインストールすることをお勧めします。"
       }
+    },
+    "webgalPrerelease": "WebGAL Preview",
+    "webgalTerrePrerelease": "WebGAL Terre Preview",
+    "prereleaseEntry": {
+      "title": "WebGAL 4.7 Preview を先行体験",
+      "feature0": "独立した 12 画面のモジュール式 UI と組み込みプリセットを搭載し、Terre のビジュアルテンプレートエディターで直接レイアウトやスタイルを編集できます。",
+      "feature1": "create-webgal-ui を使ったカスタム画面プラグインの開発・取り込みに対応し、複数行テキストの強化やスクリプト機能も改善しました。",
+      "action": "Preview をダウンロード"
+    },
+    "prereleasePage": {
+      "title": "WebGAL 4.7 Preview"
     }
   },
   "license": {

@@ -15,6 +15,10 @@
     "blog": {
       "title": "博客",
       "description": "WebGAL 博客页面"
+    },
+    "downloadPrerelease": {
+      "title": "WebGAL 4.7 Preview 下载",
+      "description": "WebGAL 与 WebGAL Terre 4.7 Preview 下载页面"
     }
   },
   "common": {
@@ -116,6 +120,17 @@
         "part0": "如果您使用 Visual Studio Code 进行开发，可以安装",
         "part1": "插件实现语法高亮"
       }
+    },
+    "webgalPrerelease": "WebGAL Preview",
+    "webgalTerrePrerelease": "WebGAL Terre Preview",
+    "prereleaseEntry": {
+      "title": "抢先体验 WebGAL 4.7 Preview",
+      "feature0": "全新 12 个独立 UI 界面与多套预制风格，支持在 Terre 可视化模板编辑器中直接拖拽排版与调试样式。",
+      "feature1": "配套 create-webgal-ui 脚手架开发自定义界面插件，并带来多行文本语法增强与脚本体验升级。",
+      "action": "下载 Preview 版本"
+    },
+    "prereleasePage": {
+      "title": "WebGAL 4.7 Preview"
     }
   },
   "license": {

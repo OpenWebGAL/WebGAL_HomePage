@@ -15,6 +15,10 @@
     "blog": {
       "title": "Blog",
       "description": "WebGAL blog page"
+    },
+    "downloadPrerelease": {
+      "title": "WebGAL 4.7 Preview Download",
+      "description": "Download 4.7 Preview builds of WebGAL and WebGAL Terre"
     }
   },
   "common": {
@@ -116,6 +120,17 @@
         "part0": "If you are developing in Visual Studio Code, you can install the",
         "part1": "plugin for syntax highlighting"
       }
+    },
+    "webgalPrerelease": "WebGAL Preview",
+    "webgalTerrePrerelease": "WebGAL Terre Preview",
+    "prereleaseEntry": {
+      "title": "Try WebGAL 4.7 Preview early",
+      "feature0": "Modular 12-screen UI architecture with built-in presets and direct drag-and-drop editing in the Terre visual template editor.",
+      "feature1": "Build and import custom screen plugins with create-webgal-ui, alongside multi-line dialogue enhancements and script upgrades.",
+      "action": "Download Preview"
+    },
+    "prereleasePage": {
+      "title": "WebGAL 4.7 Preview"
     }
   },
   "license": {
