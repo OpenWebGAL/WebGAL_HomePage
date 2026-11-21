@@ -8,6 +8,12 @@ import { PostData } from '@/types'
 
 const postsDirectory = path.join(process.cwd(), '/blog/posts')
 
+const parsePostDate = (date: string | Date) => {
+  if (date instanceof Date) return date.getTime()
+  const [year = 0, month = 1, day = 1] = String(date).trim().split('-').map(Number)
+  return Date.UTC(year, month - 1, day)
+}
+
 export const getPostList = async () => {
   const fileNames = fs.readdirSync(postsDirectory, { withFileTypes: true })
 
@@ -29,7 +35,7 @@ export const getPostList = async () => {
   )
 
   return postList
-    .sort((a, b) => (a.data.date < b.data.date) ? 1 : -1)
+    .sort((a, b) => parsePostDate(b.data.date) - parsePostDate(a.data.date) || b.slug.localeCompare(a.slug))
 }
 
 export const getPost = async (slug: string) => {
